@@ -22,14 +22,14 @@ const HomePage = () => {
   return (
     <>
       <motion.section
-        className="    px-10 pt-10 "
+        className="px-10 pt-10 "
         style={{ opacity }}
         ref={targetRef}
       >
         <div className=" text-[#202020] w-full flex flex-col items-center justify-start py-4 gap-16 ">
           <h1>Hello World</h1>
           <h2>
-            It&apos;s a{" "}
+            It&apos;s a
             <span className=" font-bold text-lg text-green-600">Blog</span>
           </h2>
           <p>

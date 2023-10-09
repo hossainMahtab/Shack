@@ -9,13 +9,13 @@ const Header = () => {
         <div className=" text-2xl">
           <ul className="flex space-x-16">
             <li className="mr-5 text-gray-700 ">
-              <div class="relative  focus-within:text-gray-400 ">
+              <div className="relative  focus-within:text-gray-400 ">
                 <input
                   type="text"
                   placeholder="Search Blog"
                   className="pl-10 border-none focus:border-none focus:ring-0 focus:outline-none focus:ring-transparent placeholder-gray-700 focus-within:placeholder-gray-400 "
                 />
-                <div class="absolute  flex inset-y-0 left-0  items-center pl-3 focus-within:text-gray-400">
+                <div className="absolute  flex inset-y-0 left-0  items-center pl-3 focus-within:text-gray-400">
                   <MdSearch />
                 </div>
               </div>
