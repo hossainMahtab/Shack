@@ -33,9 +33,20 @@ const HomePage = () => {
             <span className=" font-bold text-lg text-green-600">Blog</span>
           </h2>
           <p>
-            Lorem ipsum dolor sit amet consectet ur adipisicing elit.
+            Lorem ipsum dolor sit amet consectet ur adipisicing elit. Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Ut ab ipsam
+            perferendis iusto odit illo tempora placeat recusandae deserunt
+            deleniti, corrupti vel numquam exercitationem a nobis sunt
+            voluptatum, quam dicta!
             <br />
-            Lorem ipsum dolor sit amet consectet ur adipisicing elit.
+            Lorem ipsum dolor sit amet consectet ur adipisicing elit. Lorem
+            ipsum dolor, sit amet consectetur adipisicing elit. Quidem, totam
+            eligendi repellendus vero enim minus natus quae id magnam possimus
+            eius magni dicta ratione optio commodi voluptatum qui dolores ex.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore
+            quo, rem adipisci, totam nostrum nihil provident velit dolores id
+            voluptates sint similique voluptatum expedita ipsam, veniam dolorem.
+            Incidunt, corrupti sapiente?
           </p>
         </div>
       </motion.section>
