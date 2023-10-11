@@ -2,10 +2,10 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="w-full bg-[#150C21]  ">
+    <div className="w-full bg-[#202020]  ">
       <div className="container mx-auto px-10 relative">
         <div className="px-10  w-full absolute left-0 -top-36">
-          <div className="flex bg-[#705DF2] w-full rounded-[10px] z-0 relative">
+          <div className="flex bg-[#BC8D4B] w-full rounded-[10px] z-0 relative">
             <div className="absolute  -top-36 left-20  z-10">
               <img className="w-[180px] h-[160px]  " src="/chef.gif" alt="" />
             </div>
@@ -19,7 +19,7 @@ const Footer = () => {
                 </p>
               </div>
               <div className="flex flex-col gap-4 items-center">
-                <button className="bg-[#FFFFFF] px-10 py-4 rounded-full text-[#705DF2]">
+                <button className="bg-[#FFFFFF] px-10 py-4 rounded-full text-[#BC8D4B]">
                   Subscribe
                 </button>
                 <p className="text-[#FFFFFF] text-xl">It's a gift </p>
