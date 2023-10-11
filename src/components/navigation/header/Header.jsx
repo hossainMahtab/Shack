@@ -3,8 +3,8 @@ import { MdSearch } from "react-icons/md";
 
 const Header = () => {
   return (
-    <div className=" w-full sticky top-0 ">
-      <div className="container mx-auto flex justify-between items-center bg-[#FFFFFF] py-4 px-10">
+    <div className=" w-full sticky top-0 !bg-transparent z-50 ">
+      <div className="container mx-auto flex justify-between items-center bg-transparent py-4 px-10">
         <div className="text-2xl text-[#1d1d1f]">My Blog</div>
         <div className=" text-2xl">
           <ul className="flex space-x-16">

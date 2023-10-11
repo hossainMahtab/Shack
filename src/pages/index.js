@@ -1,23 +1,17 @@
 // import PrimaryLayout from '@/components/layouts/primary/PrimaryLayout'
-import HomePage from "@/components/homePage/HomePage";
+import AboutUs from "@/components/homePage/about-us/AboutUs";
+import Hero from "@/components/homePage/hero/Hero";
+import Parallax from "@/components/homePage/parallax/Parallax";
 import React from "react";
 
 const Home = () => {
   return (
-    <div className=" w-full h-full  bg-[#f5f5f7]">
-      <div className=" container  mx-auto  pb-64 ">
-        <div className="flex flex-col gap-32 items-center">
-          <HomePage />
-          <HomePage />
-          <HomePage />
-          <HomePage />
-          <HomePage />
-          <HomePage />
-          <HomePage />
-          <HomePage />
-          <HomePage />
-        </div>
+    <div className=" w-full h-full  bg-[#f5f5f7] pb-80 ">
+      <div className="">
+        <Hero />
       </div>
+      <AboutUs />
+      <Parallax />
     </div>
   );
 };
