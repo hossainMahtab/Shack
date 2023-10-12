@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import CommonButton from "@/components/shared/CommonButton";
+import CommonButton from "@/components/shared/button/CommonButton";
 
 // import { useScroll, useTransform, motion } from "framer-motion";
 
@@ -63,7 +63,6 @@ const Hero = () => {
       </motion.section> */}
 
       <div className="w-full  h-screen relative overflow-hidden -mt-[132px] ">
-        {/* <div className="absolute inset-0 bg-black/40 z-10"></div> */}
         {/* <div className=" container  mx-auto   "> */}
 
         {/* <img
@@ -73,6 +72,8 @@ const Hero = () => {
         /> */}
         <Slider {...sliderSettings} className="w-full h-full ">
           <div className="w-full h-full relative ">
+            <div className="absolute inset-0 bg-black/40 z-10"></div>
+
             <img
               src="/hero-food/slider-2.jpg"
               alt=""
@@ -95,6 +96,8 @@ const Hero = () => {
             </div>
           </div>
           <div className="w-full h-full relative ">
+            <div className="absolute inset-0 bg-black/40 z-10"></div>
+
             <img
               src="/hero-food/slider-1.jpg"
               alt=""

@@ -1,4 +1,4 @@
-import CommonButton from "@/components/shared/CommonButton";
+import CommonButton from "@/components/shared/button/CommonButton";
 import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
@@ -11,7 +11,7 @@ const AboutUs = () => {
   });
 
   // const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 1]);
-  const opacity = useTransform(scrollYProgress, [0, 0.8, 1], [0, 0.4, 1]);
+  const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [0, 0.1, 1]);
 
   return (
     <motion.div className="w-full" style={{ opacity }} ref={targetRef}>
