@@ -11,7 +11,7 @@ const MenuList = () => {
               <h1 className="text-[#202020] text-4xl font-bold uppercase">
                 STARTERS
               </h1>
-              <div className="w-[360px] h-1 bg-[#202020]"></div>
+              <div className="w-[360px] h-0.5 bg-[#202020]"></div>
               <div className="w-[360px] h-2 bg-[#202020]"></div>
             </div>
             {/* menu Items starts */}

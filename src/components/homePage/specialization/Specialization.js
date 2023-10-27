@@ -4,7 +4,7 @@ const Specialization = () => {
   return (
     <div className="w-full bg-[#F4F4F4]">
       <div className="container mx-auto">
-        <div className="w-full flex gap-12  py-16">
+        <div className="w-full flex gap-12 px-10  py-20">
           {/* 1 */}
           <div className="flex gap-4  w-1/3">
             <img src="/icons/groceries.png" alt="" className="w-16 h-16" />

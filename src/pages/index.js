@@ -3,6 +3,8 @@ import Hero from "@/components/homePage/hero/Hero";
 import Specialization from "@/components/homePage/specialization/Specialization";
 import React from "react";
 import Parallax1 from "@/components/homePage/parallax/Parallax1";
+import MenuAccordion from "@/components/homePage/menuAccordion/MenuAccordion";
+import Opening from "@/components/homePage/opening/Opening";
 
 const Home = () => {
   return (
@@ -11,6 +13,8 @@ const Home = () => {
       <Specialization />
       <AboutUs />
       <Parallax1 />
+      <MenuAccordion />
+      <Opening />
     </div>
   );
 };

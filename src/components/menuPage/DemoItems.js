@@ -2,19 +2,31 @@ export const demoItems = {
   starters: [
     {
       item: "Chicken Tikka",
-      price: "$ 200",
+      price: "$45.00",
       description: "Chicken / Butter / Masala",
       image: "/menuPage/menuItems/chicken-tikka.jpeg",
     },
     {
       item: "Chicken Tikka",
-      price: "$ 200",
+      price: "$45.00",
       description: "Chicken / Butter / Masala",
       image: "/menuPage/menuItems/chicken-tikka.jpeg",
     },
     {
       item: "Chicken Tikka",
-      price: "$ 200",
+      price: "$45.00",
+      description: "Chicken / Butter / Masala",
+      image: "/menuPage/menuItems/chicken-tikka.jpeg",
+    },
+    {
+      item: "Chicken Tikka",
+      price: "$45.00",
+      description: "Chicken / Butter / Masala",
+      image: "/menuPage/menuItems/chicken-tikka.jpeg",
+    },
+    {
+      item: "Chicken Tikka",
+      price: "$45.00",
       description: "Chicken / Butter / Masala",
       image: "/menuPage/menuItems/chicken-tikka.jpeg",
     },
@@ -22,19 +34,25 @@ export const demoItems = {
   mainCourse: [
     {
       item: "Chicken Tikka Masala",
-      price: "$ 200",
+      price: "$45.00",
       description: "Chicken / Butter / Masala",
       image: "/menuPage/menuItems/chicken-tikka.jpeg",
     },
     {
       item: "Chicken Tikka Masala",
-      price: "$ 200",
+      price: "$45.00",
       description: "Chicken / Butter / Masala",
       image: "/menuPage/menuItems/chicken-tikka.jpeg",
     },
     {
       item: "Chicken Tikka Masala",
-      price: "$ 200",
+      price: "$45.00",
+      description: "Chicken / Butter / Masala",
+      image: "/menuPage/menuItems/chicken-tikka.jpeg",
+    },
+    {
+      item: "Chicken Tikka Masala",
+      price: "$45.00",
       description: "Chicken / Butter / Masala",
       image: "/menuPage/menuItems/chicken-tikka.jpeg",
     },
@@ -42,19 +60,19 @@ export const demoItems = {
   soups: [
     {
       item: "Chicken Tikka Masala",
-      price: "$ 200",
+      price: "$45.00",
       description: "Chicken / Butter / Masala",
       image: "/menuPage/menuItems/chicken-tikka.jpeg",
     },
     {
       item: "Chicken Tikka Masala",
-      price: "$ 200",
+      price: "$45.00",
       description: "Chicken / Butter / Masala",
       image: "/menuPage/menuItems/chicken-tikka.jpeg",
     },
     {
       item: "Chicken Tikka Masala",
-      price: "$ 200",
+      price: "$45.00",
       description: "Chicken / Butter / Masala",
       image: "/menuPage/menuItems/chicken-tikka.jpeg",
     },
@@ -63,19 +81,19 @@ export const demoItems = {
   desserts: [
     {
       item: "Chicken Tikka Masala",
-      price: "$ 200",
+      price: "$45.00",
       description: "Chicken / Butter / Masala",
       image: "/menuPage/menuItems/chicken-tikka.jpeg",
     },
     {
       item: "Chicken Tikka Masala",
-      price: "$ 200",
+      price: "$45.00",
       description: "Chicken / Butter / Masala",
       image: "/menuPage/menuItems/chicken-tikka.jpeg",
     },
     {
       item: "Chicken Tikka Masala",
-      price: "$ 200",
+      price: "$45.00",
       description: "Chicken / Butter / Masala",
       image: "/menuPage/menuItems/chicken-tikka.jpeg",
     },

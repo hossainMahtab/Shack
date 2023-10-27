@@ -16,7 +16,7 @@ const AboutUs = () => {
   return (
     <motion.div className="w-full" style={{ opacity }} ref={targetRef}>
       <div className="container mx-auto">
-        <div className="w-full flex gap-10 justify-between py-20">
+        <div className="w-full flex gap-10 justify-between px-10 py-20">
           <div className="w-1/2 flex flex-col justify-between gap-4">
             <div className=" w-full flex flex-col gap-5">
               <div className="  max-w-max flex flex-col gap-2 items-end">

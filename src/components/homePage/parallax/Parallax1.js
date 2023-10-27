@@ -3,7 +3,7 @@ import React from "react";
 const Parallax1 = () => {
   return (
     <>
-      <div className="flex relative items-center justify-center bg-[url(/homepage-img/about-4.jpg)] bg-fixed bg-cover  max-w-full h-[440px]">
+      <div className="flex relative items-center justify-center bg-[url(/homepage-img/about-4.jpg)] bg-fixed bg-cover  max-w-full h-[500px]">
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="absolute">
           <img

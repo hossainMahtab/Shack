@@ -18,12 +18,16 @@ const MenuItems = (itemType) => {
               <div className="w-full flex flex-col ">
                 <div className="w-full flex ">
                   <div className=" w-auto flex gap-2">
-                    <h1 className="text-lg font-semibold">{item.item}</h1>
+                    <h1 className="text-lg text-[#202020] font-semibold">
+                      {item.item}
+                    </h1>
                   </div>
-                  <div className=" mx-2 mb-2 flex-grow border-b border-dashed border-gray-400 "></div>
-                  <p className="text-lg font-semibold">{item.price}</p>
+                  <div className=" mx-2 mb-2 flex-grow border-b border-dashed border-slate-600 "></div>
+                  <p className="text-lg text-[#202020] font-semibold">
+                    {item.price}
+                  </p>
                 </div>
-                <p className="text-sm text-gray-400">{item.description}</p>
+                <p className="text-sm text-slate-600">{item.description}</p>
               </div>
             </div>
           ))}
@@ -42,12 +46,16 @@ const MenuItems = (itemType) => {
               <div className="w-full flex flex-col ">
                 <div className="w-full flex ">
                   <div className=" w-auto flex gap-2">
-                    <h1 className="text-lg font-semibold">{item.item}</h1>
+                    <h1 className="text-lg text-[#202020] font-semibold">
+                      {item.item}
+                    </h1>
                   </div>
-                  <div className=" mx-2 mb-2 flex-grow border-b border-dashed border-gray-400 "></div>
-                  <p className="text-lg font-semibold">{item.price}</p>
+                  <div className=" mx-2 mb-2 flex-grow border-b border-dashed border-slate-600 "></div>
+                  <p className="text-lg text-[#202020] font-semibold">
+                    {item.price}
+                  </p>
                 </div>
-                <p className="text-sm text-gray-400">{item.description}</p>
+                <p className="text-sm text-slate-600">{item.description}</p>
               </div>
             </div>
           ))}
@@ -65,12 +73,16 @@ const MenuItems = (itemType) => {
               <div className="w-full flex flex-col ">
                 <div className="w-full flex ">
                   <div className=" w-auto flex gap-2">
-                    <h1 className="text-lg font-semibold">{item.item}</h1>
+                    <h1 className="text-lg text-[#202020] font-semibold">
+                      {item.item}
+                    </h1>
                   </div>
-                  <div className=" mx-2 mb-2 flex-grow border-b border-dashed border-gray-400 "></div>
-                  <p className="text-lg font-semibold">{item.price}</p>
+                  <div className=" mx-2 mb-2 flex-grow border-b border-dashed border-slate-600 "></div>
+                  <p className="text-lg text-[#202020] font-semibold">
+                    {item.price}
+                  </p>
                 </div>
-                <p className="text-sm text-gray-400">{item.description}</p>
+                <p className="text-sm text-slate-600">{item.description}</p>
               </div>
             </div>
           ))}
@@ -88,12 +100,16 @@ const MenuItems = (itemType) => {
               <div className="w-full flex flex-col ">
                 <div className="w-full flex ">
                   <div className=" w-auto flex gap-2">
-                    <h1 className="text-lg font-semibold">{item.item}</h1>
+                    <h1 className="text-lg text-[#202020] font-semibold">
+                      {item.item}
+                    </h1>
                   </div>
-                  <div className=" mx-2 mb-2 flex-grow border-b border-dashed border-gray-400 "></div>
-                  <p className="text-lg font-semibold">{item.price}</p>
+                  <div className=" mx-2 mb-2 flex-grow border-b border-dashed border-slate-600 "></div>
+                  <p className="text-lg text-[#202020] font-semibold">
+                    {item.price}
+                  </p>
                 </div>
-                <p className="text-sm text-gray-400">{item.description}</p>
+                <p className="text-sm text-slate-600">{item.description}</p>
               </div>
             </div>
           ))}

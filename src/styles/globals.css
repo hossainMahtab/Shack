@@ -22,3 +22,7 @@ body {
 ::-webkit-scrollbar {
   width: 0.5rem;
 }
+
+.accordion-hover:hover > .MuiAccordionSummary-expandIconWrapper {
+  @apply text-[#FFFFFF] transition duration-500 ease-in-out;
+}
