@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { useEffect } from "react";
 import { MdSearch } from "react-icons/md";
 
@@ -49,8 +50,12 @@ const Header = () => {
             <div className="container mx-auto flex flex-col  justify-center items-center bg-transparent  py-5 px-10 z-[9999]">
               <div className=" text-lg uppercase">
                 <ul className="flex space-x-16">
-                  <li className="text-white cursor-pointer">Home</li>
-                  <li className="text-white cursor-pointer">Menu</li>
+                  <Link href="/">
+                    <li className="text-white cursor-pointer">Home</li>
+                  </Link>
+                  <Link href="/menu">
+                    <li className="text-white cursor-pointer">Menu</li>
+                  </Link>
                   <li className="text-white cursor-pointer">Reservation</li>
                   <li className="text-white cursor-pointer">About</li>
                   <li className="text-white cursor-pointer">Contact</li>
@@ -87,8 +92,12 @@ const Header = () => {
                 <option value="ghi">GHI</option>
               </select>
             </li> */}
-                  <li className="text-white cursor-pointer">Home</li>
-                  <li className="text-white cursor-pointer">Menu</li>
+                  <Link href="/">
+                    <li className="text-white cursor-pointer">Home</li>
+                  </Link>
+                  <Link href="/menu">
+                    <li className="text-white cursor-pointer">Menu</li>
+                  </Link>
                   <li className="text-white cursor-pointer">Reservation</li>
                   <li className="text-white cursor-pointer">About</li>
                   <li className="text-white cursor-pointer">Contact</li>
