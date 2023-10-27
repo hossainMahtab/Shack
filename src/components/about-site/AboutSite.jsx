@@ -5,7 +5,7 @@ const AboutSite = () => {
   return (
     <div>
       <Head>
-        <title>My Blog</title>
+        <title>Shack</title>
         <meta name="description" content="About Site" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
