@@ -58,6 +58,8 @@ const Header = () => {
                   </Link>
                   <li className="text-white cursor-pointer">Reservation</li>
                   <li className="text-white cursor-pointer">About</li>
+                  <li className="text-white cursor-pointer">Gallery</li>
+                  <li className="text-white cursor-pointer">Blog</li>
                   <li className="text-white cursor-pointer">Contact</li>
                 </ul>
               </div>
@@ -100,6 +102,8 @@ const Header = () => {
                   </Link>
                   <li className="text-white cursor-pointer">Reservation</li>
                   <li className="text-white cursor-pointer">About</li>
+                  <li className="text-white cursor-pointer">Gallery</li>
+                  <li className="text-white cursor-pointer">Blog</li>
                   <li className="text-white cursor-pointer">Contact</li>
                 </ul>
               </div>

@@ -9,7 +9,7 @@ const Parallax1 = () => {
           <img
             src="/homepage-img/taste-food.png"
             alt=""
-            className="w-full h-auto"
+            className="w-full h-[300px]"
           />
         </div>
       </div>

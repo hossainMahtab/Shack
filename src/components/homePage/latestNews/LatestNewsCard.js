@@ -28,10 +28,10 @@ const LatestNewsCard = () => {
               </div>
             </div>
             <div className="w-full relative">
-              <p className="text-[#f1b24a] bg-[#f6feff37] z-20 max-w-max p-1.5 rounded-md capitalize absolute top-2 right-4 text-xl text-right w-full">
+              <p className="text-[#f1b24a] bg-[#f6feff30] backdrop-blur-sm z-20 max-w-max p-2 rounded-md capitalize absolute top-2.5 right-4 text-xl text-right w-full">
                 {news.type}
               </p>
-              <div className=" absolute top-0 left-0 w-full h-full z-10 bg-black/30"></div>
+              <div className=" absolute top-0 left-0 w-full h-full z-10 bg-black/40"></div>
               <img
                 src={news.image}
                 alt=""
