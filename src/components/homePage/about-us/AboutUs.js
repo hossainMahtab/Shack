@@ -20,7 +20,7 @@ const AboutUs = () => {
           <div className="w-1/2 flex flex-col justify-between gap-4">
             <div className=" w-full flex flex-col gap-5">
               <div className="  max-w-max flex flex-col gap-2 items-end">
-                <h1 className=" max-w-max px-4 py-2 border-b-8 border-b-[#f1b24a] text-[#202020] text-5xl">
+                <h1 className=" max-w-max px-4 py-2 border-b-8 border-b-[#f1b24a] font-bold text-[#202020] text-5xl">
                   About Us
                 </h1>
                 {/* <div className="w-56 flex flex-col gap-2 items-end"> */}
@@ -28,12 +28,12 @@ const AboutUs = () => {
                 <div className="w-28 h-1 bg-[#202020]"></div>
                 {/* </div> */}
               </div>
-              <h3 className="text-[#202020] text-2xl">
+              <h2 className="text-[#202020] text-2xl">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Quisquam voluptatum, voluptas, quod, quas quae quia dolorum
                 doloribus
-              </h3>
-              <p className="text-[#202020] text-lg">
+              </h2>
+              <p className="text-[#202020] text-xl">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Quisquam voluptatum, voluptas, quod, quas quae quia dolorum
                 doloribus accusantium tempora voluptatibus voluptate. Quisquam
@@ -56,7 +56,7 @@ const AboutUs = () => {
             <img
               src="/homepage-img/about-7.jpg"
               alt=""
-              className="w-full h-auto"
+              className="w-full h-[500px] "
             />
           </div>
         </div>
