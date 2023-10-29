@@ -16,7 +16,7 @@ const PrivateSection = () => {
   return (
     <div className="w-full">
       <div className="container mx-auto">
-        <div className="w-full flex gap-10 justify-between px-10 py-20">
+        <div className="w-full flex gap-10 justify-between px-10 pb-20">
           <div className="w-1/2">
             <img
               src="/homepage-img/private2outline.png"
@@ -27,11 +27,11 @@ const PrivateSection = () => {
           <div className="w-1/2 flex flex-col justify-between items-end gap-4">
             <div className=" w-full flex flex-col items-end gap-5">
               <div className="  max-w-max flex flex-col gap-2 items-end">
-                <h1 className=" font-bold text-right max-w-max px-4 py-2 border-b-8 border-b-[#f1b24a] text-[#202020] text-5xl">
+                <h1 className=" font-bold text-right max-w-max px-4 py-2 border-b-8 border-b-[#e4ae62] text-[#202020] text-5xl">
                   PRIVATE EVENTS
                 </h1>
                 {/* <div className="w-56 flex flex-col gap-2 items-end"> */}
-                {/* <div className="w-56 h-2 bg-[#f1b24a] mt-5"></div> */}
+                {/* <div className="w-56 h-2 bg-[#e4ae62] mt-5"></div> */}
                 <div className="w-48 h-1 bg-[#202020]"></div>
                 {/* </div> */}
               </div>
@@ -55,7 +55,7 @@ const PrivateSection = () => {
                 btnText="Book Now"
                 borderColor="border-[#202020]"
                 textColor="text-[#202020]"
-                hoverBorderColor="hover:border-[#BC8D4B]"
+                hoverBorderColor="hover:border-[#e4ae62]"
                 hoverTextColor="hover:text-[#FFFFFF]"
               />
             </div>

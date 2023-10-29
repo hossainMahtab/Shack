@@ -28,7 +28,7 @@ const LatestNewsCard = () => {
               </div>
             </div>
             <div className="w-full relative">
-              <p className="text-[#f1b24a] bg-[#f6feff30] backdrop-blur-sm z-20 max-w-max p-2 rounded-md capitalize absolute top-2.5 right-4 text-xl text-right w-full">
+              <p className="text-[#e4ae62] bg-[#f6feff30] backdrop-blur-sm z-20 max-w-max p-2 rounded-md capitalize absolute top-2.5 right-4 text-xl text-right w-full">
                 {news.type}
               </p>
               <div className=" absolute top-0 left-0 w-full h-full z-10 bg-black/40"></div>
@@ -44,7 +44,7 @@ const LatestNewsCard = () => {
               btnText="Read More"
               borderColor="border-[#202020]"
               textColor="text-[#202020]"
-              hoverBorderColor="hover:border-[#BC8D4B]"
+              hoverBorderColor="hover:border-[#e4ae62]"
               hoverTextColor="hover:text-[#FFFFFF]"
             />
           </div>

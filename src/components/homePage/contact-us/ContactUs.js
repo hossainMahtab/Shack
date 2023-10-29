@@ -20,8 +20,8 @@ const ContactUs = () => {
               Contact Us
             </h1>
             <div className="w-[400px] h-0.5 bg-[#202020] mb-1"></div>
-            <div className="w-[400px] h-2 bg-[#202020] mb-10"></div>
-            <div className=" w-full grid grid-cols-2 gap-y-10 gap-x-12 pb-8">
+            <div className="w-[400px] h-2 bg-[#202020] mb-2"></div>
+            <div className=" w-full grid grid-cols-2 gap-y-10 gap-x-12 py-10 ">
               <TextField id="outlined-basic" label="Name" variant="outlined" />
               <TextField id="outlined-basic" label="Email" variant="outlined" />
               <TextField id="outlined-basic" label="Phone" variant="outlined" />
@@ -54,7 +54,7 @@ const ContactUs = () => {
                 btnText="Send Message"
                 borderColor="border-[#202020]"
                 textColor="text-[#202020]"
-                hoverBorderColor="hover:border-[#BC8D4B]"
+                hoverBorderColor="hover:border-[#e4ae62]"
                 hoverTextColor="hover:text-[#FFFFFF]"
               />
             </div>

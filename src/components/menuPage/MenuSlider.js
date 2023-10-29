@@ -10,6 +10,13 @@ const MenuSlider = () => {
           alt=""
           className="w-full h-full object-cover"
         />
+        <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center">
+          <img
+            src="/homepage-img/taste-food.png"
+            alt=""
+            className="w-auto h-auto object-cover"
+          />
+        </div>
       </div>
     </div>
   );

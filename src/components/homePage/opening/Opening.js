@@ -28,7 +28,7 @@ const Opening = () => {
             btnText="Book Now"
             borderColor="border-[#FFFFFF]"
             textColor="text-[#FFFFFF]"
-            hoverBorderColor="hover:border-[#BC8D4B]"
+            hoverBorderColor="hover:border-[#e4ae62]"
             hoverTextColor="hover:text-[#FFFFFF]"
           />
         </div>

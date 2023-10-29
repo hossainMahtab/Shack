@@ -31,9 +31,9 @@ export default function MenuAccordion() {
             </h3>
           </div>
           <div className=" w-full flex flex-col gap-8 py-10">
-            <Accordion>
+            <Accordion className="!rounded-[10px]">
               <AccordionSummary
-                className=" accordion-hover py-4 !bg-[#FFFFFF] hover:!bg-[#202020] !text-[#202020] hover:!text-[#FFFFFF]  hover:!transition hover:!duration-500 hover:!ease-in-out"
+                className=" accordion-hover !rounded-[10px]  !py-4 !bg-[#FFFFFF] hover:!bg-[#202020] !text-[#202020] hover:!text-[#FFFFFF]  hover:!transition hover:!duration-500 hover:!ease-in-out"
                 sx={{
                   border: "6px solid #202020",
 
@@ -81,9 +81,9 @@ export default function MenuAccordion() {
                 </div>
               </AccordionDetails>
             </Accordion>
-            <Accordion>
+            <Accordion className="!rounded-[10px]">
               <AccordionSummary
-                className=" accordion-hover py-4 !bg-[#FFFFFF] hover:!bg-[#202020] !text-[#202020] hover:!text-[#FFFFFF]  hover:!transition hover:!duration-500 hover:!ease-in-out"
+                className=" accordion-hover !rounded-[10px] !py-4 !bg-[#FFFFFF] hover:!bg-[#202020] !text-[#202020] hover:!text-[#FFFFFF]  hover:!transition hover:!duration-500 hover:!ease-in-out"
                 sx={{
                   border: "6px solid #202020",
 
@@ -133,9 +133,9 @@ export default function MenuAccordion() {
                 </div>
               </AccordionDetails>
             </Accordion>
-            <Accordion>
+            <Accordion className="!rounded-[10px]">
               <AccordionSummary
-                className=" accordion-hover py-4 !bg-[#FFFFFF] hover:!bg-[#202020] !text-[#202020] hover:!text-[#FFFFFF]  hover:!transition hover:!duration-500 hover:!ease-in-out"
+                className=" accordion-hover !rounded-[10px] !py-4 !bg-[#FFFFFF] hover:!bg-[#202020] !text-[#202020] hover:!text-[#FFFFFF]  hover:!transition hover:!duration-500 hover:!ease-in-out"
                 sx={{
                   border: "6px solid #202020",
 
@@ -183,9 +183,9 @@ export default function MenuAccordion() {
                 </div>
               </AccordionDetails>
             </Accordion>
-            <Accordion>
+            <Accordion className="!rounded-[10px]">
               <AccordionSummary
-                className=" accordion-hover py-4 !bg-[#FFFFFF] hover:!bg-[#202020] !text-[#202020] hover:!text-[#FFFFFF]  hover:!transition hover:!duration-500 hover:!ease-in-out"
+                className=" accordion-hover !rounded-[10px] !py-4 !bg-[#FFFFFF] hover:!bg-[#202020] !text-[#202020] hover:!text-[#FFFFFF]  hover:!transition hover:!duration-500 hover:!ease-in-out"
                 sx={{
                   border: "6px solid #202020",
 
@@ -240,7 +240,7 @@ export default function MenuAccordion() {
                 btnText="View Menu"
                 borderColor="border-[#202020]"
                 textColor="text-[#202020]"
-                hoverBorderColor="hover:border-[#BC8D4B]"
+                hoverBorderColor="hover:border-[#e4ae62]"
                 hoverTextColor="hover:text-[#FFFFFF]"
               />
             </Link>

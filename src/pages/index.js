@@ -9,16 +9,18 @@ import PrivateSection from "@/components/homePage/privateSection/PrivateSection"
 import LatestNews from "@/components/homePage/latestNews/LatestNews";
 import Testimonials from "@/components/homePage/testimonials/Testimonials";
 import ContactUs from "@/components/homePage/contact-us/ContactUs";
+import HomeGallery from "@/components/homePage/homeGallery/HomeGallery";
 const Home = () => {
   return (
     <div className=" w-full h-full  bg-[#ffffff]  pb-80 ">
       <Hero />
       <Specialization />
       <AboutUs />
-      <Parallax1 />
-      <MenuAccordion />
+      {/* <Parallax1 /> */}
       <Opening />
+      <MenuAccordion />
       <PrivateSection />
+      <HomeGallery />
       <LatestNews />
       <Testimonials />
       <ContactUs />

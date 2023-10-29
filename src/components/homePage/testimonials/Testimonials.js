@@ -16,7 +16,7 @@ const Testimonials = () => {
           <div className="w-[440px] h-2 bg-[#FFFFFF] mb-10"></div>
           <div className="w-full grid grid-cols-3 gap-16 px-20 ">
             {/* 1 */}
-            <div className="w-full bg-[#75797a75] p-6 flex flex-col items-center justify-center">
+            <div className="w-full bg-[#75797a50] rounded-[10px] p-6 flex flex-col items-center justify-center">
               <p className="text-[#FFFFFF] text-center text-xl font-bold capitalize mb-2">
                 "Ferri altera eripuit ne nam. Duo at tibique conclusionemque,
                 nam modo ancillae tacimates et, cu vim omnes phaedrum
@@ -29,7 +29,7 @@ const Testimonials = () => {
               <h3 className="text-[#FFFFFF] text-xl font-bold "> ⭐⭐⭐⭐⭐</h3>
             </div>
             {/* 2 */}
-            <div className="w-full bg-[#75797a75] p-6 flex flex-col items-center justify-center">
+            <div className="w-full bg-[#75797a50] rounded-[10px] p-6 flex flex-col items-center justify-center">
               <p className="text-[#FFFFFF] text-center text-xl font-bold capitalize mb-2">
                 "Ferri altera eripuit ne nam. Duo at tibique conclusionemque,
                 nam modo ancillae tacimates et, cu vim omnes phaedrum
@@ -42,7 +42,7 @@ const Testimonials = () => {
               <h3 className="text-[#FFFFFF] text-xl font-bold "> ⭐⭐⭐⭐⭐</h3>
             </div>
             {/* 3 */}
-            <div className="w-full bg-[#75797a75] p-6 flex flex-col items-center justify-center">
+            <div className="w-full bg-[#75797a50] rounded-[10px] p-6 flex flex-col items-center justify-center">
               <p className="text-[#FFFFFF] text-center text-xl font-bold capitalize mb-2">
                 "Ferri altera eripuit ne nam. Duo at tibique conclusionemque,
                 nam modo ancillae tacimates et, cu vim omnes phaedrum
