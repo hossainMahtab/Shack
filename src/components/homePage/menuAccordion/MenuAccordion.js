@@ -5,13 +5,15 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { demoItems } from "@/components/menuPage/DemoItems";
+import CommonButton from "@/components/shared/button/CommonButton";
+import Link from "next/link";
 
 export default function MenuAccordion() {
   const { starters, mainCourse, soups, desserts } = demoItems;
   return (
     <div className="w-full">
       <div className="container mx-auto">
-        <div className="w-full  px-10 py-20">
+        <div className="w-full flex flex-col px-10 py-20">
           <div className="w-full flex flex-col items-center">
             <h2 className="text-2xl font-semibold text-[#202020] uppercase mb-1">
               DISCOVER
@@ -28,10 +30,10 @@ export default function MenuAccordion() {
               experience.
             </h3>
           </div>
-          <div className=" w-full flex flex-col gap-8 pt-10">
-            <Accordion>
+          <div className=" w-full flex flex-col gap-8 py-10">
+            <Accordion className="!rounded-[10px]">
               <AccordionSummary
-                className=" accordion-hover py-4 !bg-[#FFFFFF] hover:!bg-[#202020] !text-[#202020] hover:!text-[#FFFFFF]  hover:!transition hover:!duration-500 hover:!ease-in-out"
+                className=" accordion-hover !rounded-[10px]  !py-4 !bg-[#FFFFFF] hover:!bg-[#202020] !text-[#202020] hover:!text-[#FFFFFF]  hover:!transition hover:!duration-500 hover:!ease-in-out"
                 sx={{
                   border: "6px solid #202020",
 
@@ -79,9 +81,9 @@ export default function MenuAccordion() {
                 </div>
               </AccordionDetails>
             </Accordion>
-            <Accordion>
+            <Accordion className="!rounded-[10px]">
               <AccordionSummary
-                className=" accordion-hover py-4 !bg-[#FFFFFF] hover:!bg-[#202020] !text-[#202020] hover:!text-[#FFFFFF]  hover:!transition hover:!duration-500 hover:!ease-in-out"
+                className=" accordion-hover !rounded-[10px] !py-4 !bg-[#FFFFFF] hover:!bg-[#202020] !text-[#202020] hover:!text-[#FFFFFF]  hover:!transition hover:!duration-500 hover:!ease-in-out"
                 sx={{
                   border: "6px solid #202020",
 
@@ -131,9 +133,9 @@ export default function MenuAccordion() {
                 </div>
               </AccordionDetails>
             </Accordion>
-            <Accordion>
+            <Accordion className="!rounded-[10px]">
               <AccordionSummary
-                className=" accordion-hover py-4 !bg-[#FFFFFF] hover:!bg-[#202020] !text-[#202020] hover:!text-[#FFFFFF]  hover:!transition hover:!duration-500 hover:!ease-in-out"
+                className=" accordion-hover !rounded-[10px] !py-4 !bg-[#FFFFFF] hover:!bg-[#202020] !text-[#202020] hover:!text-[#FFFFFF]  hover:!transition hover:!duration-500 hover:!ease-in-out"
                 sx={{
                   border: "6px solid #202020",
 
@@ -181,9 +183,9 @@ export default function MenuAccordion() {
                 </div>
               </AccordionDetails>
             </Accordion>
-            <Accordion>
+            <Accordion className="!rounded-[10px]">
               <AccordionSummary
-                className=" accordion-hover py-4 !bg-[#FFFFFF] hover:!bg-[#202020] !text-[#202020] hover:!text-[#FFFFFF]  hover:!transition hover:!duration-500 hover:!ease-in-out"
+                className=" accordion-hover !rounded-[10px] !py-4 !bg-[#FFFFFF] hover:!bg-[#202020] !text-[#202020] hover:!text-[#FFFFFF]  hover:!transition hover:!duration-500 hover:!ease-in-out"
                 sx={{
                   border: "6px solid #202020",
 
@@ -231,6 +233,17 @@ export default function MenuAccordion() {
                 </div>
               </AccordionDetails>
             </Accordion>
+          </div>
+          <div className="w-full flex justify-center">
+            <Link href="/menu">
+              <CommonButton
+                btnText="View Menu"
+                borderColor="border-[#202020]"
+                textColor="text-[#202020]"
+                hoverBorderColor="hover:border-[#e4ae62]"
+                hoverTextColor="hover:text-[#FFFFFF]"
+              />
+            </Link>
           </div>
         </div>
       </div>

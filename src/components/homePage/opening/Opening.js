@@ -3,7 +3,7 @@ import CommonButton from "@/components/shared/button/CommonButton";
 
 const Opening = () => {
   return (
-    <div className="flex relative items-center justify-center bg-[url(/homepage-img/about-5.jpg)] bg-fixed bg-cover  max-w-full h-[500px]">
+    <div className="flex relative items-center justify-center bg-[url(/homepage-img/about-5.jpg)] bg-fixed bg-cover  max-w-full h-[540px]">
       <div className="absolute inset-0 bg-black/40"></div>
       <div className="absolute w-full">
         <div className="w-full flex flex-col items-center justify-center">
@@ -28,7 +28,7 @@ const Opening = () => {
             btnText="Book Now"
             borderColor="border-[#FFFFFF]"
             textColor="text-[#FFFFFF]"
-            hoverBorderColor="hover:border-[#BC8D4B]"
+            hoverBorderColor="hover:border-[#e4ae62]"
             hoverTextColor="hover:text-[#FFFFFF]"
           />
         </div>
