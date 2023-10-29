@@ -1,7 +1,7 @@
 import CommonButton from "@/components/shared/button/CommonButton";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-
+import { BiSolidUpArrowCircle } from "react-icons/bi";
 const AboutUs = () => {
   // const targetRef = React.useRef(null);
 
@@ -13,9 +13,33 @@ const AboutUs = () => {
   // // const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 1]);
   // const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [0, 0.1, 1]);
 
+  const [isVisible, setIsVisible] = useState(false);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  const toggleVisibility = () => {
+    if (window.scrollY > 650) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", toggleVisibility);
+    return () => {
+      window.removeEventListener("scroll", toggleVisibility);
+    };
+  }, []);
+
   return (
     // <motion.div className="w-full" style={{ opacity }} ref={targetRef}>
-    <div className="w-full">
+    <div className="w-full relative">
       <div className="container mx-auto">
         <div className="w-full flex gap-10 justify-between px-10 py-20">
           <div className="w-1/2 flex flex-col justify-between gap-4">
@@ -62,6 +86,16 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
+
+      {isVisible && (
+        <div
+          onClick={scrollToTop}
+          className=" text-[#e4ae62] z-[9999] text-4xl fixed bottom-10 right-10 cursor-pointer"
+        >
+          <BiSolidUpArrowCircle />
+        </div>
+      )}
+
       {/* </motion.div> */}
     </div>
   );
