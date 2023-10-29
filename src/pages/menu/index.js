@@ -3,7 +3,7 @@ import React from "react";
 
 const Menu = () => {
   return (
-    <div className="w-full bg-[#F4F4F4] pb-80">
+    <div className="w-full bg-[#F4F4F4] pb-[300px]">
       <MenuPage />
     </div>
   );

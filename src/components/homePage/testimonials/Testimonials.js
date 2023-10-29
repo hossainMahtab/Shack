@@ -1,4 +1,5 @@
 import React from "react";
+import { MdOutlineStarPurple500 } from "react-icons/md";
 
 const Testimonials = () => {
   return (
@@ -26,7 +27,14 @@ const Testimonials = () => {
               <h2 className="text-[#FFFFFF] text-2xl font-bold capitalize mb-2">
                 - John Doe -
               </h2>
-              <h3 className="text-[#FFFFFF] text-xl font-bold "> ⭐⭐⭐⭐⭐</h3>
+              <h3 className="text-yellow-400 flex gap-2 text-3xl font-bold ">
+                {" "}
+                <MdOutlineStarPurple500 />
+                <MdOutlineStarPurple500 />
+                <MdOutlineStarPurple500 />
+                <MdOutlineStarPurple500 />
+                <MdOutlineStarPurple500 />
+              </h3>{" "}
             </div>
             {/* 2 */}
             <div className="w-full bg-[#75797a50] rounded-[10px] p-6 flex flex-col items-center justify-center">
@@ -39,7 +47,14 @@ const Testimonials = () => {
               <h2 className="text-[#FFFFFF] text-2xl font-bold capitalize mb-2">
                 - John Doe -
               </h2>
-              <h3 className="text-[#FFFFFF] text-xl font-bold "> ⭐⭐⭐⭐⭐</h3>
+              <h3 className="text-yellow-400 flex gap-2 text-3xl font-bold ">
+                {" "}
+                <MdOutlineStarPurple500 />
+                <MdOutlineStarPurple500 />
+                <MdOutlineStarPurple500 />
+                <MdOutlineStarPurple500 />
+                <MdOutlineStarPurple500 />
+              </h3>{" "}
             </div>
             {/* 3 */}
             <div className="w-full bg-[#75797a50] rounded-[10px] p-6 flex flex-col items-center justify-center">
@@ -52,7 +67,14 @@ const Testimonials = () => {
               <h2 className="text-[#FFFFFF] text-2xl font-bold capitalize mb-2">
                 - John Doe -
               </h2>
-              <h3 className="text-[#FFFFFF] text-xl font-bold "> ⭐⭐⭐⭐⭐</h3>
+              <h3 className="text-yellow-400 flex gap-2 text-3xl font-bold ">
+                {" "}
+                <MdOutlineStarPurple500 />
+                <MdOutlineStarPurple500 />
+                <MdOutlineStarPurple500 />
+                <MdOutlineStarPurple500 />
+                <MdOutlineStarPurple500 />
+              </h3>
             </div>
           </div>
         </div>

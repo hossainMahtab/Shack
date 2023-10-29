@@ -12,7 +12,7 @@ import ContactUs from "@/components/homePage/contact-us/ContactUs";
 import HomeGallery from "@/components/homePage/homeGallery/HomeGallery";
 const Home = () => {
   return (
-    <div className=" w-full h-full  bg-[#ffffff]  pb-80 ">
+    <div className=" w-full h-full  bg-[#ffffff]  pb-[300px] ">
       <Hero />
       <Specialization />
       <AboutUs />

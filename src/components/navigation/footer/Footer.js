@@ -1,5 +1,8 @@
 import React from "react";
 import { MdCall, MdOutlineEmail } from "react-icons/md";
+import { BsFacebook } from "react-icons/bs";
+import { RiTwitterXFill } from "react-icons/ri";
+import { FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -28,8 +31,8 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="pt-[140px] pb-16 ">
-          <div className="grid grid-cols-3 gap-16">
+        <div className="w-full pt-[160px] pb-6 flex flex-col items-center gap-8 ">
+          <div className="w-full grid grid-cols-3 gap-16">
             <div className="col-span-1 flex flex-col items-center gap-2 text-center">
               <h1 className="text-[#FFFFFF] text-2xl font-bold uppercase mb-4">
                 Address
@@ -66,6 +69,16 @@ const Footer = () => {
                 </h3>
               </div>
             </div>
+          </div>
+          <div className="w-full flex flex-col items-center gap-6">
+            <div className=" flex gap-4 items-center text-3xl text-white">
+              <BsFacebook />
+              <RiTwitterXFill />
+              <FaInstagram />
+            </div>
+            <p className="text-[#FFFFFF] text-sm uppercase font-extralight">
+              COPYRIGHT © 2023, Shack . DESIGNED BY Mahtab Hossain
+            </p>
           </div>
         </div>
       </div>
