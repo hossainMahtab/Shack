@@ -11,10 +11,10 @@ const ContactUsContent = () => {
           <div className="w-full flex flex-col px-10 pt-20">
             <div className="w-full flex flex-col items-center text-center">
               <h2 className="text-2xl font-semibold text-[#202020] uppercase mb-1">
-                About
+                Feel Free to{" "}
               </h2>
               <h1 className="text-6xl font-semibold text-[#202020] uppercase mb-2">
-                Our Story
+                Contact Us{" "}
               </h1>
               <div className="w-[400px] h-0.5 bg-[#202020] mb-1"></div>
               <div className="w-[400px] h-2 bg-[#202020] mb-2"></div>
