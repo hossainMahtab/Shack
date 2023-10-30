@@ -5,7 +5,7 @@ const ReservationForm = () => {
   return (
     <div className="w-full  ">
       <div className="container mx-auto">
-        <div className="w-full flex flex-col gap-8 px-10 ">
+        <div className="w-full flex flex-col gap-8  ">
           <ContactUs />
         </div>
       </div>

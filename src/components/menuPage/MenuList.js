@@ -5,8 +5,8 @@ const MenuList = () => {
   return (
     <div className="w-full  ">
       <div className="container mx-auto">
-        <div className="w-full flex flex-col gap-8 px-10 ">
-          <div className="w-full items-center flex flex-col gap-8">
+        <div className="w-full flex flex-col gap-8 ">
+          <div className="w-full items-center px-10 pt-20 flex flex-col gap-8">
             <div className="w-full  flex flex-col items-center justify-center gap-1">
               <h1 className="text-[#202020] text-4xl font-bold uppercase">
                 STARTERS

@@ -1,23 +1,13 @@
 import React from "react";
+import CommonPageSlider from "../shared/pageSlider/CommonPageSlider";
 
 const MenuSlider = () => {
   return (
-    <div className="w-full  h-auto relative overflow-hidden -mt-[132px] ">
-      <div className="w-full h-[500px] relative ">
-        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
-        <img
-          src="/menuPage/food-menu-cover.jpeg"
-          alt=""
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center">
-          <img
-            src="/homepage-img/taste-food.png"
-            alt=""
-            className="w-auto h-auto object-cover"
-          />
-        </div>
-      </div>
+    <div>
+      <CommonPageSlider
+        imgSrc="/menuPage/food-menu-cover.jpeg"
+        imgContentsrc="/homepage-img/taste-food.png"
+      />
     </div>
   );
 };

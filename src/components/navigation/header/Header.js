@@ -44,11 +44,10 @@ const Header = () => {
                 border="0"
                 className="w-36 h-12 z-[9999]"
               />
-              <p className="text-white text-xs capitalize text-right">
+              <button className="text-white text-sm capitalize text-right cursor-pointer bg-transparent outline-none focus:outline-none">
                 {/* phone number */}
-                Book now <br />
-                905-303-9900
-              </p>
+                Sign in
+              </button>
             </div>
             <div className="container mx-auto flex flex-col  justify-center items-center bg-transparent  py-5 px-10 z-[9999]">
               <div className=" text-lg uppercase">
@@ -82,13 +81,15 @@ const Header = () => {
                       Reservation
                     </li>
                   </Link>
-                  <li
-                    className={` ${
-                      pathname === "/about" ? "text-[#e4ae62]" : "text-white"
-                    } cursor-pointer `}
-                  >
-                    About
-                  </li>
+                  <Link href="/about">
+                    <li
+                      className={` ${
+                        pathname === "/about" ? "text-[#e4ae62]" : "text-white"
+                      } cursor-pointer `}
+                    >
+                      About
+                    </li>
+                  </Link>
                   <li
                     className={` ${
                       pathname === "/gallery" ? "text-[#e4ae62]" : "text-white"
@@ -103,23 +104,35 @@ const Header = () => {
                   >
                     Blog
                   </li>
-                  <li
-                    className={` ${
-                      pathname === "/conatact" ? "text-[#e4ae62]" : "text-white"
-                    } cursor-pointer `}
-                  >
-                    Contact
-                  </li>
+                  <Link href="/contact">
+                    <li
+                      className={` ${
+                        pathname === "/conatact"
+                          ? "text-[#e4ae62]"
+                          : "text-white"
+                      } cursor-pointer `}
+                    >
+                      Contact
+                    </li>
+                  </Link>
                 </ul>
               </div>
             </div>
           </div>
         )}
         {sticky && (
-          <div className="bg-[#202020]  top-0 w-full !fixed  z-[9999] ">
-            <div className="container mx-auto flex flex-col  justify-center items-center bg-transparent py-5 px-10">
+          <div className="bg-[#202020]  top-0 w-full !fixed  z-[9999]  ">
+            <div className="container mx-auto h-[70px] flex  justify-between items-center bg-transparent py-5 px-10">
+              <Link href="/">
+                <img
+                  src="/logo/shack-logo-2.png"
+                  alt="logo"
+                  border="0"
+                  className="w-24 h-8 z-[9999] cursor-pointer"
+                />
+              </Link>
               <div className=" text-lg uppercase">
-                <ul className="flex space-x-16">
+                <ul className="flex space-x-14">
                   <Link href="/">
                     <li
                       className={` ${
@@ -149,13 +162,15 @@ const Header = () => {
                       Reservation
                     </li>
                   </Link>
-                  <li
-                    className={` ${
-                      pathname === "/about" ? "text-[#e4ae62]" : "text-white"
-                    } cursor-pointer `}
-                  >
-                    About
-                  </li>
+                  <Link href="/about">
+                    <li
+                      className={` ${
+                        pathname === "/about" ? "text-[#e4ae62]" : "text-white"
+                      } cursor-pointer `}
+                    >
+                      About
+                    </li>
+                  </Link>
                   <li
                     className={` ${
                       pathname === "/gallery" ? "text-[#e4ae62]" : "text-white"
@@ -170,15 +185,22 @@ const Header = () => {
                   >
                     Blog
                   </li>
-                  <li
-                    className={` ${
-                      pathname === "/contact" ? "text-[#e4ae62]" : "text-white"
-                    } cursor-pointer `}
-                  >
-                    Contact
-                  </li>
+                  <Link href="/contact">
+                    <li
+                      className={` ${
+                        pathname === "/contact"
+                          ? "text-[#e4ae62]"
+                          : "text-white"
+                      } cursor-pointer `}
+                    >
+                      Contact
+                    </li>
+                  </Link>
                 </ul>
               </div>
+              <button className="text-white bg-transparent cursor-pointer text-lg  uppercase outline-none focus:outline-none">
+                Sign in
+              </button>
             </div>
           </div>
         )}
