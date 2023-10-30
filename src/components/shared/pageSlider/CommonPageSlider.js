@@ -20,7 +20,7 @@ const CommonPageSlider = (props) => {
               className="w-auto h-auto object-cover"
             />
           ) : (
-            <h1 className="text-6xl font-semibold text-white capitalize">
+            <h1 className="text-6xl font-semibold text-white uppercase">
               {props.title}
             </h1>
           )}

@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @import "./galleryEmbla.css";
+@import "./galleryPageEmblaThumb.css";
 /* @import "./galleryBase.css"; */
 
 /* :root {
