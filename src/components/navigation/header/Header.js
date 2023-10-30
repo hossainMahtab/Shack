@@ -24,7 +24,7 @@ const Header = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  console.log("sticky", sticky);
+  // console.log("sticky", sticky);
 
   const { pathname } = useRouter();
 

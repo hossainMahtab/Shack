@@ -47,7 +47,7 @@ const GalleryEmbla = (props) => {
 
   const [hoveredCard, setHoveredCard] = useState(null);
 
-  console.log("hoveredCard", hoveredCard);
+  // console.log("hoveredCard", hoveredCard);
 
   return (
     <div className="embla">

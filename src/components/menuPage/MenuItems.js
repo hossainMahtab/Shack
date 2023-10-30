@@ -2,7 +2,7 @@ import React from "react";
 import { demoItems } from "./DemoItems";
 
 const MenuItems = (itemType) => {
-  console.log("itemType", itemType.itemType);
+  // console.log("itemType", itemType.itemType);
   const { starters, mainCourse, soups, desserts } = demoItems;
   return (
     <>
