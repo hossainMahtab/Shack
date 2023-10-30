@@ -12,16 +12,16 @@ const ContactUs = () => {
     <div className="w-full">
       <div className="container mx-auto">
         <div className="w-full flex flex-col px-10 pt-20">
-          <div className="w-full flex flex-col items-center">
+          <div className="w-full flex flex-col items-center text-center">
             <h2 className="text-2xl font-semibold text-[#202020] uppercase mb-1">
               Reserve a table
             </h2>
             <h1 className="text-6xl font-semibold text-[#202020] uppercase mb-2">
-              Contact Us
+              Get in Touch
             </h1>
             <div className="w-[400px] h-0.5 bg-[#202020] mb-1"></div>
             <div className="w-[400px] h-2 bg-[#202020] mb-2"></div>
-            <div className=" w-full grid grid-cols-2 gap-y-10 gap-x-12 py-10 ">
+            <div className=" w-full grid grid-cols-2 gap-y-10 gap-x-12 py-10 justify-center items-center ">
               <TextField id="outlined-basic" label="Name" variant="outlined" />
               <TextField id="outlined-basic" label="Email" variant="outlined" />
               <TextField id="outlined-basic" label="Phone" variant="outlined" />

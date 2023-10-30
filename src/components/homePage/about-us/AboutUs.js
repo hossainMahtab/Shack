@@ -90,7 +90,7 @@ const AboutUs = () => {
       {isVisible && (
         <div
           onClick={scrollToTop}
-          className=" text-[#e4ae62] z-[9999] text-4xl fixed bottom-10 right-10 cursor-pointer"
+          className=" text-[#e4ae62] z-[9999] text-4xl fixed bottom-8 right-10 cursor-pointer"
         >
           <BiSolidUpArrowCircle />
         </div>

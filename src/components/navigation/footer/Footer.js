@@ -23,7 +23,7 @@ const Footer = () => {
                 </p>
               </div>
               <div className="flex flex-col gap-4 items-center">
-                <button className="bg-[#FFFFFF] px-10 py-4 rounded-full text-xl text-[#e4ae62]">
+                <button className="bg-[#FFFFFF] px-10 py-4 rounded-full text-xl text-[#e4ae62] outline-none focus:outline-none">
                   Subscribe
                 </button>
                 <p className="text-[#FFFFFF] text-xl">It's a gift </p>
