@@ -11,7 +11,7 @@ const style = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: "80%",
+  width: "65%",
   bgcolor: "background.paper",
   //   border: "0px solid #000",
   boxShadow: 24,
@@ -24,10 +24,18 @@ const SLIDE_COUNT = 10;
 const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 
 const GalleryModal = (props) => {
-  const { cardId, open, title, description, title1, description1 } = props;
+  const {
+    cardId,
+    open,
+    title,
+    description,
+    title1,
+    description1,
+    selectedCard,
+  } = props;
 
   const handleCloseModal = () => props.handleClose();
-  console.log(cardId, open);
+  // console.log(cardId, selectedCard, open);
 
   return (
     <div>
@@ -39,14 +47,12 @@ const GalleryModal = (props) => {
       >
         <Box sx={style} className="!outline-none focus:!outline-none">
           <>
-            {/* <Typography id="modal-modal-title" variant="h6" component="h2">
-              {cardId === 1 ? `${title}` : `${title1}`}
-            </Typography> */}
             <section className="sandbox__carousel">
               <GalleryPageEmbla
                 slides={SLIDES}
                 options={OPTIONS}
                 cardId={cardId}
+                selectedCard={selectedCard}
               />
             </section>
           </>
