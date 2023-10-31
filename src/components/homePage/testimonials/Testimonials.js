@@ -19,10 +19,10 @@ const Testimonials = () => {
             {/* 1 */}
             <div className="w-full bg-[#75797a50] rounded-[10px] p-6 flex flex-col items-center justify-center">
               <p className="text-[#FFFFFF] text-center text-xl font-bold capitalize mb-2">
-                "Ferri altera eripuit ne nam. Duo at tibique conclusionemque,
-                nam modo ancillae tacimates et, cu vim omnes phaedrum
-                conclusionemque. Ex tempor eligendi corrumpit vim, sea ei
-                tacimates reformidans. Congue corpora vis ad."
+                &quot;Ferri altera eripuit ne nam. Duo at tibique
+                conclusionemque, nam modo ancillae tacimates et, cu vim omnes
+                phaedrum conclusionemque. Ex tempor eligendi corrumpit vim, sea
+                ei tacimates reformidans. Congue corpora vis ad.&quot;
               </p>
               <h2 className="text-[#FFFFFF] text-2xl font-bold capitalize mb-2">
                 - John Doe -
@@ -39,10 +39,10 @@ const Testimonials = () => {
             {/* 2 */}
             <div className="w-full bg-[#75797a50] rounded-[10px] p-6 flex flex-col items-center justify-center">
               <p className="text-[#FFFFFF] text-center text-xl font-bold capitalize mb-2">
-                "Ferri altera eripuit ne nam. Duo at tibique conclusionemque,
-                nam modo ancillae tacimates et, cu vim omnes phaedrum
-                conclusionemque. Ex tempor eligendi corrumpit vim, sea ei
-                tacimates reformidans. Congue corpora vis ad."
+                &quot;Ferri altera eripuit ne nam. Duo at tibique
+                conclusionemque, nam modo ancillae tacimates et, cu vim omnes
+                phaedrum conclusionemque. Ex tempor eligendi corrumpit vim, sea
+                ei tacimates reformidans. Congue corpora vis ad.&quot;
               </p>
               <h2 className="text-[#FFFFFF] text-2xl font-bold capitalize mb-2">
                 - John Doe -
@@ -59,10 +59,10 @@ const Testimonials = () => {
             {/* 3 */}
             <div className="w-full bg-[#75797a50] rounded-[10px] p-6 flex flex-col items-center justify-center">
               <p className="text-[#FFFFFF] text-center text-xl font-bold capitalize mb-2">
-                "Ferri altera eripuit ne nam. Duo at tibique conclusionemque,
-                nam modo ancillae tacimates et, cu vim omnes phaedrum
-                conclusionemque. Ex tempor eligendi corrumpit vim, sea ei
-                tacimates reformidans. Congue corpora vis ad."
+                &quot;Ferri altera eripuit ne nam. Duo at tibique
+                conclusionemque, nam modo ancillae tacimates et, cu vim omnes
+                phaedrum conclusionemque. Ex tempor eligendi corrumpit vim, sea
+                ei tacimates reformidans. Congue corpora vis ad.&quot;
               </p>
               <h2 className="text-[#FFFFFF] text-2xl font-bold capitalize mb-2">
                 - John Doe -

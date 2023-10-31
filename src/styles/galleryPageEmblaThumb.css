@@ -1,7 +1,7 @@
 .GpEmbla {
   --slide-spacing: 1rem;
   --slide-size: 100%;
-  --slide-height: 32rem;
+  --slide-height: 30rem;
   padding: 0.8rem;
 }
 .GpEmbla__viewport {
@@ -59,7 +59,7 @@
 }
 .GpEmbla-thumbs {
   --thumbs-slide-spacing: 0.8rem;
-  --thumbs-slide-height: 11rem;
+  --thumbs-slide-height: 10rem;
   margin-top: var(--thumbs-slide-spacing);
 }
 .GpEmbla-thumbs__viewport {
@@ -82,7 +82,8 @@
   }
 }
 .GpEmbla-thumbs__slide__button {
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
+
   background-color: transparent;
   touch-action: manipulation;
   display: block;

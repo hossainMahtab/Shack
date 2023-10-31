@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="px-10  w-full absolute left-0 -top-36">
           <div className="flex bg-[#e4ae62] w-full rounded-[10px] z-0 relative">
             <div className="absolute  -top-36 left-20  z-10">
-              <img className="w-[180px] h-[160px]  " src="/chef.gif" alt="" />
+              <img className="w-[180px] h-[160px]" src="/chef.gif" alt="" />
             </div>
             <div className="w-full flex justify-between px-20 py-16">
               <div className=" flex flex-col gap-4">
@@ -26,7 +26,7 @@ const Footer = () => {
                 <button className="bg-[#FFFFFF] px-10 py-4 rounded-full text-xl text-[#e4ae62] outline-none focus:outline-none">
                   Subscribe
                 </button>
-                <p className="text-[#FFFFFF] text-xl">It's a gift </p>
+                <p className="text-[#FFFFFF] text-xl">It&apos;s a gift </p>
               </div>
             </div>
           </div>

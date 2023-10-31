@@ -23,7 +23,7 @@ const ContactUsContent = () => {
               <div className="w-1/2 flex flex-col bg-[#202020] p-8 text-white gap-4">
                 <div className="w-full flex flex-col  ">
                   <h1 className="text-5xl font-semibold  uppercase mb-2">
-                    We're Open
+                    We&apos;re Open
                   </h1>
                   <div className="w-[320px] h-0.5 bg-[#FFFFFF] mb-1"></div>
                   <div className="w-[320px] h-2 bg-[#FFFFFF] mb-2"></div>
