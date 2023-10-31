@@ -7,6 +7,6 @@ const image6 = "/homepage-img/gallery-cover/private.jpeg";
 
 export const images = [image1, image2, image3, image4, image5, image6];
 
-const imageByIndexGPKitchen = (index) => images[index % images.length];
+const ImageByIndexGPKitchen = (index) => images[index % images.length];
 
-export default imageByIndexGPKitchen;
+export default ImageByIndexGPKitchen;

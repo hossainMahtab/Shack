@@ -2,8 +2,8 @@ import React, { useState, useEffect, useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 
 import { GalleryPageEmblaThumbnail } from "./GalleryPageEmblaThumbnail";
-import imageByIndexGPKitchen from "./imageByIndexGPKitchen";
-import imageByIndexGPInterior from "./imageByIndexGPInterior";
+import ImageByIndexGPKitchen from "./ImageByIndexGPKitchen";
+import ImageByIndexGPInterior from "./ImageByIndexGPInterior";
 
 const GalleryPageEmbla = (props) => {
   const { slides, options, cardId } = props;
@@ -48,8 +48,8 @@ const GalleryPageEmbla = (props) => {
                 className="GpEmbla__slide__img"
                 src={
                   cardId === 1
-                    ? imageByIndexGPKitchen(index)
-                    : imageByIndexGPInterior(index)
+                    ? ImageByIndexGPKitchen(index)
+                    : ImageByIndexGPInterior(index)
                 }
                 alt="Your alt text"
               />
@@ -68,8 +68,8 @@ const GalleryPageEmbla = (props) => {
                 index={index}
                 imgSrc={
                   cardId === 1
-                    ? imageByIndexGPKitchen(index)
-                    : imageByIndexGPInterior(index)
+                    ? ImageByIndexGPKitchen(index)
+                    : ImageByIndexGPInterior(index)
                 }
                 key={index}
               />

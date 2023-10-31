@@ -23,7 +23,7 @@ const OPTIONS = {};
 const SLIDE_COUNT = 10;
 const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 
-export default function GalleryModal(props) {
+const GalleryModal = (props) => {
   const { cardId, open, title, description, title1, description1 } = props;
 
   const handleCloseModal = () => props.handleClose();
@@ -54,4 +54,5 @@ export default function GalleryModal(props) {
       </Modal>
     </div>
   );
-}
+};
+export default GalleryModal;
