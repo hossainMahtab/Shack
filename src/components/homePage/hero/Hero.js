@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import CommonButton from "@/components/shared/button/CommonButton";
+import Link from "next/link";
 
 // import { useScroll, useTransform, motion } from "framer-motion";
 
@@ -86,13 +87,15 @@ const Hero = () => {
               <p className="text-white text-2xl font-semibold capitalize">
                 to the shack
               </p>
-              <CommonButton
-                btnText="Book Now"
-                borderColor="border-[#FFFFFF]"
-                textColor="text-[#FFFFFF]"
-                hoverBorderColor="hover:border-[#e4ae62]"
-                hoverTextColor="hover:text-[#FFFFFF]"
-              />
+              <Link href="/reservation">
+                <CommonButton
+                  btnText="Book Now"
+                  borderColor="border-[#FFFFFF]"
+                  textColor="text-[#FFFFFF]"
+                  hoverBorderColor="hover:border-[#e4ae62]"
+                  hoverTextColor="hover:text-[#FFFFFF]"
+                />
+              </Link>
             </div>
           </div>
           <div className="w-full h-full relative ">
@@ -113,13 +116,15 @@ const Hero = () => {
               {/* <button className=" mt-4 bg-transparent border-[6px] border-[#FFFFFF] cursor-pointer hover:border-[#e4ae62] hover:bg-[#e4ae62] hover:ease-in hover:transition-all hover:delay-200 text-white px-10 py-3 uppercase font-semibold text-xl ">
                 Book Now
               </button> */}
-              <CommonButton
-                btnText="Book Now"
-                borderColor="border-[#FFFFFF]"
-                textColor="text-[#FFFFFF]"
-                hoverBorderColor="hover:border-[#e4ae62]"
-                hoverTextColor="hover:text-[#FFFFFF]"
-              />{" "}
+              <Link href="/reservation">
+                <CommonButton
+                  btnText="Book Now"
+                  borderColor="border-[#FFFFFF]"
+                  textColor="text-[#FFFFFF]"
+                  hoverBorderColor="hover:border-[#e4ae62]"
+                  hoverTextColor="hover:text-[#FFFFFF]"
+                />{" "}
+              </Link>
             </div>
           </div>
         </Slider>

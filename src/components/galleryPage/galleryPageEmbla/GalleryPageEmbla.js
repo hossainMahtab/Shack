@@ -80,9 +80,18 @@ const GalleryPageEmbla = (props) => {
                 selected={index === selectedIndex}
                 index={index}
                 imgSrc={
-                  (cardId || selectedCard) === 1
-                    ? ImageByIndexGPKitchen(index)
-                    : ImageByIndexGPInterior(index)
+                  ((cardId || selectedCard) === 1 &&
+                    ImageByIndexGPKitchen(index)) ||
+                  ((cardId || selectedCard) === 2 &&
+                    ImageByIndexGPInterior(index)) ||
+                  ((cardId || selectedCard) === 3 &&
+                    ImageByIndexGPOutdoor(index)) ||
+                  ((cardId || selectedCard) === 4 &&
+                    ImageByIndexGPBreakfast(index)) ||
+                  ((cardId || selectedCard) === 5 &&
+                    ImageByIndexGPDessert(index)) ||
+                  ((cardId || selectedCard) === 6 &&
+                    ImageByIndexGPPrivate(index))
                 }
                 key={index}
               />

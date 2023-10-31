@@ -49,7 +49,7 @@ const GalleryPageContent = () => {
     }
   }, []);
 
-  console.log("selectedCard", selectedCard);
+  // console.log("selectedCard", selectedCard);
   const handleCardId = (id) => {
     setCardId(id);
   };
