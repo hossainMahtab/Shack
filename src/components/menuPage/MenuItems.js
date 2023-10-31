@@ -8,8 +8,8 @@ const MenuItems = (itemType) => {
     <>
       {itemType.itemType === "starters" && (
         <div className="w-[90%]  grid grid-cols-2 gap-x-20 gap-y-4">
-          {starters.map((item) => (
-            <div className=" w-full flex items-center gap-4 pt-4">
+          {starters.map((item, index) => (
+            <div key={index} className=" w-full flex items-center gap-4 pt-4">
               <img
                 src={item.image}
                 alt="menu"
@@ -36,8 +36,8 @@ const MenuItems = (itemType) => {
 
       {itemType.itemType === "mainCourse" && (
         <div className="w-[90%]  grid grid-cols-2 gap-x-20 gap-y-4">
-          {mainCourse.map((item) => (
-            <div className=" w-full flex items-center gap-4 pt-4">
+          {mainCourse.map((item, index) => (
+            <div key={index} className=" w-full flex items-center gap-4 pt-4">
               <img
                 src={item.image}
                 alt="menu"
@@ -63,8 +63,8 @@ const MenuItems = (itemType) => {
       )}
       {itemType.itemType === "soups" && (
         <div className="w-[90%]  grid grid-cols-2 gap-x-20 gap-y-4">
-          {soups.map((item) => (
-            <div className=" w-full flex items-center gap-4 pt-4">
+          {soups.map((item, index) => (
+            <div key={index} className=" w-full flex items-center gap-4 pt-4">
               <img
                 src={item.image}
                 alt="menu"
@@ -90,8 +90,8 @@ const MenuItems = (itemType) => {
       )}
       {itemType.itemType === "desserts" && (
         <div className="w-[90%]  grid grid-cols-2 gap-x-20 gap-y-4">
-          {desserts.map((item) => (
-            <div className=" w-full flex items-center gap-4 pt-4">
+          {desserts.map((item, index) => (
+            <div key={index} className=" w-full flex items-center gap-4 pt-4">
               <img
                 src={item.image}
                 alt="menu"

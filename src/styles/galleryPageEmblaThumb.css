@@ -59,7 +59,7 @@
 }
 .GpEmbla-thumbs {
   --thumbs-slide-spacing: 0.8rem;
-  --thumbs-slide-height: 11rem;
+  --thumbs-slide-height: 10rem;
   margin-top: var(--thumbs-slide-spacing);
 }
 .GpEmbla-thumbs__viewport {
@@ -82,7 +82,8 @@
   }
 }
 .GpEmbla-thumbs__slide__button {
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
+
   background-color: transparent;
   touch-action: manipulation;
   display: block;

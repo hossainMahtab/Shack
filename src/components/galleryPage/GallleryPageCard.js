@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 const GallleryPageCard = (props) => {
   const { id, imgSrc, title } = props;
+
   const [hoveredCard, setHoveredCard] = useState(null);
 
   const handleModalOpen = (id) => () => {
@@ -12,8 +13,8 @@ const GallleryPageCard = (props) => {
   return (
     <div
       onClick={handleModalOpen(id)}
-      // onMouseEnter={() => setHoveredCard(id)}
-      // onMouseLeave={() => setHoveredCard(null)}
+      onMouseEnter={() => setHoveredCard(id)}
+      onMouseLeave={() => setHoveredCard(null)}
       className="w-full relative rounded-[10px] cursor-pointer overflow-hidden  "
     >
       <img

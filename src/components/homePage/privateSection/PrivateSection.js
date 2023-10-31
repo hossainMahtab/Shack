@@ -1,4 +1,5 @@
 import CommonButton from "@/components/shared/button/CommonButton";
+import Link from "next/link";
 import React from "react";
 // import { motion, useScroll, useTransform } from "framer-motion";
 
@@ -51,13 +52,15 @@ const PrivateSection = () => {
               </p>
             </div>
             <div className=" max-w-max">
-              <CommonButton
-                btnText="Book Now"
-                borderColor="border-[#202020]"
-                textColor="text-[#202020]"
-                hoverBorderColor="hover:border-[#e4ae62]"
-                hoverTextColor="hover:text-[#FFFFFF]"
-              />
+              <Link href="/reservation">
+                <CommonButton
+                  btnText="Book Now"
+                  borderColor="border-[#202020]"
+                  textColor="text-[#202020]"
+                  hoverBorderColor="hover:border-[#e4ae62]"
+                  hoverTextColor="hover:text-[#FFFFFF]"
+                />
+              </Link>
             </div>
           </div>
         </div>

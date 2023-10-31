@@ -1,12 +1,27 @@
-const image1 = "/homepage-img/gallery-cover/cookies.jpg";
-const image2 = "/homepage-img/gallery-cover/morning-breakfast.jpeg";
-const image3 = "/homepage-img/gallery-cover/chef.jpeg";
-const image4 = "/homepage-img/gallery-cover/interior.jpeg";
-const image5 = "/homepage-img/gallery-cover/outdoor.jpg";
-const image6 = "/homepage-img/gallery-cover/private.jpeg";
+const image1 = "/galleryPage/interior/image1.jpeg";
+const image2 = "/galleryPage/interior/image2.jpeg";
+const image3 = "/galleryPage/interior/image3.jpeg";
+const image4 = "/galleryPage/interior/image4.jpeg";
+const image5 = "/galleryPage/interior/image5.jpeg";
+const image6 = "/galleryPage/interior/image6.jpeg";
+const image7 = "/galleryPage/interior/image7.jpeg";
+const image8 = "/galleryPage/interior/image8.jpeg";
+const image9 = "/galleryPage/interior/image9.jpeg";
+const image10 = "/galleryPage/interior/image10.jpeg";
 
-export const images = [image1, image2, image3, image4, image5, image6];
+export const images = [
+  image1,
+  image2,
+  image3,
+  image4,
+  image5,
+  image6,
+  image7,
+  image8,
+  image9,
+  image10,
+];
 
-const imageByIndexGPInterior = (index) => images[index % images.length];
+const ImageByIndexGPInterior = (index) => images[index % images.length];
 
-export default imageByIndexGPInterior;
+export default ImageByIndexGPInterior;

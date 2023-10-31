@@ -1,6 +1,7 @@
 import React from "react";
 import GalleryEmbla from "./GalleryEmbla";
 import CommonButton from "@/components/shared/button/CommonButton";
+import Link from "next/link";
 
 const OPTIONS = { dragFree: true };
 const SLIDE_COUNT = 6;
@@ -28,13 +29,15 @@ const HomeGallery = () => {
       <div className="w-full">
         <div className="container mx-auto">
           <div className="w-full flex flex-col items-center">
-            <CommonButton
-              btnText="View More"
-              borderColor="border-[#202020]"
-              textColor="text-[#202020]"
-              hoverBorderColor="hover:border-[#e4ae62]"
-              hoverTextColor="hover:text-[#FFFFFF]"
-            />
+            <Link href="/gallery">
+              <CommonButton
+                btnText="View Gallery"
+                borderColor="border-[#202020]"
+                textColor="text-[#202020]"
+                hoverBorderColor="hover:border-[#e4ae62]"
+                hoverTextColor="hover:text-[#FFFFFF]"
+              />
+            </Link>
           </div>
         </div>
       </div>

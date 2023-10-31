@@ -21,7 +21,7 @@ const Specialization = () => {
             <img src="/icons/food.png" alt="" className="w-16 h-16" />
             <div className="flex flex-col gap-2">
               <h1 className="text-[#202020] text-2xl font-bold">
-                CHEF'S SPECIALS
+                CHEF&apos; SPECIALS
               </h1>
               <p className="text-[#202020] text-lg">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.

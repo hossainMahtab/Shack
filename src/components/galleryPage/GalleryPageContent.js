@@ -1,4 +1,4 @@
-import React from "react";
+import React, { use, useEffect } from "react";
 import GallleryPageCard from "./GallleryPageCard";
 import GalleryModal from "../shared/modal/GalleryModal";
 
@@ -26,7 +26,7 @@ const demoCardData = [
   {
     id: 5,
     imgSrc: "/homepage-img/gallery-cover/cookies.jpg",
-    title: "Cookies",
+    title: "Dessert",
   },
   {
     id: 6,
@@ -39,6 +39,17 @@ const GalleryPageContent = () => {
   const [open, setOpen] = React.useState(false);
   const [cardId, setCardId] = React.useState(null);
 
+  const [selectedCard, setSelectedCard] = React.useState(null);
+
+  useEffect(() => {
+    const storedData = localStorage.getItem("selectedCard");
+    if (storedData) {
+      setSelectedCard(parseInt(storedData));
+      localStorage.removeItem("selectedCard");
+    }
+  }, []);
+
+  // console.log("selectedCard", selectedCard);
   const handleCardId = (id) => {
     setCardId(id);
   };
@@ -47,21 +58,25 @@ const GalleryPageContent = () => {
     setOpen(value);
   };
 
+  useEffect(() => {
+    if (selectedCard) {
+      setOpen(true);
+    }
+  }, [selectedCard]);
+
   const handleClose = () => {
     setOpen(false);
+    selectedCard && setSelectedCard(null);
   };
 
   return (
     <>
       <GalleryModal
+        selectedCard={selectedCard}
         cardId={cardId}
         open={open}
         handleOpen={handleOpen}
         handleClose={handleClose}
-        title="abc"
-        description="efd"
-        title1="abcasdddd"
-        description1="efdafffff"
       />
       <div className="w-full  ">
         <div className="container mx-auto">

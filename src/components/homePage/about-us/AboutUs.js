@@ -2,6 +2,7 @@ import CommonButton from "@/components/shared/button/CommonButton";
 import React, { useEffect, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { BiSolidUpArrowCircle } from "react-icons/bi";
+import Link from "next/link";
 const AboutUs = () => {
   // const targetRef = React.useRef(null);
 
@@ -67,13 +68,15 @@ const AboutUs = () => {
               </p>
             </div>
             <div className=" max-w-max">
-              <CommonButton
-                btnText="Find More"
-                borderColor="border-[#202020]"
-                textColor="text-[#202020]"
-                hoverBorderColor="hover:border-[#e4ae62]"
-                hoverTextColor="hover:text-[#FFFFFF]"
-              />
+              <Link href="/about">
+                <CommonButton
+                  btnText="Find More"
+                  borderColor="border-[#202020]"
+                  textColor="text-[#202020]"
+                  hoverBorderColor="hover:border-[#e4ae62]"
+                  hoverTextColor="hover:text-[#FFFFFF]"
+                />
+              </Link>
             </div>
           </div>
 

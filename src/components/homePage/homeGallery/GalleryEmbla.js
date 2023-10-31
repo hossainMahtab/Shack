@@ -1,9 +1,12 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { use, useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { flushSync } from "react-dom";
-import imageByIndex from "./imageByIndex";
-import titleByIndex from "./titleByIndex";
-import { MdSearch } from "react-icons/md";
+import ImageByIndex from "./ImageByIndex";
+import TitleByIndex from "./TitleByIndex";
+import { useRouter } from "next/router";
+import GalleryPageEmbla from "@/components/galleryPage/galleryPageEmbla/GalleryPageEmbla";
+import GallleryPageCard from "@/components/galleryPage/GallleryPageCard";
+import Link from "next/link";
 
 const TWEEN_FACTOR = 1.2;
 
@@ -47,7 +50,20 @@ const GalleryEmbla = (props) => {
 
   const [hoveredCard, setHoveredCard] = useState(null);
 
-  // console.log("hoveredCard", hoveredCard);
+  const [selectedCard, setSelectedCard] = useState(null);
+
+  const handleSelectedCard = (index) => () => {
+    setSelectedCard(index + 1);
+  };
+
+  const router = useRouter();
+
+  useEffect(() => {
+    if (selectedCard) {
+      localStorage.setItem("selectedCard", selectedCard);
+      router.push(`/gallery`);
+    }
+  }, [selectedCard]);
 
   return (
     <div className="embla">
@@ -81,16 +97,19 @@ const GalleryEmbla = (props) => {
                   </div>
                   <img
                     className="embla__slide__img embla__parallax__img"
-                    src={imageByIndex(index)}
+                    src={ImageByIndex(index)}
                     alt="Your alt text"
                   />
                   <div className="absolute left-0 top-0 w-full h-full flex justify-center items-center text-4xl font-semibold text-white">
                     <div className=" flex flex-col gap-4 items-center">
                       <h1 className=" text-6xl font-semibold text-[#FFFFFF] capitalize">
-                        {titleByIndex(index)}
+                        {TitleByIndex(index)}
                       </h1>
                       {hoveredCard === index ? (
-                        <h1 className=" custom-ping text-3xl text  font-semibold text-white hover:text-[#e4ae62] capitalize">
+                        <h1
+                          onClick={handleSelectedCard(index)}
+                          className=" custom-ping text-3xl text  font-semibold text-white hover:text-[#e4ae62] capitalize"
+                        >
                           visit
                         </h1>
                       ) : (
