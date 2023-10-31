@@ -45,7 +45,7 @@ const ContactUs = () => {
                   multiline
                   rows={5}
                   variant="outlined"
-                  className="w-full"
+                  className="!w-full"
                 />
               </div>
             </div>
