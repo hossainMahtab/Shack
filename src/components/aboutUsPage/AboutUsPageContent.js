@@ -9,7 +9,7 @@ const AboutUsPageContent = () => {
       <div className="container mx-auto">
         <div className="w-full flex flex-col gap-8 ">
           {/* story */}
-          <div className="w-full flex flex-col px-10 pt-20">
+          <div className="w-full flex flex-col xl:px-10 md:px-8 px-6 pt-20">
             <div className="w-full flex flex-col items-center text-center">
               <CommonContentHeader
                 textColor="text-[#202020]"
@@ -20,7 +20,7 @@ const AboutUsPageContent = () => {
                 titleSize="text-6xl"
               />
             </div>
-            <div className="w-full flex flex-row-reverse gap-20 justify-between  py-20">
+            <div className="w-full flex flex-row-reverse gap-20 justify-between  py-8 md:py-14  xl:py-20">
               <div className="w-1/2 flex flex-col items-center justify-center gap-4">
                 <div className=" w-full flex flex-col  gap-5">
                   <div className="  max-w-max flex flex-col  gap-2 items-end text-right">
@@ -54,7 +54,7 @@ const AboutUsPageContent = () => {
             </div>
           </div>
           {/* chef */}
-          <div className="w-full flex flex-col px-10 ">
+          <div className="w-full flex flex-col xl:px-10 md:px-8 px-6 ">
             <div className="w-full flex flex-col items-center text-center">
               <CommonContentHeader
                 textColor="text-[#202020]"
@@ -65,7 +65,7 @@ const AboutUsPageContent = () => {
                 titleSize="text-6xl"
               />
             </div>
-            <div className="w-full flex flex-row gap-20 justify-between  py-20">
+            <div className="w-full flex flex-row gap-20 justify-between  py-8 md:py-14  xl:py-20">
               <div className="w-1/2 flex flex-col items-center justify-center gap-4">
                 <div className=" w-full flex flex-col  gap-5">
                   <div className="  max-w-max flex flex-col  gap-2 items-start text-left">
@@ -104,7 +104,7 @@ const AboutUsPageContent = () => {
             </div>
           </div>
           {/* reviews */}
-          <div className="w-full flex flex-col px-10 ">
+          <div className="w-full flex flex-col xl:px-10 md:px-8 px-6 ">
             <div className="w-full flex flex-col items-center text-center">
               <CommonContentHeader
                 textColor="text-[#202020]"

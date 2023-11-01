@@ -7,8 +7,8 @@ import { FaInstagram } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="w-full bg-[#202020] rounded-t-[20px]  ">
-      <div className="container mx-auto px-10 relative">
-        <div className="px-10  w-full absolute left-0 -top-36">
+      <div className="container mx-auto xl:px-10 md:px-8 px-6 relative">
+        <div className="xl:px-10 md:px-8 px-6  w-full absolute left-0 -top-36">
           <div className="flex bg-[#e4ae62] w-full rounded-[10px] z-0 relative">
             <div className="absolute  -top-36 left-20  z-10">
               <img className="w-[180px] h-[160px]" src="/chef.gif" alt="" />
@@ -23,7 +23,7 @@ const Footer = () => {
                 </p>
               </div>
               <div className="flex flex-col gap-4 items-center">
-                <button className="bg-[#FFFFFF] px-10 py-4 rounded-full text-xl text-[#e4ae62] outline-none focus:outline-none">
+                <button className="bg-[#FFFFFF] xl:px-10 md:px-8 px-6 py-4 rounded-full text-xl text-[#e4ae62] outline-none focus:outline-none">
                   Subscribe
                 </button>
                 <p className="text-[#FFFFFF] text-xl">It&apos;s a gift </p>

@@ -11,20 +11,24 @@ const HomeGallery = () => {
   return (
     <div className="w-full">
       <div className="container mx-auto">
-        <div className="w-full flex flex-col px-10 ">
+        <div className="w-full flex flex-col xl:px-10 md:px-8 px-6 ">
           <div className="w-full flex flex-col items-center">
             <CommonContentHeader
               textColor="text-[#202020]"
               subtitle="Visit our"
               title="Gallery"
               lineBg="bg-[#202020]"
-              subtitleSize="text-2xl"
-              titleSize="text-6xl"
+              subtitleSizeXl="text-2xl"
+              subtitleSizeMd="text-xl"
+              subtitleSize="text-lg"
+              titleSizeXl="text-6xl"
+              titleSizeMd="text-4xl"
+              titleSize="text-2xl"
             />
           </div>
         </div>
       </div>
-      <div className=" mt-6 py-10">
+      <div className=" mt-2 md:mt-4 xl:mt-6 py-4 md:py-7 xl:py-10">
         <GalleryEmbla slides={SLIDES} options={OPTIONS} />
       </div>
       <div className="w-full">

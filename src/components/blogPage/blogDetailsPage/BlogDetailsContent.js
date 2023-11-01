@@ -9,7 +9,7 @@ const BlogDetailsContent = () => {
     <div className="w-full  ">
       <div className="container mx-auto">
         <div className="w-full flex flex-col gap-8 ">
-          <div className="w-full flex flex-row px-10 pt-20">
+          <div className="w-full flex flex-row xl:px-10 md:px-8 px-6 pt-20">
             {demoNews.map((news) => (
               <div key={news.id}>
                 {blogId == news.id && (

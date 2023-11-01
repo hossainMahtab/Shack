@@ -33,8 +33,8 @@ const Header = () => {
       <nav className=" w-full ">
         {notSticky && (
           <div className=" w-full z-[9999] flex flex-col bg-transparent  ">
-            <div className="w-full relative mx-auto flex justify-center items-center bg-transparent z-[9999]  pt-4 px-10">
-              <div className="absolute top-4 px-10  w-full flex justify-between items-center">
+            <div className="w-full relative mx-auto flex justify-center items-center bg-transparent z-[9999]  pt-4 xl:px-10 md:px-8 px-6">
+              <div className="absolute top-4 xl:px-10 md:px-8 px-6  w-full flex justify-between items-center">
                 <p className="text-white text-xs capitalize text-left">
                   9100 Jane St, Vaughan, <br /> ON L4K 0A4
                 </p>
@@ -50,7 +50,7 @@ const Header = () => {
                 className="w-36 h-12 z-[9999]"
               />
             </div>
-            <div className="container mx-auto flex flex-col  justify-center items-center bg-transparent  py-5 px-10 z-[9999]">
+            <div className="container mx-auto flex flex-col  justify-center items-center bg-transparent  py-5 xl:px-10 md:px-8 px-6 z-[9999]">
               <div className=" text-lg uppercase">
                 <ul className="flex space-x-16">
                   <Link href="/">
@@ -129,7 +129,7 @@ const Header = () => {
         )}
         {sticky && (
           <div className="bg-[#202020]  top-0 w-full !fixed  z-[9999]  ">
-            <div className="container mx-auto h-[70px] flex  justify-between items-center bg-transparent py-5 px-10">
+            <div className="container mx-auto h-[70px] flex  justify-between items-center bg-transparent py-5 xl:px-10 md:px-8 px-6">
               <Link href="/">
                 <img
                   src="/logo/shack-logo-2.png"

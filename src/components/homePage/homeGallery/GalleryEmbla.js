@@ -88,11 +88,11 @@ const GalleryEmbla = (props) => {
                     }),
                   }}
                 >
-                  <div className="absolute left-0 top-0 embla__slide__img embla__parallax__img bg-black/40 py-10  ">
+                  <div className="absolute left-0 top-0 embla__slide__img embla__parallax__img bg-black/40 py-4 md:py-7 xl:py-10  ">
                     {hoveredCard === index ? (
-                      <div className=" custom-pulse w-full h-full flex justify-center items-center border-y-8 border-solid border-[#FFFFFF]"></div>
+                      <div className=" custom-pulse w-full h-full flex justify-center items-center border-y-4 md:border-y-[6px] xl:border-y-8 border-solid border-[#FFFFFF]"></div>
                     ) : (
-                      <div className=" w-full h-full flex justify-center items-center border-y-8 border-solid border-transparent"></div>
+                      <div className=" w-full h-full flex justify-center items-center border-y-4 md:border-y-[6px] xl:border-y-8 border-solid border-transparent"></div>
                     )}
                   </div>
                   <img
@@ -101,19 +101,19 @@ const GalleryEmbla = (props) => {
                     alt="Your alt text"
                   />
                   <div className="absolute left-0 top-0 w-full h-full flex justify-center items-center text-4xl font-semibold text-white">
-                    <div className=" flex flex-col gap-4 items-center">
-                      <h1 className=" text-6xl font-semibold text-[#FFFFFF] capitalize">
+                    <div className=" flex flex-col gap-2 md:gap-3 xl:gap-4 items-center">
+                      <h1 className=" text-2xl md:text-4xl xl:text-6xl font-semibold text-[#FFFFFF] capitalize">
                         {TitleByIndex(index)}
                       </h1>
                       {hoveredCard === index ? (
                         <h1
                           onClick={handleSelectedCard(index)}
-                          className=" custom-ping text-3xl text  font-semibold text-white hover:text-[#e4ae62] capitalize"
+                          className=" custom-ping text-xl md:text-2xl xl:text-3xl text  font-semibold text-white hover:text-[#e4ae62] capitalize"
                         >
                           visit
                         </h1>
                       ) : (
-                        <div className=" opacity-0  custom-ping text-3xl text  font-semibold text-transparent hover:text-[#e4ae62] capitalize">
+                        <div className=" opacity-0  custom-ping text-xl md:text-2xl xl:text-3xl text  font-semibold text-transparent hover:text-[#e4ae62] capitalize">
                           visit
                         </div>
                       )}

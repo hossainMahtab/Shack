@@ -23,7 +23,7 @@ const BlogPageContent = () => {
       <div className="container mx-auto">
         <div className="w-full flex flex-col gap-8 ">
           <div className="w-full flex flex-row gap-8  pt-20">
-            <div className="w-[75%] flex flex-col items-center justify-center gap-4 px-10">
+            <div className="w-[75%] flex flex-col items-center justify-center gap-4 xl:px-10 md:px-8 px-6">
               <div className="w-full flex flex-col items-center">
                 <CommonContentHeader
                   textColor="text-[#202020]"
@@ -39,7 +39,7 @@ const BlogPageContent = () => {
               </div>
             </div>
             {/* filter */}
-            <div className="flex-grow h-full flex flex-col  items-center rounded-[10px] mt-[126px] pt-6 pb-10 gap-4 px-10 shadow-lg">
+            <div className="flex-grow h-full flex flex-col  items-center rounded-[10px] mt-[126px] pt-6 pb-10 gap-4 xl:px-10 md:px-8 px-6 shadow-lg">
               <div className="max-w-max flex flex-col items-center">
                 <CommonContentHeader
                   textColor="text-[#202020]"

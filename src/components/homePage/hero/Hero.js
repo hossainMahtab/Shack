@@ -44,7 +44,7 @@ const Hero = () => {
   return (
     <>
       {/* <motion.section
-        className="px-10 pt-10 "
+        className="xl:px-10 md:px-8 px-6 pt-10 "
         style={{ opacity }}
         ref={targetRef}
       >
@@ -54,7 +54,7 @@ const Hero = () => {
       <motion.section
         style={{ opacity: opacity2 }}
         ref={targetRef2}
-        className="px-10 pb-10"
+        className="xl:px-10 md:px-8 px-6 pb-10"
       >
         <div className=" w-full flex flex-col items-center justify-start gap-20">
           <img src="/output-onlinegiftools.gif" alt="" className="w-28 h-28" />
@@ -63,7 +63,7 @@ const Hero = () => {
         </div>
       </motion.section> */}
 
-      <div className="w-full  h-screen relative overflow-hidden -mt-[132px] ">
+      <div className="w-full max-h-screen relative overflow-hidden -mt-[132px] ">
         {/* <div className=" container  mx-auto   "> */}
 
         {/* <img
@@ -74,17 +74,16 @@ const Hero = () => {
         <Slider {...sliderSettings} className="w-full h-full ">
           <div className="w-full h-full relative ">
             <div className="absolute inset-0 bg-black/40 z-10"></div>
-
             <img
               src="/hero-food/slider-2.jpg"
               alt=""
               className="w-full h-full  "
             />
-            <div className=" w-screen -mt-28 absolute inset-0 flex flex-col gap-4 items-center justify-center z-20">
-              <h1 className="text-8xl text-white font-bold uppercase">
+            <div className=" w-full  absolute left-0 top-[35%]  flex flex-col gap-1 md:gap-2.5 xl:gap-4 items-center justify-center z-20">
+              <h1 className="2xl:text-8xl xl:text-7xl lg:text-6xl md:text-5xl sm:text-4xl text-3xl text-white font-bold uppercase">
                 Welcome
               </h1>
-              <p className="text-white text-2xl font-semibold capitalize">
+              <p className="text-white  2xl:text-2xl xl:text-xl lg:text-lg md:text-base text-sm font-semibold capitalize">
                 to the shack
               </p>
               <Link href="/reservation">
@@ -106,16 +105,14 @@ const Hero = () => {
               alt=""
               className="w-full h-full  "
             />
-            <div className=" w-screen -mt-28 absolute inset-0 flex flex-col gap-4 items-center justify-center z-20">
-              <h1 className="text-8xl text-white font-bold uppercase">
+            <div className=" w-full  absolute left-0 top-[35%]  flex flex-col gap-1 md:gap-2.5 xl:gap-4 items-center justify-center z-20">
+              <h1 className="2xl:text-8xl xl:text-7xl lg:text-6xl md:text-5xl sm:text-4xl text-3xl text-white font-bold uppercase">
                 Welcome
               </h1>
-              <p className="text-white text-2xl font-semibold capitalize">
+              <p className="text-white 2xl:text-2xl xl:text-xl lg:text-lg md:text-base text-sm font-semibold capitalize">
                 enjoy the food
               </p>
-              {/* <button className=" mt-4 bg-transparent border-[6px] border-[#FFFFFF] cursor-pointer hover:border-[#e4ae62] hover:bg-[#e4ae62] hover:ease-in hover:transition-all hover:delay-200 text-white px-10 py-3 uppercase font-semibold text-xl ">
-                Book Now
-              </button> */}
+
               <Link href="/reservation">
                 <CommonButton
                   btnText="Book Now"

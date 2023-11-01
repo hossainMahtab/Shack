@@ -5,7 +5,7 @@ import CommonContentHeader from "@/components/shared/contentHeader/CommonContent
 
 const Opening = () => {
   return (
-    <div className="flex relative items-center justify-center bg-[url(/homepage-img/about-5.jpg)] bg-fixed bg-cover  max-w-full h-[540px]">
+    <div className="flex relative items-center justify-center bg-[url(/homepage-img/about-5.jpg)] bg-fixed bg-cover  max-w-full h-[300px] md:h-[420px] xl:h-[540px]">
       <div className="absolute inset-0 bg-black/40"></div>
       <div className="absolute w-full">
         <div className="w-full flex flex-col items-center justify-center">
@@ -14,14 +14,18 @@ const Opening = () => {
             subtitle="Reserve a table"
             title="Opening Hours"
             lineBg="bg-[#FFFFFF]"
-            subtitleSize="text-2xl"
-            titleSize="text-6xl"
+            subtitleSizeXl="text-2xl"
+            subtitleSizeMd="text-xl"
+            subtitleSize="text-lg"
+            titleSizeXl="text-6xl"
+            titleSizeMd="text-4xl"
+            titleSize="text-2xl"
           />
-          <h2 className="text-[#FFFFFF] text-2xl font-bold uppercase mt-10 mb-5">
+          <h2 className="text-[#FFFFFF] text-lg md:text-xl xl:text-2xl font-bold uppercase mt-4 md:mt-7 xl:mt-10 mb-2 md:mb-4 xl:mb-6">
             {" "}
             Monday - Friday: 10 AM - 11 PM
           </h2>
-          <h2 className="text-[#FFFFFF] text-2xl font-bold uppercase mb-7">
+          <h2 className="text-[#FFFFFF] text-lg md:text-xl xl:text-2xl font-bold uppercase mb-2 md:mb-4 xl:mb-6">
             {" "}
             Saturday - Sunday: 10 AM - 12 PM{" "}
           </h2>

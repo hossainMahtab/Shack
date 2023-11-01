@@ -7,7 +7,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <AboutSite />
-      <div className=" w-full h-auto overflow-auto">
+      <div className=" w-full h-auto overflow-hidden">
         <Header />
         <Component {...pageProps} />
         <Footer />
