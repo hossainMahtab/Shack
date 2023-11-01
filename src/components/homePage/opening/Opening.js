@@ -1,6 +1,7 @@
 import React from "react";
 import CommonButton from "@/components/shared/button/CommonButton";
 import Link from "next/link";
+import CommonContentHeader from "@/components/shared/contentHeader/CommonContentHeader";
 
 const Opening = () => {
   return (
@@ -8,15 +9,15 @@ const Opening = () => {
       <div className="absolute inset-0 bg-black/40"></div>
       <div className="absolute w-full">
         <div className="w-full flex flex-col items-center justify-center">
-          <h2 className="text-[#FFFFFF] text-2xl font-bold uppercase mb-2">
-            RESERVE A TABLE
-          </h2>
-          <h1 className="text-[#FFFFFF] text-6xl font-bold uppercase mb-2">
-            OPEN HOURS
-          </h1>
-          <div className="w-[440px] h-0.5 bg-[#FFFFFF] mb-1"></div>
-          <div className="w-[440px] h-2 bg-[#FFFFFF] mb-7"></div>
-          <h2 className="text-[#FFFFFF] text-2xl font-bold uppercase mb-5">
+          <CommonContentHeader
+            textColor="text-[#FFFFFF]"
+            subtitle="Reserve a table"
+            title="Opening Hours"
+            lineBg="bg-[#FFFFFF]"
+            subtitleSize="text-2xl"
+            titleSize="text-6xl"
+          />
+          <h2 className="text-[#FFFFFF] text-2xl font-bold uppercase mt-10 mb-5">
             {" "}
             Monday - Friday: 10 AM - 11 PM
           </h2>

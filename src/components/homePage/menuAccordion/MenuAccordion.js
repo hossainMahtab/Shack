@@ -7,6 +7,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { demoItems } from "@/components/menuPage/DemoItems";
 import CommonButton from "@/components/shared/button/CommonButton";
 import Link from "next/link";
+import CommonContentHeader from "@/components/shared/contentHeader/CommonContentHeader";
 
 const MenuAccordion = () => {
   const { starters, mainCourse, soups, desserts } = demoItems;
@@ -16,15 +17,15 @@ const MenuAccordion = () => {
         <div className="container mx-auto">
           <div className="w-full flex flex-col px-10 py-20">
             <div className="w-full flex flex-col items-center">
-              <h2 className="text-2xl font-semibold text-[#202020] uppercase mb-1">
-                DISCOVER
-              </h2>
-              <h1 className="text-6xl font-semibold text-[#202020] uppercase mb-2">
-                Our Menu
-              </h1>
-              <div className="w-[360px] h-0.5 bg-[#202020] mb-1"></div>
-              <div className="w-[360px] h-2 bg-[#202020] mb-4"></div>
-              <h3 className="text-xl text-[#202020] text-center">
+              <CommonContentHeader
+                textColor="text-[#202020]"
+                subtitle="DISCOVER"
+                title="Our Menu"
+                lineBg="bg-[#202020]"
+                subtitleSize="text-2xl"
+                titleSize="text-6xl"
+              />
+              <h3 className="text-xl text-[#202020] text-center mt-6">
                 Explore texture, color and of course the ultimate tastes with
                 our menu of the season. All the ingredients are fresh and
                 carefully selected by our chefs. <br /> Enjoy an extraordinary

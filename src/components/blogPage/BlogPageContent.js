@@ -1,5 +1,6 @@
 import React from "react";
 import LatestNewsCard from "../homePage/latestNews/LatestNewsCard";
+import CommonContentHeader from "../shared/contentHeader/CommonContentHeader";
 
 const BlogPageContent = () => {
   const demoTypes = [
@@ -21,27 +22,35 @@ const BlogPageContent = () => {
     <div className="w-full  ">
       <div className="container mx-auto">
         <div className="w-full flex flex-col gap-8 ">
-          <div className="w-full flex flex-row  pt-20">
-            <div className="w-[68%] flex flex-col items-center justify-center gap-4 px-10">
+          <div className="w-full flex flex-row gap-8  pt-20">
+            <div className="w-[75%] flex flex-col items-center justify-center gap-4 px-10">
               <div className="w-full flex flex-col items-center">
-                <h1 className="text-6xl font-semibold text-[#202020] uppercase mb-2">
-                  LATEST NEWS
-                </h1>
-                <div className="w-[420px] h-0.5 bg-[#202020] mb-1"></div>
-                <div className="w-[420px] h-2 bg-[#202020]"></div>
+                <CommonContentHeader
+                  textColor="text-[#202020]"
+                  // subtitle="Reserve a table"
+                  title="Latest News"
+                  lineBg="bg-[#202020]"
+                  // subtitleSize="text-2xl"
+                  titleSize="text-5xl"
+                />
               </div>
               <div className="w-full py-10">
                 <LatestNewsCard />
               </div>
             </div>
             {/* filter */}
-            <div className="flex-grow h-auto flex flex-col  items-center  gap-4 px-10">
+            <div className="flex-grow h-full flex flex-col  items-center rounded-[10px] mt-[126px] pt-6 pb-10 gap-4 px-10 shadow-lg">
               <div className="max-w-max flex flex-col items-center">
-                <h1 className="text-3xl font-semibold text-[#202020] uppercase mb-2">
-                  Categories
-                </h1>
-                <div className="w-full h-0.5 bg-[#202020] mb-1"></div>
-                <div className="w-full h-2 bg-[#202020] mb-4"></div>
+                <CommonContentHeader
+                  textColor="text-[#202020]"
+                  // subtitle="Reserve a table"
+                  title="Categories"
+                  lineBg="bg-[#202020]"
+                  // subtitleSize="text-2xl"
+                  titleSize="text-4xl"
+                />
+              </div>
+              <div className="w-full  flex flex-col items-center justify-center mt-4 gap-4">
                 <div className=" grid grid-cols-1 w-full  gap-4">
                   {demoTypes.map((type) => (
                     <div

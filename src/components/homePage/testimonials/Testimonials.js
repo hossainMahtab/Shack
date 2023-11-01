@@ -1,3 +1,4 @@
+import CommonContentHeader from "@/components/shared/contentHeader/CommonContentHeader";
 import React from "react";
 import { MdOutlineStarPurple500 } from "react-icons/md";
 
@@ -7,15 +8,15 @@ const Testimonials = () => {
       <div className="absolute inset-0 bg-black/40"></div>
       <div className="absolute w-full">
         <div className="w-full flex flex-col items-center justify-center">
-          <h2 className="text-[#FFFFFF] text-2xl font-bold uppercase mb-2">
-            WHAT CLIENTS SAY
-          </h2>
-          <h1 className="text-[#FFFFFF] text-6xl font-bold uppercase mb-2">
-            TESTIMONIALS{" "}
-          </h1>
-          <div className="w-[440px] h-0.5 bg-[#FFFFFF] mb-1"></div>
-          <div className="w-[440px] h-2 bg-[#FFFFFF] mb-10"></div>
-          <div className="w-full grid grid-cols-3 gap-16 px-20 ">
+          <CommonContentHeader
+            textColor="text-[#FFFFFF]"
+            subtitle="What Client Say"
+            title="Testimonials"
+            lineBg="bg-[#FFFFFF]"
+            subtitleSize="text-2xl"
+            titleSize="text-6xl"
+          />
+          <div className="w-full grid grid-cols-3 gap-16 px-20 mt-10 ">
             {/* 1 */}
             <div className="w-full bg-[#75797a50] rounded-[10px] p-6 flex flex-col items-center justify-center">
               <p className="text-[#FFFFFF] text-center text-xl font-bold capitalize mb-2">

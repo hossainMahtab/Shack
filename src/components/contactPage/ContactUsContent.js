@@ -1,6 +1,7 @@
 import React from "react";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { MdCall, MdOutlineEmail } from "react-icons/md";
+import CommonContentHeader from "../shared/contentHeader/CommonContentHeader";
 
 const ContactUsContent = () => {
   return (
@@ -10,23 +11,26 @@ const ContactUsContent = () => {
           {/* story */}
           <div className="w-full flex flex-col px-10 pt-20">
             <div className="w-full flex flex-col items-center text-center">
-              <h2 className="text-2xl font-semibold text-[#202020] uppercase mb-1">
-                Feel Free to{" "}
-              </h2>
-              <h1 className="text-6xl font-semibold text-[#202020] uppercase mb-2">
-                Contact Us{" "}
-              </h1>
-              <div className="w-[400px] h-0.5 bg-[#202020] mb-1"></div>
-              <div className="w-[400px] h-2 bg-[#202020] mb-2"></div>
+              <CommonContentHeader
+                textColor="text-[#202020]"
+                subtitle="Feel Free To"
+                title="Contact Us"
+                lineBg="bg-[#202020]"
+                subtitleSize="text-2xl"
+                titleSize="text-6xl"
+              />
             </div>
-            <div className="w-full  flex flex-row  justify-between  py-20">
+            <div className="w-full  flex flex-row  justify-between  py-10">
               <div className="w-1/2 flex flex-col bg-[#202020] p-8 text-white gap-4">
                 <div className="w-full flex flex-col  ">
-                  <h1 className="text-5xl font-semibold  uppercase mb-2">
-                    We&apos;re Open
-                  </h1>
-                  <div className="w-[320px] h-0.5 bg-[#FFFFFF] mb-1"></div>
-                  <div className="w-[320px] h-2 bg-[#FFFFFF] mb-2"></div>
+                  <CommonContentHeader
+                    textColor="text-[#FFFFFF]"
+                    // subtitle="Reserve a table"
+                    title="We're Open"
+                    lineBg="bg-[#FFFFFF]"
+                    // subtitleSize="text-2xl"
+                    titleSize="text-5xl"
+                  />
                 </div>
                 <div className="w-full flex flex-col gap-4">
                   <p className="text-xl">
