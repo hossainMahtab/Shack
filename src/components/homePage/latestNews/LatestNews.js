@@ -1,5 +1,7 @@
 import React from "react";
 import LatestNewsCard from "./LatestNewsCard";
+import Link from "next/link";
+import CommonButton from "@/components/shared/button/CommonButton";
 
 const LatestNews = () => {
   return (
@@ -15,9 +17,18 @@ const LatestNews = () => {
             </h1>
             <div className="w-[420px] h-0.5 bg-[#202020] mb-1"></div>
             <div className="w-[420px] h-2 bg-[#202020] mb-4"></div>
-          </div>
-          <div className="w-full py-10">
-            <LatestNewsCard />
+            <div className="w-full py-10">
+              <LatestNewsCard />
+            </div>
+            <Link href="/blog">
+              <CommonButton
+                btnText="View All"
+                borderColor="border-[#202020]"
+                textColor="text-[#202020]"
+                hoverBorderColor="hover:border-[#e4ae62]"
+                hoverTextColor="hover:text-[#FFFFFF]"
+              />
+            </Link>
           </div>
         </div>
       </div>

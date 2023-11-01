@@ -22,10 +22,30 @@ const ContactUs = () => {
             <div className="w-[400px] h-0.5 bg-[#202020] mb-1"></div>
             <div className="w-[400px] h-2 bg-[#202020] mb-2"></div>
             <div className=" w-full grid grid-cols-2 gap-y-10 gap-x-12 py-10 justify-center items-center ">
-              <TextField id="outlined-basic" label="Name" variant="outlined" />
-              <TextField id="outlined-basic" label="Email" variant="outlined" />
-              <TextField id="outlined-basic" label="Phone" variant="outlined" />
               <TextField
+                type="text"
+                name="name"
+                id="outlined-basic"
+                label="Name"
+                variant="outlined"
+              />
+              <TextField
+                type="email"
+                name="email"
+                id="outlined-basic"
+                label="Email"
+                variant="outlined"
+              />
+              <TextField
+                type="tel"
+                name="phone"
+                id="outlined-basic"
+                label="Phone"
+                variant="outlined"
+              />
+              <TextField
+                type="number"
+                name="guest"
                 id="outlined-basic"
                 label="Number of Guest"
                 variant="outlined"
@@ -40,6 +60,8 @@ const ContactUs = () => {
 
               <div className="col-span-2">
                 <TextField
+                  type="text"
+                  name="message"
                   id="outlined-multiline-static"
                   label="Message"
                   multiline
