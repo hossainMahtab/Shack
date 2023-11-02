@@ -11,7 +11,7 @@ const HomeGallery = () => {
   return (
     <div className="w-full">
       <div className="container mx-auto">
-        <div className="w-full flex flex-col xl:px-10 md:px-8 px-6 ">
+        <div className="w-full flex flex-col xl:px-20 md:px-16 px-12 ">
           <div className="w-full flex flex-col items-center">
             <CommonContentHeader
               textColor="text-[#202020]"

@@ -17,7 +17,7 @@ const PrivateSection = () => {
   return (
     <div className="w-full">
       <div className="container mx-auto">
-        <div className="w-full flex flex-col md:flex-row xl:gap-10 md:gap-8 gap-6 justify-between xl:px-10 md:px-8 px-6 pb-12 md:pb-16 xl:pb-20">
+        <div className="w-full flex flex-col md:flex-row xl:gap-10 md:gap-8 gap-6 justify-between xl:px-20 md:px-16 px-12 pb-12 md:pb-16 xl:pb-20">
           <div className=" w-full md:w-1/2">
             <img
               src="/homepage-img/private2outline.png"
@@ -28,7 +28,7 @@ const PrivateSection = () => {
           <div className="w-full md:w-1/2 flex flex-col justify-between items-end gap-2 md:gap-3 xl:gap-4">
             <div className=" w-full flex flex-col items-end gap-2 md:gap-4 xl:gap-6">
               <div className="  max-w-max flex flex-col gap-1 md:gap-2 items-end">
-                <h1 className=" font-bold text-right max-w-max px-2 md:px-3 xl:px-4 py-1 md:py-2 border-4 md:border-b-[6px] xl:border-b-8 border-b-[#e4ae62] text-[#202020] text-2xl md:text-4xl xl:text-6xl">
+                <h1 className=" font-bold text-right max-w-max px-2 md:px-3 xl:px-4 py-1 md:py-2 border-b-4 md:border-b-[6px] xl:border-b-8 border-b-[#e4ae62] text-[#202020] text-2xl md:text-4xl xl:text-6xl">
                   PRIVATE EVENTS
                 </h1>
                 {/* <div className="w-56 flex flex-col gap-2 items-end"> */}

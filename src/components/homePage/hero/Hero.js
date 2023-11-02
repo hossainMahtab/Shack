@@ -44,7 +44,7 @@ const Hero = () => {
   return (
     <>
       {/* <motion.section
-        className="xl:px-10 md:px-8 px-6 pt-10 "
+        className="xl:px-20 md:px-16 px-12 pt-10 "
         style={{ opacity }}
         ref={targetRef}
       >
@@ -54,7 +54,7 @@ const Hero = () => {
       <motion.section
         style={{ opacity: opacity2 }}
         ref={targetRef2}
-        className="xl:px-10 md:px-8 px-6 pb-10"
+        className="xl:px-20 md:px-16 px-12 pb-10"
       >
         <div className=" w-full flex flex-col items-center justify-start gap-20">
           <img src="/output-onlinegiftools.gif" alt="" className="w-28 h-28" />

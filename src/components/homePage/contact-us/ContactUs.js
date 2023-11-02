@@ -12,7 +12,7 @@ const ContactUs = () => {
   return (
     <div className="w-full">
       <div className="container mx-auto">
-        <div className="w-full flex flex-col xl:px-10 md:px-8 px-6 pt-12 md:pt-16 xl:pt-20">
+        <div className="w-full flex flex-col xl:px-20 md:px-16 px-12 pt-12 md:pt-16 xl:pt-20">
           <div className="w-full flex flex-col items-center text-center">
             <CommonContentHeader
               textColor="text-[#202020]"

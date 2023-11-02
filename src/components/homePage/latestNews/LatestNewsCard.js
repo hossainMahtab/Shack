@@ -16,8 +16,8 @@ const LatestNewsCard = () => {
       <div
         className={` ${
           pathname == "/"
-            ? " grid-cols-1 md:grid-cols-2 xl:grid-cols-3"
-            : "grid-cols-1 md:grid-cols-2"
+            ? " grid-cols-1 lg:grid-cols-3"
+            : "grid-cols-1 lg:grid-cols-2"
         } w-full grid gap-x-12 md:gap-x-16 xl:gap-x-20 gap-y-4 md:gap-y-7 xl:gap-y-10 items-center `}
       >
         {pathname == "/"

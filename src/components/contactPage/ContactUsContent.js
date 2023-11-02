@@ -9,7 +9,7 @@ const ContactUsContent = () => {
       <div className="container mx-auto">
         <div className="w-full flex flex-col gap-4 md:gap-6 xl:gap-8 ">
           {/* story */}
-          <div className="w-full flex flex-col xl:px-10 md:px-8 px-6 pt-20">
+          <div className="w-full flex flex-col xl:px-20 md:px-16 px-12 pt-20">
             <div className="w-full flex flex-col items-center text-center">
               <CommonContentHeader
                 textColor="text-[#202020]"
