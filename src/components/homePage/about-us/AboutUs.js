@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { BiSolidUpArrowCircle } from "react-icons/bi";
 import Link from "next/link";
+import CommonContentHeader from "@/components/shared/contentHeader/CommonContentHeader";
 const AboutUs = () => {
   // const targetRef = React.useRef(null);
 
@@ -42,19 +43,30 @@ const AboutUs = () => {
     // <motion.div className="w-full" style={{ opacity }} ref={targetRef}>
     <div className="w-full relative">
       <div className="container mx-auto">
-        <div className="w-full flex flex-col md:flex-row xl:gap-10 md:gap-8 gap-6 justify-between xl:px-20 md:px-16 px-12 py-8 md:py-14  xl:py-20">
-          <div className="w-full md:w-1/2 flex flex-col justify-between gap-2 md:gap-3 xl:gap-4">
-            <div className=" w-full flex flex-col gap-2 md:gap-3 xl:gap-4">
-              <div className="  max-w-max flex flex-col gap-1 md:gap-2 items-end">
+        <div className="w-full flex flex-col lg:flex-row xl:gap-10 md:gap-8 gap-6 justify-between pageContainerPaddingX pageContainerPaddingY">
+          <div className="w-full lg:w-1/2 flex flex-col justify-between gap-1 md:gap-2 lg:gap-3 xl:gap-4">
+            <div className=" w-full flex flex-col items-center gap-1 md:gap-2 lg:gap-3 xl:gap-4">
+              <div className=" hidden max-w-max lg:flex flex-col gap-1 md:gap-2 items-end">
                 <h1 className=" max-w-max py-2 xl:border-b-8 md:border-b-[6px] border-b-4 border-b-[#e4ae62] font-bold text-[#202020] text-2xl md:text-4xl xl:text-6xl">
                   About Us
                 </h1>
-                {/* <div className="w-56 flex flex-col gap-2 items-end"> */}
-                {/* <div className="w-56 h-2 bg-[#e4ae62] mt-5"></div> */}
+
                 <div className="xl:w-28 md:w-20 w-16 h-0.5 md:h-1 bg-[#202020]"></div>
-                {/* </div> */}
               </div>
-              <h2 className="text-[#202020] text-lg md:text-xl xl:text-2xl">
+              <div className="lg:hidden block">
+                <CommonContentHeader
+                  textColor="text-[#202020]"
+                  // subtitle="About"
+                  title="About Us"
+                  lineBg="bg-[#202020]"
+                  // subtitleSize="text-2xl"
+                  titleSizeXl="text-6xl"
+                  titleSizeMd="text-4xl"
+                  titleSize="text-2xl"
+                />
+              </div>
+
+              <h2 className="text-[#202020] text-lg md:text-xl xl:text-2xl font-semibold">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Quisquam voluptatum, voluptas, quod, quas quae quia dolorum
                 doloribus
@@ -67,7 +79,7 @@ const AboutUs = () => {
                 accusantium tempora voluptatibus voluptate.
               </p>
             </div>
-            <div className=" max-w-max">
+            <div className=" flex justify-center items-center w-full">
               <Link href="/about">
                 <CommonButton
                   btnText="Find More"
@@ -80,11 +92,11 @@ const AboutUs = () => {
             </div>
           </div>
 
-          <div className="w-full md:w-1/2">
+          <div className="w-full lg:w-1/2">
             <img
               src="/homepage-img/about-7.jpg"
               alt=""
-              className="w-full h-[300px] md:h-[400px] xl:h-[500px] "
+              className="w-full h-[300px] lg:h-[400px] xl:h-[500px] "
             />
           </div>
         </div>

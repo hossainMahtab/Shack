@@ -63,7 +63,7 @@ const Hero = () => {
         </div>
       </motion.section> */}
 
-      <div className="w-full max-h-screen relative overflow-hidden -mt-[132px] ">
+      <div className="w-full max-h-screen relative overflow-hidden -mt-[132px] bg-[#F4F4F4] ">
         {/* <div className=" container  mx-auto   "> */}
 
         {/* <img
@@ -79,11 +79,11 @@ const Hero = () => {
               alt=""
               className="w-full h-full  "
             />
-            <div className=" w-full  absolute left-0 top-[35%]  flex flex-col gap-1 md:gap-2.5 xl:gap-4 items-center justify-center z-20">
-              <h1 className="2xl:text-8xl xl:text-7xl lg:text-6xl md:text-5xl sm:text-4xl text-3xl text-white font-bold uppercase">
+            <div className=" w-full  absolute left-0 top-[35%]  flex flex-col gap-1 md:gap-2 lg:gap-3 xl:gap-4 items-center justify-center z-20">
+              <h1 className="xl:text-8xl lg:text-6xl md:text-5xl sm:text-4xl text-3xl text-white font-bold uppercase">
                 Welcome
               </h1>
-              <p className="text-white  2xl:text-2xl xl:text-xl lg:text-lg md:text-base text-sm font-semibold capitalize">
+              <p className="text-white  xl:text-2xl  lg:text-xl md:text-lg sm:text-base text-sm font-semibold capitalize">
                 to the shack
               </p>
               <Link href="/reservation">
@@ -105,11 +105,11 @@ const Hero = () => {
               alt=""
               className="w-full h-full  "
             />
-            <div className=" w-full  absolute left-0 top-[35%]  flex flex-col gap-1 md:gap-2.5 xl:gap-4 items-center justify-center z-20">
-              <h1 className="2xl:text-8xl xl:text-7xl lg:text-6xl md:text-5xl sm:text-4xl text-3xl text-white font-bold uppercase">
+            <div className=" w-full  absolute left-0 top-[35%]  flex flex-col gap-1 md:gap-2 lg:gap-3 xl:gap-4 items-center justify-center z-20">
+              <h1 className="xl:text-8xl lg:text-6xl md:text-5xl sm:text-4xl text-3xl text-white font-bold uppercase">
                 Welcome
               </h1>
-              <p className="text-white 2xl:text-2xl xl:text-xl lg:text-lg md:text-base text-sm font-semibold capitalize">
+              <p className="text-white  xl:text-2xl  lg:text-xl md:text-lg sm:text-base text-sm font-semibold capitalize">
                 enjoy the food
               </p>
 
