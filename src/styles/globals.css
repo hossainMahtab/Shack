@@ -77,9 +77,9 @@ body {
   @apply h-auto;
 }
 
-.pageContainerPaddingX {
+/* .pageContainerPaddingX {
   @apply xl:px-20 lg:px-16 md:px-12 px-10;
-}
+} */
 
 .pageContainerPaddingY {
   @apply xl:py-20 lg:py-16 md:py-12 py-8;
