@@ -47,7 +47,7 @@ const GalleryModal = (props) => {
       >
         <Box sx={style} className="!outline-none focus:!outline-none">
           <>
-            <section className="sandbox__carousel">
+            <section className="">
               <GalleryPageEmbla
                 slides={SLIDES}
                 options={OPTIONS}

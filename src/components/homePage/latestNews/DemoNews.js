@@ -5,9 +5,9 @@ export const demoNews = [
     profilePic: "/homepage-img/profilePic1.jpeg",
     profileName: "John Doe",
     date: "12/12/2021",
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    title: "Lorem ipsum",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate.",
     image: "/homepage-img/pizza2.jpg",
   },
   {
@@ -16,9 +16,9 @@ export const demoNews = [
     profilePic: "/homepage-img/profilePic2.jpg",
     profileName: "John Doe",
     date: "12/12/2021",
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    title: "Lorem ipsum",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate.",
     image: "/homepage-img/donuts.jpg",
   },
   {
@@ -27,9 +27,9 @@ export const demoNews = [
     profilePic: "/homepage-img/profilePic1.jpeg",
     profileName: "John Doe",
     date: "12/12/2021",
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    title: "Lorem ipsum",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate.",
     image: "/homepage-img/opening.jpeg",
   },
   {
@@ -38,10 +38,10 @@ export const demoNews = [
     profilePic: "/homepage-img/profilePic2.jpg",
     profileName: "John Doe",
     date: "12/12/2021",
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    title: "Lorem ipsum",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate.",
-    image: "/homepage-img/news4.jpeg",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate.",
+    image: "/homepage-img/pizza2.jpg",
   },
   {
     id: 5,
@@ -49,10 +49,10 @@ export const demoNews = [
     profilePic: "/homepage-img/profilePic1.jpeg",
     profileName: "John Doe",
     date: "12/12/2021",
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    title: "Lorem ipsum",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate.",
-    image: "/homepage-img/news5.jpeg",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate.",
+    image: "/homepage-img/opening.jpeg",
   },
   {
     id: 6,
@@ -60,9 +60,9 @@ export const demoNews = [
     profilePic: "/homepage-img/profilePic2.jpg",
     profileName: "John Doe",
     date: "12/12/2021",
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    title: "Lorem ipsum",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate.",
-    image: "/homepage-img/news6.jpeg",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate.",
+    image: "/homepage-img/donuts.jpg",
   },
 ];

@@ -80,7 +80,7 @@ const GalleryPageContent = () => {
       />
       <div className="w-full  ">
         <div className="container mx-auto">
-          <div className="w-full grid grid-cols-3 gap-10 px-10 pt-20">
+          <div className="w-full grid grid-cols-3 xl:gap-10 md:gap-8 gap-6 xl:px-20 md:px-16 px-12 pt-20">
             {demoCardData.map((card) => (
               <GallleryPageCard
                 key={card.id}

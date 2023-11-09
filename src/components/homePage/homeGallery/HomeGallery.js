@@ -2,6 +2,7 @@ import React from "react";
 import GalleryEmbla from "./GalleryEmbla";
 import CommonButton from "@/components/shared/button/CommonButton";
 import Link from "next/link";
+import CommonContentHeader from "@/components/shared/contentHeader/CommonContentHeader";
 
 const OPTIONS = { dragFree: true };
 const SLIDE_COUNT = 6;
@@ -10,25 +11,29 @@ const HomeGallery = () => {
   return (
     <div className="w-full">
       <div className="container mx-auto">
-        <div className="w-full flex flex-col px-10 ">
+        <div className="w-full flex flex-col xl:px-20 lg:px-16 px-12 ">
           <div className="w-full flex flex-col items-center">
-            <h2 className="text-2xl font-semibold text-[#202020] uppercase mb-1">
-              Visit our
-            </h2>
-            <h1 className="text-6xl font-semibold text-[#202020] uppercase mb-2">
-              Gallery
-            </h1>
-            <div className="w-[400px] h-0.5 bg-[#202020] mb-1"></div>
-            <div className="w-[400px] h-2 bg-[#202020] mb-10"></div>
+            <CommonContentHeader
+              textColor="text-[#202020]"
+              subtitle="Visit our"
+              title="Gallery"
+              lineBg="bg-[#202020]"
+              subtitleSizeXl="text-2xl"
+              subtitleSizeLg="text-xl"
+              subtitleSize="text-lg"
+              titleSizeXl="text-6xl"
+              titleSizeLg="text-4xl"
+              titleSize="text-2xl"
+            />
           </div>
         </div>
       </div>
-      <div className=" py-10">
+      <div className=" mt-2 lg:mt-4 xl:mt-6 py-4 lg:py-7 xl:py-10">
         <GalleryEmbla slides={SLIDES} options={OPTIONS} />
       </div>
       <div className="w-full">
         <div className="container mx-auto">
-          <div className="w-full flex flex-col items-center">
+          <div className="w-full flex flex-col items-center xl:mt-4 lg:mt-3 mt-2">
             <Link href="/gallery">
               <CommonButton
                 btnText="View Gallery"

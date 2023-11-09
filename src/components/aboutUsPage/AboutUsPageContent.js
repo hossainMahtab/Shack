@@ -1,6 +1,7 @@
 import React from "react";
 import ContactUs from "../homePage/contact-us/ContactUs";
 import { MdOutlineStarPurple500 } from "react-icons/md";
+import CommonContentHeader from "../shared/contentHeader/CommonContentHeader";
 
 const AboutUsPageContent = () => {
   return (
@@ -8,18 +9,18 @@ const AboutUsPageContent = () => {
       <div className="container mx-auto">
         <div className="w-full flex flex-col gap-8 ">
           {/* story */}
-          <div className="w-full flex flex-col px-10 pt-20">
+          <div className="w-full flex flex-col xl:px-20 md:px-16 px-12 pt-20">
             <div className="w-full flex flex-col items-center text-center">
-              <h2 className="text-2xl font-semibold text-[#202020] uppercase mb-1">
-                About
-              </h2>
-              <h1 className="text-6xl font-semibold text-[#202020] uppercase mb-2">
-                Our Story
-              </h1>
-              <div className="w-[400px] h-0.5 bg-[#202020] mb-1"></div>
-              <div className="w-[400px] h-2 bg-[#202020] mb-2"></div>
+              <CommonContentHeader
+                textColor="text-[#202020]"
+                subtitle="About"
+                title="Our Story"
+                lineBg="bg-[#202020]"
+                subtitleSize="text-2xl"
+                titleSize="text-6xl"
+              />
             </div>
-            <div className="w-full flex flex-row-reverse gap-20 justify-between  py-20">
+            <div className="w-full flex flex-row-reverse gap-20 justify-between  py-8 md:py-14  xl:py-20">
               <div className="w-1/2 flex flex-col items-center justify-center gap-4">
                 <div className=" w-full flex flex-col  gap-5">
                   <div className="  max-w-max flex flex-col  gap-2 items-end text-right">
@@ -53,18 +54,18 @@ const AboutUsPageContent = () => {
             </div>
           </div>
           {/* chef */}
-          <div className="w-full flex flex-col px-10 ">
+          <div className="w-full flex flex-col xl:px-20 md:px-16 px-12 ">
             <div className="w-full flex flex-col items-center text-center">
-              <h2 className="text-2xl font-semibold text-[#202020] uppercase mb-1">
-                About
-              </h2>
-              <h1 className="text-6xl font-semibold text-[#202020] uppercase mb-2">
-                Our Chefs
-              </h1>
-              <div className="w-[400px] h-0.5 bg-[#202020] mb-1"></div>
-              <div className="w-[400px] h-2 bg-[#202020] mb-2"></div>
+              <CommonContentHeader
+                textColor="text-[#202020]"
+                subtitle="About"
+                title="Our Chefs"
+                lineBg="bg-[#202020]"
+                subtitleSize="text-2xl"
+                titleSize="text-6xl"
+              />
             </div>
-            <div className="w-full flex flex-row gap-20 justify-between  py-20">
+            <div className="w-full flex flex-row gap-20 justify-between  py-8 md:py-14  xl:py-20">
               <div className="w-1/2 flex flex-col items-center justify-center gap-4">
                 <div className=" w-full flex flex-col  gap-5">
                   <div className="  max-w-max flex flex-col  gap-2 items-start text-left">
@@ -103,16 +104,16 @@ const AboutUsPageContent = () => {
             </div>
           </div>
           {/* reviews */}
-          <div className="w-full flex flex-col px-10 ">
+          <div className="w-full flex flex-col xl:px-20 md:px-16 px-12 ">
             <div className="w-full flex flex-col items-center text-center">
-              <h2 className="text-2xl font-semibold text-[#202020] uppercase mb-1">
-                About
-              </h2>
-              <h1 className="text-6xl font-semibold text-[#202020] uppercase mb-2">
-                Testimonials
-              </h1>
-              <div className="w-[440px] h-0.5 bg-[#202020] mb-1"></div>
-              <div className="w-[440px] h-2 bg-[#202020] "></div>
+              <CommonContentHeader
+                textColor="text-[#202020]"
+                subtitle="About"
+                title="Testimonials"
+                lineBg="bg-[#202020]"
+                subtitleSize="text-2xl"
+                titleSize="text-6xl"
+              />
             </div>
           </div>
         </div>

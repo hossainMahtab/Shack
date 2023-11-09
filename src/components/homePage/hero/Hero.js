@@ -44,7 +44,7 @@ const Hero = () => {
   return (
     <>
       {/* <motion.section
-        className="px-10 pt-10 "
+        className="xl:px-20 md:px-16 px-12 pt-10 "
         style={{ opacity }}
         ref={targetRef}
       >
@@ -54,7 +54,7 @@ const Hero = () => {
       <motion.section
         style={{ opacity: opacity2 }}
         ref={targetRef2}
-        className="px-10 pb-10"
+        className="xl:px-20 md:px-16 px-12 pb-10"
       >
         <div className=" w-full flex flex-col items-center justify-start gap-20">
           <img src="/output-onlinegiftools.gif" alt="" className="w-28 h-28" />
@@ -63,7 +63,7 @@ const Hero = () => {
         </div>
       </motion.section> */}
 
-      <div className="w-full  h-screen relative overflow-hidden -mt-[132px] ">
+      <div className="w-full h-full relative  bg-[#F4F4F4] ">
         {/* <div className=" container  mx-auto   "> */}
 
         {/* <img
@@ -71,31 +71,32 @@ const Hero = () => {
           alt=""
           className="w-full h-full bg-cover absolute inset-0 z-0"
         /> */}
-        <Slider {...sliderSettings} className="w-full h-full ">
+        <Slider {...sliderSettings} className="w-full h-full">
           <div className="w-full h-full relative ">
             <div className="absolute inset-0 bg-black/40 z-10"></div>
-
             <img
               src="/hero-food/slider-2.jpg"
               alt=""
-              className="w-full h-full  "
+              className="w-full min-h-[300px] max-h-screen object-cover  "
             />
-            <div className=" w-screen -mt-28 absolute inset-0 flex flex-col gap-4 items-center justify-center z-20">
-              <h1 className="text-8xl text-white font-bold uppercase">
+            <div className=" w-full  absolute left-0 top-[50%] lg:top-[40%]  flex flex-col gap-1 md:gap-2 lg:gap-3 xl:gap-4 items-center justify-center z-20">
+              <h1 className="xl:text-8xl lg:text-6xl md:text-5xl sm:text-4xl text-3xl text-white font-bold uppercase">
                 Welcome
               </h1>
-              <p className="text-white text-2xl font-semibold capitalize">
+              <p className="text-white  xl:text-2xl  lg:text-xl md:text-lg sm:text-base text-sm font-semibold capitalize">
                 to the shack
               </p>
-              <Link href="/reservation">
-                <CommonButton
-                  btnText="Book Now"
-                  borderColor="border-[#FFFFFF]"
-                  textColor="text-[#FFFFFF]"
-                  hoverBorderColor="hover:border-[#e4ae62]"
-                  hoverTextColor="hover:text-[#FFFFFF]"
-                />
-              </Link>
+              <div className="xl:mt-4 lg:mt-3 mt-2">
+                <Link href="/reservation">
+                  <CommonButton
+                    btnText="Book Now"
+                    borderColor="border-[#FFFFFF]"
+                    textColor="text-[#FFFFFF]"
+                    hoverBorderColor="hover:border-[#e4ae62]"
+                    hoverTextColor="hover:text-[#FFFFFF]"
+                  />
+                </Link>
+              </div>
             </div>
           </div>
           <div className="w-full h-full relative ">
@@ -104,27 +105,26 @@ const Hero = () => {
             <img
               src="/hero-food/slider-1.jpg"
               alt=""
-              className="w-full h-full  "
+              className="w-full min-h-[300px] max-h-screen  object-cover "
             />
-            <div className=" w-screen -mt-28 absolute inset-0 flex flex-col gap-4 items-center justify-center z-20">
-              <h1 className="text-8xl text-white font-bold uppercase">
+            <div className=" w-full  absolute left-0 top-[50%] lg:top-[40%] flex flex-col gap-1 md:gap-2 lg:gap-3 xl:gap-4 items-center justify-center z-20">
+              <h1 className="xl:text-8xl lg:text-6xl md:text-5xl sm:text-4xl text-3xl text-white font-bold uppercase">
                 Welcome
               </h1>
-              <p className="text-white text-2xl font-semibold capitalize">
+              <p className="text-white  xl:text-2xl  lg:text-xl md:text-lg sm:text-base text-sm font-semibold capitalize">
                 enjoy the food
               </p>
-              {/* <button className=" mt-4 bg-transparent border-[6px] border-[#FFFFFF] cursor-pointer hover:border-[#e4ae62] hover:bg-[#e4ae62] hover:ease-in hover:transition-all hover:delay-200 text-white px-10 py-3 uppercase font-semibold text-xl ">
-                Book Now
-              </button> */}
-              <Link href="/reservation">
-                <CommonButton
-                  btnText="Book Now"
-                  borderColor="border-[#FFFFFF]"
-                  textColor="text-[#FFFFFF]"
-                  hoverBorderColor="hover:border-[#e4ae62]"
-                  hoverTextColor="hover:text-[#FFFFFF]"
-                />{" "}
-              </Link>
+              <div className="xl:mt-4 lg:mt-3 mt-2">
+                <Link href="/reservation">
+                  <CommonButton
+                    btnText="Book Now"
+                    borderColor="border-[#FFFFFF]"
+                    textColor="text-[#FFFFFF]"
+                    hoverBorderColor="hover:border-[#e4ae62]"
+                    hoverTextColor="hover:text-[#FFFFFF]"
+                  />{" "}
+                </Link>
+              </div>
             </div>
           </div>
         </Slider>

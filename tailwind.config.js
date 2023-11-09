@@ -22,6 +22,26 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
+    container: {
+      // you can configure the container to be centered
+      center: true,
+
+      // or have default horizontal padding
+      padding: {
+        DEFAULT: "2rem",
+        sm: "3rem",
+        xl: "4rem",
+      },
+
+      // default breakpoints but with 40px removed
+      screens: {
+        sm: "620px",
+        md: "728px",
+        lg: "964px",
+        xl: "1200px",
+        "2xl": "1440px",
+      },
+    },
     screens: {
       xs: "375px",
       // => @media (min-width: 375px) { ... }
