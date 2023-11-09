@@ -33,7 +33,7 @@ const HomeGallery = () => {
       </div>
       <div className="w-full">
         <div className="container mx-auto">
-          <div className="w-full flex flex-col items-center">
+          <div className="w-full flex flex-col items-center xl:mt-4 lg:mt-3 mt-2">
             <Link href="/gallery">
               <CommonButton
                 btnText="View Gallery"

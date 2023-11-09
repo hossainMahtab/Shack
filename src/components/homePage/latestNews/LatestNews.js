@@ -25,15 +25,17 @@ const LatestNews = () => {
             <div className="w-full mt-2 lg:mt-4 xl:mt-6 py-4 lg:py-7 xl:py-10">
               <LatestNewsCard />
             </div>
-            <Link href="/blog">
-              <CommonButton
-                btnText="View All"
-                borderColor="border-[#202020]"
-                textColor="text-[#202020]"
-                hoverBorderColor="hover:border-[#e4ae62]"
-                hoverTextColor="hover:text-[#FFFFFF]"
-              />
-            </Link>
+            <div className="xl:mt-4 lg:mt-3 mt-2">
+              <Link href="/blog">
+                <CommonButton
+                  btnText="View All"
+                  borderColor="border-[#202020]"
+                  textColor="text-[#202020]"
+                  hoverBorderColor="hover:border-[#e4ae62]"
+                  hoverTextColor="hover:text-[#FFFFFF]"
+                />
+              </Link>
+            </div>
           </div>
         </div>
       </div>

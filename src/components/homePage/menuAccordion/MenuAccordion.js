@@ -263,7 +263,7 @@ const MenuAccordion = () => {
                 </AccordionDetails>
               </Accordion>
             </div>
-            <div className="w-full flex justify-center">
+            <div className="w-full flex justify-center xl:mt-4 lg:mt-3 mt-2">
               <Link href="/menu">
                 <CommonButton
                   btnText="View Menu"

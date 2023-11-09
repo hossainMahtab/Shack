@@ -76,7 +76,7 @@ const ContactUs = () => {
                 />
               </div>
             </div>
-            <div className=" w-full flex justify-end">
+            <div className=" w-full flex justify-center lg:justify-end xl:mt-4 lg:mt-3 mt-2">
               <CommonButton
                 btnText="Send Message"
                 borderColor="border-[#202020]"

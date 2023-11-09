@@ -15,30 +15,6 @@ const AboutUs = () => {
   // // const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 1]);
   // const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [0, 0.1, 1]);
 
-  const [isVisible, setIsVisible] = useState(false);
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
-
-  const toggleVisibility = () => {
-    if (window.scrollY > 650) {
-      setIsVisible(true);
-    } else {
-      setIsVisible(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", toggleVisibility);
-    return () => {
-      window.removeEventListener("scroll", toggleVisibility);
-    };
-  }, []);
-
   return (
     // <motion.div className="w-full" style={{ opacity }} ref={targetRef}>
     <div className="w-full relative">
@@ -78,7 +54,7 @@ const AboutUs = () => {
                 accusantium tempora voluptatibus voluptate.
               </h3>
             </div>
-            <div className=" flex justify-center lg:justify-start items-center  w-full">
+            <div className=" flex justify-center lg:justify-start items-center  w-full xl:mt-4 lg:mt-3 mt-2">
               <Link href="/about">
                 <CommonButton
                   btnText="Find More"
@@ -100,15 +76,6 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-
-      {isVisible && (
-        <div
-          onClick={scrollToTop}
-          className=" text-[#e4ae62] z-[9999] text-4xl fixed bottom-8 right-10 cursor-pointer"
-        >
-          <BiSolidUpArrowCircle />
-        </div>
-      )}
 
       {/* </motion.div> */}
     </div>

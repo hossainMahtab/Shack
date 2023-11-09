@@ -29,15 +29,17 @@ const Opening = () => {
             {" "}
             Saturday - Sunday: 10 AM - 12 PM{" "}
           </h2>
-          <Link href="/reservation">
-            <CommonButton
-              btnText="Book Now"
-              borderColor="border-[#FFFFFF]"
-              textColor="text-[#FFFFFF]"
-              hoverBorderColor="hover:border-[#e4ae62]"
-              hoverTextColor="hover:text-[#FFFFFF]"
-            />
-          </Link>
+          <div className="xl:mt-4 lg:mt-3 mt-2">
+            <Link href="/reservation">
+              <CommonButton
+                btnText="Book Now"
+                borderColor="border-[#FFFFFF]"
+                textColor="text-[#FFFFFF]"
+                hoverBorderColor="hover:border-[#e4ae62]"
+                hoverTextColor="hover:text-[#FFFFFF]"
+              />
+            </Link>
+          </div>
         </div>
       </div>
     </div>

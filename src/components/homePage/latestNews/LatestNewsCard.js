@@ -27,8 +27,8 @@ const LatestNewsCard = () => {
                 className="w-full h-auto overflow-hidden flex flex-col py-2 lg:py-4 xl:py-6 gap-2 lg:gap-3 xl:gap-4 items-center justify-center rounded-[10px] shadow-xl  hover:shadow-2xl hover:scale-[1.02] transition-all duration-500 ease-in-out"
               >
                 <h1 className="text-xl lg:text-2xl xl:text-3xl px-2 lg:px-3 xl:px-4 font-semibold text-[#202020] max-w-max">
-                  {news.title.slice(0, 80)}
-                  {news.title.length > 80 && "..."}
+                  {news.title.slice(0, 60)}
+                  {news.title.length > 60 && "..."}
                 </h1>
                 <div className="w-full px-2 lg:px-3 xl:px-4 flex justify-between items-center">
                   <div className="w-full lg:w-1/2  flex items-center gap-1 lg:gap-2">
@@ -58,12 +58,15 @@ const LatestNewsCard = () => {
                     className="w-full h-[150px] lg:h-[200px] xl:h-[250px] object-cover"
                   />
                 </div>
-                <div className="w-full  flex flex-col gap-1  items-center justify-between">
+                <div className="w-full  flex flex-col gap-1.5  items-center justify-between pb-2">
                   <h3 className="text-base lg:text-lg xl:text-xl h-20 lg:h-24 xl:h-28 px-2 lg:px-3 xl:px-4 text-[#202020] text-left w-full">
                     {news.description.slice(0, 110)}
                     {news.description.length > 110 && "..."}
                   </h3>
-                  <div onClick={handleBlogId(news.id)}>
+                  <div
+                    onClick={handleBlogId(news.id)}
+                    className="xl:mt-4 lg:mt-3 mt-2"
+                  >
                     <CommonButton
                       btnText="Read More"
                       borderColor="border-[#202020]"
@@ -112,12 +115,15 @@ const LatestNewsCard = () => {
                     className="w-full h-[150px] lg:h-[200px] xl:h-[250px] object-cover"
                   />
                 </div>
-                <div className="w-full  flex flex-col gap-1  items-center justify-between">
+                <div className="w-full  flex flex-col gap-1.5  items-center justify-between pb-2">
                   <h3 className="text-base lg:text-lg xl:text-xl h-20 lg:h-24 xl:h-28 px-2 lg:px-3 xl:px-4 text-[#202020] text-left w-full">
                     {news.description.slice(0, 110)}
                     {news.description.length > 110 && "..."}
                   </h3>
-                  <div onClick={handleBlogId(news.id)}>
+                  <div
+                    onClick={handleBlogId(news.id)}
+                    className="xl:mt-4 lg:mt-3 mt-2"
+                  >
                     <CommonButton
                       btnText="Read More"
                       borderColor="border-[#202020]"

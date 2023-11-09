@@ -86,15 +86,17 @@ const Hero = () => {
               <p className="text-white  xl:text-2xl  lg:text-xl md:text-lg sm:text-base text-sm font-semibold capitalize">
                 to the shack
               </p>
-              <Link href="/reservation">
-                <CommonButton
-                  btnText="Book Now"
-                  borderColor="border-[#FFFFFF]"
-                  textColor="text-[#FFFFFF]"
-                  hoverBorderColor="hover:border-[#e4ae62]"
-                  hoverTextColor="hover:text-[#FFFFFF]"
-                />
-              </Link>
+              <div className="xl:mt-4 lg:mt-3 mt-2">
+                <Link href="/reservation">
+                  <CommonButton
+                    btnText="Book Now"
+                    borderColor="border-[#FFFFFF]"
+                    textColor="text-[#FFFFFF]"
+                    hoverBorderColor="hover:border-[#e4ae62]"
+                    hoverTextColor="hover:text-[#FFFFFF]"
+                  />
+                </Link>
+              </div>
             </div>
           </div>
           <div className="w-full h-full relative ">
@@ -112,16 +114,17 @@ const Hero = () => {
               <p className="text-white  xl:text-2xl  lg:text-xl md:text-lg sm:text-base text-sm font-semibold capitalize">
                 enjoy the food
               </p>
-
-              <Link href="/reservation">
-                <CommonButton
-                  btnText="Book Now"
-                  borderColor="border-[#FFFFFF]"
-                  textColor="text-[#FFFFFF]"
-                  hoverBorderColor="hover:border-[#e4ae62]"
-                  hoverTextColor="hover:text-[#FFFFFF]"
-                />{" "}
-              </Link>
+              <div className="xl:mt-4 lg:mt-3 mt-2">
+                <Link href="/reservation">
+                  <CommonButton
+                    btnText="Book Now"
+                    borderColor="border-[#FFFFFF]"
+                    textColor="text-[#FFFFFF]"
+                    hoverBorderColor="hover:border-[#e4ae62]"
+                    hoverTextColor="hover:text-[#FFFFFF]"
+                  />{" "}
+                </Link>
+              </div>
             </div>
           </div>
         </Slider>
