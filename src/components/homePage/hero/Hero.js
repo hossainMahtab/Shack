@@ -63,7 +63,7 @@ const Hero = () => {
         </div>
       </motion.section> */}
 
-      <div className="w-full h-full relative -mt-[132px] bg-[#F4F4F4] ">
+      <div className="w-full h-full relative  bg-[#F4F4F4] ">
         {/* <div className=" container  mx-auto   "> */}
 
         {/* <img
@@ -77,9 +77,9 @@ const Hero = () => {
             <img
               src="/hero-food/slider-2.jpg"
               alt=""
-              className="w-full max-h-screen object-cover  "
+              className="w-full min-h-[300px] max-h-screen object-cover  "
             />
-            <div className=" w-full  absolute left-0 top-[40%]  flex flex-col gap-1 md:gap-2 lg:gap-3 xl:gap-4 items-center justify-center z-20">
+            <div className=" w-full  absolute left-0 top-[50%] lg:top-[40%]  flex flex-col gap-1 md:gap-2 lg:gap-3 xl:gap-4 items-center justify-center z-20">
               <h1 className="xl:text-8xl lg:text-6xl md:text-5xl sm:text-4xl text-3xl text-white font-bold uppercase">
                 Welcome
               </h1>
@@ -103,9 +103,9 @@ const Hero = () => {
             <img
               src="/hero-food/slider-1.jpg"
               alt=""
-              className="w-full max-h-screen  object-cover "
+              className="w-full min-h-[300px] max-h-screen  object-cover "
             />
-            <div className=" w-full  absolute left-0 top-[40%]  flex flex-col gap-1 md:gap-2 lg:gap-3 xl:gap-4 items-center justify-center z-20">
+            <div className=" w-full  absolute left-0 top-[50%] lg:top-[40%] flex flex-col gap-1 md:gap-2 lg:gap-3 xl:gap-4 items-center justify-center z-20">
               <h1 className="xl:text-8xl lg:text-6xl md:text-5xl sm:text-4xl text-3xl text-white font-bold uppercase">
                 Welcome
               </h1>
