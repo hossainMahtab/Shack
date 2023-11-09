@@ -17,10 +17,10 @@ const ContactUsContent = () => {
                 title="Contact Us"
                 lineBg="bg-[#202020]"
                 subtitleSizeXl="text-2xl"
-                subtitleSizeMd="text-xl"
+                subtitleSizeLg="text-xl"
                 subtitleSize="text-lg"
                 titleSizeXl="text-6xl"
-                titleSizeMd="text-5xl"
+                titleSizeLg="text-5xl"
                 titleSize="text-4xl"
               />
             </div>
@@ -34,7 +34,7 @@ const ContactUsContent = () => {
                     lineBg="bg-[#FFFFFF]"
                     // subtitleSize="text-2xl"
                     titleSizeXl="text-5xl"
-                    titleSizeMd="text-4xl"
+                    titleSizeLg="text-4xl"
                     titleSize="text-3xl"
                   />
                 </div>

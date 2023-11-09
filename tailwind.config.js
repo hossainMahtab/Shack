@@ -23,17 +23,25 @@ module.exports = {
       },
     },
     container: {
+      // you can configure the container to be centered
       center: true,
+
+      // or have default horizontal padding
       padding: {
-        DEFAULT: "1rem",
-        sm: "2rem",
-        md: "3rem",
-        lg: "4rem",
-        xl: "5rem",
-        "2xl": "6rem",
+        DEFAULT: "2rem",
+        sm: "3rem",
+        xl: "4rem",
+      },
+
+      // default breakpoints but with 40px removed
+      screens: {
+        sm: "620px",
+        md: "728px",
+        lg: "964px",
+        xl: "1200px",
+        "2xl": "1440px",
       },
     },
-
     screens: {
       xs: "375px",
       // => @media (min-width: 375px) { ... }
@@ -49,7 +57,7 @@ module.exports = {
       xl: "1280px",
       // => @media (min-width: 1280px) { ... }
 
-      "2xl": "1440px",
+      "2xl": "1536px",
       // => @media (min-width: 1536px) { ... }
     },
   },

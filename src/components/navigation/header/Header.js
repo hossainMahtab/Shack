@@ -129,7 +129,7 @@ const Header = () => {
         )}
         {sticky && (
           <div className="bg-[#202020]  top-0 w-full !fixed  z-[9999]  ">
-            <div className="container mx-auto h-[70px] flex  justify-between items-center bg-transparent py-5 xl:px-20 md:px-16 px-12">
+            <div className="container mx-auto h-[70px] flex  justify-between items-center bg-transparent py-5 ">
               <Link href="/">
                 <img
                   src="/logo/shack-logo-2.png"

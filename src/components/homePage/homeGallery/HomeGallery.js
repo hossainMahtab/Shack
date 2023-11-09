@@ -11,7 +11,7 @@ const HomeGallery = () => {
   return (
     <div className="w-full">
       <div className="container mx-auto">
-        <div className="w-full flex flex-col xl:px-20 md:px-16 px-12 ">
+        <div className="w-full flex flex-col xl:px-20 lg:px-16 px-12 ">
           <div className="w-full flex flex-col items-center">
             <CommonContentHeader
               textColor="text-[#202020]"
@@ -19,16 +19,16 @@ const HomeGallery = () => {
               title="Gallery"
               lineBg="bg-[#202020]"
               subtitleSizeXl="text-2xl"
-              subtitleSizeMd="text-xl"
+              subtitleSizeLg="text-xl"
               subtitleSize="text-lg"
               titleSizeXl="text-6xl"
-              titleSizeMd="text-4xl"
+              titleSizeLg="text-4xl"
               titleSize="text-2xl"
             />
           </div>
         </div>
       </div>
-      <div className=" mt-2 md:mt-4 xl:mt-6 py-4 md:py-7 xl:py-10">
+      <div className=" mt-2 lg:mt-4 xl:mt-6 py-4 lg:py-7 xl:py-10">
         <GalleryEmbla slides={SLIDES} options={OPTIONS} />
       </div>
       <div className="w-full">

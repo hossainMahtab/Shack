@@ -7,26 +7,28 @@ import { FaInstagram } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="w-full bg-[#202020] rounded-t-[20px]  ">
-      <div className="container mx-auto xl:px-20 md:px-16 px-12 relative">
-        <div className="xl:px-20 md:px-16 px-12  w-full absolute left-0 -top-36">
-          <div className="flex bg-[#e4ae62] w-full rounded-[10px] z-0 relative">
-            <div className="absolute  -top-36 left-20  z-10">
-              <img className="w-[180px] h-[160px]" src="/chef.gif" alt="" />
-            </div>
-            <div className="w-full flex justify-between px-20 py-16">
-              <div className=" flex flex-col gap-4">
-                <p className="text-[#FFFFFF] text-4xl font-bold">
-                  Subscribe to our newsletter
-                </p>
-                <p className="text-[#FFFFFF] text-xl">
-                  Subscribe to our newsletter to receive news and updates
-                </p>
+      <div className="container  mx-auto">
+        <div className="relative">
+          <div className="  w-full absolute left-0 -top-36">
+            <div className="flex bg-[#e4ae62] w-full rounded-[10px] z-0 relative">
+              <div className="absolute  -top-36 left-20  z-10">
+                <img className="w-[180px] h-[160px]" src="/chef.gif" alt="" />
               </div>
-              <div className="flex flex-col gap-4 items-center">
-                <button className="bg-[#FFFFFF] xl:px-20 md:px-16 px-12 py-4 rounded-full text-xl text-[#e4ae62] outline-none focus:outline-none">
-                  Subscribe
-                </button>
-                <p className="text-[#FFFFFF] text-xl">It&apos;s a gift </p>
+              <div className="w-full flex justify-between px-20 py-16">
+                <div className=" flex flex-col gap-4">
+                  <p className="text-[#FFFFFF] text-4xl font-bold">
+                    Subscribe to our newsletter
+                  </p>
+                  <p className="text-[#FFFFFF] text-xl">
+                    Subscribe to our newsletter to receive news and updates
+                  </p>
+                </div>
+                <div className="flex flex-col gap-4 items-center">
+                  <button className="bg-[#FFFFFF] xl:px-20 lg:px-16 px-12 py-4 rounded-full text-xl text-[#e4ae62] outline-none focus:outline-none">
+                    Subscribe
+                  </button>
+                  <p className="text-[#FFFFFF] text-xl">It&apos;s a gift </p>
+                </div>
               </div>
             </div>
           </div>

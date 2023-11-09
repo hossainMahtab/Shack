@@ -15,10 +15,10 @@ const Opening = () => {
             title="Opening Hours"
             lineBg="bg-[#FFFFFF]"
             subtitleSizeXl="text-2xl"
-            subtitleSizeMd="text-xl"
+            subtitleSizeLg="text-xl"
             subtitleSize="text-lg"
             titleSizeXl="text-6xl"
-            titleSizeMd="text-4xl"
+            titleSizeLg="text-4xl"
             titleSize="text-2xl"
           />
           <h2 className="text-[#FFFFFF] text-lg md:text-xl xl:text-2xl font-bold uppercase mt-4 md:mt-7 xl:mt-10 mb-2 md:mb-4 xl:mb-6">

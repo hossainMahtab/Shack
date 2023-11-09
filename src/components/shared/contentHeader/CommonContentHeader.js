@@ -5,10 +5,10 @@ const CommonContentHeader = (props) => {
     subtitle,
     title,
     subtitleSize,
-    subtitleSizeMd,
+    subtitleSizeLg,
     subtitleSizeXl,
     titleSizeXl,
-    titleSizeMd,
+    titleSizeLg,
     titleSize,
     lineBg,
     textColor,
@@ -17,13 +17,13 @@ const CommonContentHeader = (props) => {
     <div className="max-w-max flex flex-col items-center">
       {subtitle && (
         <h3
-          className={` ${subtitleSize} lg:${subtitleSizeMd} xl:${subtitleSizeXl} font-semibold ${textColor} uppercase mb-1 `}
+          className={` ${subtitleSize} lg:${subtitleSizeLg} xl:${subtitleSizeXl} font-semibold ${textColor} uppercase mb-1 `}
         >
           {subtitle}
         </h3>
       )}
       <h1
-        className={` ${titleSize} lg:${titleSizeMd} xl:${titleSizeXl}  font-bold ${textColor} uppercase mb-2 `}
+        className={` ${titleSize} lg:${titleSizeLg} xl:${titleSizeXl}  font-bold ${textColor} uppercase mb-2 px-2 `}
       >
         {title}
       </h1>

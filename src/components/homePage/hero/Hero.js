@@ -63,7 +63,7 @@ const Hero = () => {
         </div>
       </motion.section> */}
 
-      <div className="w-full max-h-screen relative overflow-hidden -mt-[132px] bg-[#F4F4F4] ">
+      <div className="w-full h-full relative -mt-[132px] bg-[#F4F4F4] ">
         {/* <div className=" container  mx-auto   "> */}
 
         {/* <img
@@ -71,15 +71,15 @@ const Hero = () => {
           alt=""
           className="w-full h-full bg-cover absolute inset-0 z-0"
         /> */}
-        <Slider {...sliderSettings} className="w-full h-full ">
+        <Slider {...sliderSettings} className="w-full h-full">
           <div className="w-full h-full relative ">
             <div className="absolute inset-0 bg-black/40 z-10"></div>
             <img
               src="/hero-food/slider-2.jpg"
               alt=""
-              className="w-full h-full  "
+              className="w-full max-h-screen object-cover  "
             />
-            <div className=" w-full  absolute left-0 top-[35%]  flex flex-col gap-1 md:gap-2 lg:gap-3 xl:gap-4 items-center justify-center z-20">
+            <div className=" w-full  absolute left-0 top-[40%]  flex flex-col gap-1 md:gap-2 lg:gap-3 xl:gap-4 items-center justify-center z-20">
               <h1 className="xl:text-8xl lg:text-6xl md:text-5xl sm:text-4xl text-3xl text-white font-bold uppercase">
                 Welcome
               </h1>
@@ -103,9 +103,9 @@ const Hero = () => {
             <img
               src="/hero-food/slider-1.jpg"
               alt=""
-              className="w-full h-full  "
+              className="w-full max-h-screen  object-cover "
             />
-            <div className=" w-full  absolute left-0 top-[35%]  flex flex-col gap-1 md:gap-2 lg:gap-3 xl:gap-4 items-center justify-center z-20">
+            <div className=" w-full  absolute left-0 top-[40%]  flex flex-col gap-1 md:gap-2 lg:gap-3 xl:gap-4 items-center justify-center z-20">
               <h1 className="xl:text-8xl lg:text-6xl md:text-5xl sm:text-4xl text-3xl text-white font-bold uppercase">
                 Welcome
               </h1>
