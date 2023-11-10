@@ -1,6 +1,6 @@
 import React, { use, useEffect } from "react";
 import GallleryPageCard from "./GallleryPageCard";
-import GalleryModal from "../shared/modal/GalleryModal";
+import CommonModal from "../shared/modal/CommonModal";
 
 const demoCardData = [
   {
@@ -71,7 +71,7 @@ const GalleryPageContent = () => {
 
   return (
     <>
-      <GalleryModal
+      <CommonModal
         selectedCard={selectedCard}
         cardId={cardId}
         open={open}
@@ -80,7 +80,7 @@ const GalleryPageContent = () => {
       />
       <div className="w-full  ">
         <div className="container mx-auto">
-          <div className="w-full grid grid-cols-3 xl:gap-10 md:gap-8 gap-6 xl:px-20 md:px-16 px-12 pt-20">
+          <div className="w-full grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 xl:gap-10 md:gap-8 gap-6  pt-12 lg:pt-16 xl:pt-20">
             {demoCardData.map((card) => (
               <GallleryPageCard
                 key={card.id}

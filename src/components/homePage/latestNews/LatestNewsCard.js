@@ -18,7 +18,7 @@ const LatestNewsCard = () => {
           pathname == "/"
             ? " grid-cols-1 lg:grid-cols-3"
             : "grid-cols-1 lg:grid-cols-2"
-        } w-full grid gap-x-8 lg:gap-x-12 xl:gap-x-16 gap-y-4 lg:gap-y-7 xl:gap-y-10 items-center `}
+        } w-full grid gap-x-6 lg:gap-x-10 xl:gap-x-14 gap-y-4 lg:gap-y-7 xl:gap-y-10 items-center `}
       >
         {pathname == "/"
           ? demoNews.slice(0, 3).map((news) => (
@@ -59,9 +59,11 @@ const LatestNewsCard = () => {
                   />
                 </div>
                 <div className="w-full  flex flex-col gap-1.5  items-center justify-between pb-2">
-                  <h3 className="text-base lg:text-lg xl:text-xl h-20 lg:h-24 xl:h-28 px-2 lg:px-3 xl:px-4 text-[#202020] text-left w-full">
-                    {news.description.slice(0, 110)}
-                    {news.description.length > 110 && "..."}
+                  <h3 className="text-base lg:text-lg xl:text-xl px-2 lg:px-3 xl:px-4 text-[#202020] break-words w-full ">
+                    {/* {news.description.slice(0, 110)}
+                    {news.description.length > 110 && "..."} */}
+                    {news.description && news.description.slice(0, 90)}
+                    {news.description && news.description.length > 90 && "..."}
                   </h3>
                   <div
                     onClick={handleBlogId(news.id)}

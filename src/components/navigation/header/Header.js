@@ -60,12 +60,20 @@ const Header = () => {
     };
   }, []);
 
+  const [currentPath, setCurrentPath] = useState("");
+
+  useEffect(() => {
+    setCurrentPath(pathname);
+  }, [pathname]);
+
+  console.log("currentPath", currentPath);
+
   return (
     <>
       <nav className=" w-full h-full relative ">
         {notSticky && (
           <div className=" w-full z-[9999] flex flex-col bg-transparent  ">
-            <div className="w-full relative mx-auto flex justify-center items-center bg-transparent z-[9999]  pt-4 xl:px-20 lg:px-16 px-4">
+            <div className="w-full relative mx-auto flex justify-center items-center bg-transparent z-[9999]  pt-4 ">
               <div className="absolute top-4 xl:px-20 lg:px-16 px-4  w-full flex justify-between items-center">
                 <p className="text-white xl:text-sm lg:text-xs capitalize text-left hidden lg:block ">
                   9100 Jane St, Vaughan, <br /> ON L4K 0A4
@@ -289,65 +297,86 @@ const Header = () => {
               <div className="container mx-auto flex flex-col items-center justify-center py-4 gap-10">
                 <Link href="/">
                   <p
-                    className={`                       ${
+                    onClick={() => {
+                      setBurger(false);
+                    }}
+                    className={`${
                       pathname === "/" ? "text-[#e4ae62]" : "text-white"
-                    } text-base cursor-pointer`}
+                    } text-base cursor-pointer max-w-max`}
                   >
                     Home
                   </p>
                 </Link>
                 <Link href="/menu">
                   <p
+                    onClick={() => {
+                      setBurger(false);
+                    }}
                     className={`                       ${
                       pathname === "/menu" ? "text-[#e4ae62]" : "text-white"
-                    } text-base cursor-pointer`}
+                    } text-base cursor-pointer max-w-max`}
                   >
                     Menu
                   </p>
                 </Link>
                 <Link href="/reservation">
                   <p
+                    onClick={() => {
+                      setBurger(false);
+                    }}
                     className={`                       ${
                       pathname === "/reservation"
                         ? "text-[#e4ae62]"
                         : "text-white"
-                    } text-base cursor-pointer`}
+                    } text-base cursor-pointer max-w-max`}
                   >
                     Reservation
                   </p>
                 </Link>
                 <Link href="/about">
                   <p
+                    onClick={() => {
+                      setBurger(false);
+                    }}
                     className={`                       ${
                       pathname === "/about" ? "text-[#e4ae62]" : "text-white"
-                    } text-base cursor-pointer`}
+                    } text-base cursor-pointer max-w-max`}
                   >
                     About
                   </p>
                 </Link>
                 <Link href="/gallery">
                   <p
+                    onClick={() => {
+                      setBurger(false);
+                    }}
                     className={`                       ${
                       pathname === "/gallery" ? "text-[#e4ae62]" : "text-white"
-                    } text-base cursor-pointer`}
+                    } text-base cursor-pointer max-w-max`}
                   >
                     Gallery
                   </p>
                 </Link>
                 <Link href="/blog">
                   <p
+                    onClick={() => {
+                      setBurger(false);
+                    }}
                     className={`                       ${
                       pathname === "/blog" ? "text-[#e4ae62]" : "text-white"
-                    } text-base cursor-pointer`}
+                    } text-base cursor-pointer max-w-max`}
                   >
                     Blog
                   </p>
                 </Link>
                 <Link href="/contact">
                   <p
+                    onClick={() => {
+                      setBurger(false);
+                    }}
                     className={`                       ${
                       pathname === "/contact" ? "text-[#e4ae62]" : "text-white"
-                    } text-base cursor-pointer`}
+                    } text-base cursor-pointer max-w-max`}
                   >
                     Contact
                   </p>
@@ -374,65 +403,86 @@ const Header = () => {
               <div className="container mx-auto flex flex-col items-center justify-center py-4 gap-10">
                 <Link href="/">
                   <p
+                    onClick={() => {
+                      setBurger(false);
+                    }}
                     className={`                       ${
                       pathname === "/" ? "text-[#e4ae62]" : "text-white"
-                    } text-base cursor-pointer`}
+                    } text-base cursor-pointer max-w-max`}
                   >
                     Home
                   </p>
                 </Link>
                 <Link href="/menu">
                   <p
+                    onClick={() => {
+                      setBurger(false);
+                    }}
                     className={`                       ${
                       pathname === "/menu" ? "text-[#e4ae62]" : "text-white"
-                    } text-base cursor-pointer`}
+                    } text-base cursor-pointer max-w-max`}
                   >
                     Menu
                   </p>
                 </Link>
                 <Link href="/reservation">
                   <p
+                    onClick={() => {
+                      setBurger(false);
+                    }}
                     className={`                       ${
                       pathname === "/reservation"
                         ? "text-[#e4ae62]"
                         : "text-white"
-                    } text-base cursor-pointer`}
+                    } text-base cursor-pointer max-w-max`}
                   >
                     Reservation
                   </p>
                 </Link>
                 <Link href="/about">
                   <p
+                    onClick={() => {
+                      setBurger(false);
+                    }}
                     className={`                       ${
                       pathname === "/about" ? "text-[#e4ae62]" : "text-white"
-                    } text-base cursor-pointer`}
+                    } text-base cursor-pointer max-w-max`}
                   >
                     About
                   </p>
                 </Link>
                 <Link href="/gallery">
                   <p
+                    onClick={() => {
+                      setBurger(false);
+                    }}
                     className={`                       ${
                       pathname === "/gallery" ? "text-[#e4ae62]" : "text-white"
-                    } text-base cursor-pointer`}
+                    } text-base cursor-pointer max-w-max`}
                   >
                     Gallery
                   </p>
                 </Link>
                 <Link href="/blog">
                   <p
+                    onClick={() => {
+                      setBurger(false);
+                    }}
                     className={`                       ${
                       pathname === "/blog" ? "text-[#e4ae62]" : "text-white"
-                    } text-base cursor-pointer`}
+                    } text-base cursor-pointer max-w-max`}
                   >
                     Blog
                   </p>
                 </Link>
                 <Link href="/contact">
                   <p
+                    onClick={() => {
+                      setBurger(false);
+                    }}
                     className={`                       ${
                       pathname === "/contact" ? "text-[#e4ae62]" : "text-white"
-                    } text-base cursor-pointer`}
+                    } text-base cursor-pointer max-w-max`}
                   >
                     Contact
                   </p>
@@ -458,27 +508,27 @@ const Header = () => {
             </div>
             <div className="container mx-auto flex flex-col items-center justify-center py-5 gap-10">
               <Link href="/">
-                <p className="text-white text-base cursor-pointer">Home</p>
+                <p className="text-white text-base cursor-pointer max-w-max">Home</p>
               </Link>
               <Link href="/menu">
-                <p className="text-white text-base cursor-pointer">Menu</p>
+                <p className="text-white text-base cursor-pointer max-w-max">Menu</p>
               </Link>
               <Link href="/reservation">
-                <p className="text-white text-base cursor-pointer">
+                <p className="text-white text-base cursor-pointer max-w-max">
                   Reservation
                 </p>
               </Link>
               <Link href="/about">
-                <p className="text-white text-base cursor-pointer">About</p>
+                <p className="text-white text-base cursor-pointer max-w-max">About</p>
               </Link>
               <Link href="/gallery">
-                <p className="text-white text-base cursor-pointer">Gallery</p>
+                <p className="text-white text-base cursor-pointer max-w-max">Gallery</p>
               </Link>
               <Link href="/blog">
-                <p className="text-white text-base cursor-pointer">Blog</p>
+                <p className="text-white text-base cursor-pointer max-w-max">Blog</p>
               </Link>
               <Link href="/contact">
-                <p className="text-white text-base cursor-pointer">Contact</p>
+                <p className="text-white text-base cursor-pointer max-w-max">Contact</p>
               </Link>
             </div>
           </div>
@@ -498,27 +548,27 @@ const Header = () => {
             </div>
             <div className="container mx-auto flex flex-col items-center justify-center py-5 gap-10">
               <Link href="/">
-                <p className="text-white text-base cursor-pointer">Home</p>
+                <p className="text-white text-base cursor-pointer max-w-max">Home</p>
               </Link>
               <Link href="/menu">
-                <p className="text-white text-base cursor-pointer">Menu</p>
+                <p className="text-white text-base cursor-pointer max-w-max">Menu</p>
               </Link>
               <Link href="/reservation">
-                <p className="text-white text-base cursor-pointer">
+                <p className="text-white text-base cursor-pointer max-w-max">
                   Reservation
                 </p>
               </Link>
               <Link href="/about">
-                <p className="text-white text-base cursor-pointer">About</p>
+                <p className="text-white text-base cursor-pointer max-w-max">About</p>
               </Link>
               <Link href="/gallery">
-                <p className="text-white text-base cursor-pointer">Gallery</p>
+                <p className="text-white text-base cursor-pointer max-w-max">Gallery</p>
               </Link>
               <Link href="/blog">
-                <p className="text-white text-base cursor-pointer">Blog</p>
+                <p className="text-white text-base cursor-pointer max-w-max">Blog</p>
               </Link>
               <Link href="/contact">
-                <p className="text-white text-base cursor-pointer">Contact</p>
+                <p className="text-white text-base cursor-pointer max-w-max">Contact</p>
               </Link>
             </div>
           </div>
