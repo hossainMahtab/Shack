@@ -6,6 +6,7 @@ import { FiMenu } from "react-icons/fi";
 import { BiSolidUpArrowCircle } from "react-icons/bi";
 import CommonModal from "@/components/shared/modal/CommonModal";
 import SignIn from "@/components/login/SignIn";
+import SignUp from "@/components/login/SignUp";
 
 const Header = () => {
   const [sticky, setSticky] = React.useState(false);
@@ -63,19 +64,36 @@ const Header = () => {
   }, []);
 
   const [signInModalOpen, setSignInModalOpen] = useState(false);
+  const [signUpModalOpen, setSignUpModalOpen] = useState(false);
+
   const handleSignInOpen = () => {
     setSignInModalOpen(true);
+    setSignUpModalOpen(false);
   };
   const handleSignInClose = () => {
     setSignInModalOpen(false);
+  };
+
+  // sign up modal
+
+  const handleSignUpOpen = () => {
+    setSignUpModalOpen(true);
+
+    setSignInModalOpen(false);
+  };
+
+  const handleSignUpClose = () => {
+    setSignUpModalOpen(false);
+
+    // setSignInModalOpen(true);
   };
 
   return (
     <>
       <nav className=" w-full h-full relative ">
         {notSticky && (
-          <div className=" w-full z-[9999] flex flex-col bg-transparent  ">
-            <div className="w-full relative mx-auto flex justify-center items-center bg-transparent z-[9999]  pt-4 ">
+          <div className=" w-full z-[7777] flex flex-col bg-transparent  ">
+            <div className="w-full relative mx-auto flex justify-center items-center bg-transparent z-[7777]  pt-4 ">
               <div className="absolute top-4 xl:px-20 lg:px-16 px-4  w-full flex justify-between items-center">
                 <p className="text-white xl:text-sm lg:text-xs capitalize text-left hidden lg:block ">
                   9100 Jane St, Vaughan, <br /> ON L4K 0A4
@@ -181,10 +199,13 @@ const Header = () => {
             <div className=" px-4 h-14 lg:hidden flex  justify-between items-center bg-transparent py-5 ">
               <div onClick={handleBurger}>
                 {!burger && (
-                  <FiMenu className="text-white xl:text-2xl lg:text-xl cursor-pointer" />
+                  <FiMenu className="text-white text-2xl cursor-pointer" />
                 )}
               </div>
-              <button className="text-white xl:text-base lg:text-sm capitalize text-right cursor-pointer bg-transparent outline-none focus:outline-none">
+              <button
+                onClick={handleSignInOpen}
+                className="text-white xl:text-base lg:text-sm capitalize text-right cursor-pointer bg-transparent outline-none focus:outline-none"
+              >
                 Sign in
               </button>
             </div>
@@ -270,7 +291,10 @@ const Header = () => {
                   </Link>
                 </ul>
               </div>
-              <button className="text-white bg-transparent cursor-pointer xl:text-base lg:text-sm  uppercase outline-none focus:outline-none">
+              <button
+                onClick={handleSignInOpen}
+                className="text-white bg-transparent cursor-pointer xl:text-base lg:text-sm  uppercase outline-none focus:outline-none"
+              >
                 Sign in
               </button>
             </div>
@@ -595,10 +619,28 @@ const Header = () => {
           handleOpen={handleSignInOpen}
           handleClose={handleSignInClose}
           open={signInModalOpen}
-          customWidth="w-[85%] lg:w-[65%]"
-          customBg="bg-white/80"
+          customWidth=" w-[90%] md:w-[60%] lg:w-[40%] 2xl:w-[30%]"
+          customBg="bg-black/95"
         >
-          <SignIn />
+          <SignIn
+            handleSignInClose={handleSignInClose}
+            handleSignUpOpen={handleSignUpOpen}
+          />
+        </CommonModal>
+      )}
+
+      {signUpModalOpen && (
+        <CommonModal
+          handleClose={handleSignUpClose}
+          handleOpen={handleSignUpOpen}
+          open={signUpModalOpen}
+          customWidth=" w-[90%] md:w-[60%] lg:w-[40%] 2xl:w-[30%]"
+          customBg="bg-black/95"
+        >
+          <SignUp
+            handleSignUpClose={handleSignUpClose}
+            handleSignInOpen={handleSignInOpen}
+          />
         </CommonModal>
       )}
     </>

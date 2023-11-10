@@ -46,7 +46,7 @@ const CommonModal = ({ children, ...props }) => {
       >
         <Box
           sx={style}
-          className={`!outline-none focus:!outline-none ${customWidth} ${customBg} `}
+          className={`!outline-none focus:!outline-none ${customWidth} ${customBg} !z-[1111] `}
         >
           <>
             <section className="">
