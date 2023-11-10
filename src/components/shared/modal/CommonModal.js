@@ -9,21 +9,23 @@ const style = {
   left: "50%",
   transform: "translate(-50%, -50%)",
   // width: "65%",
-  bgcolor: "background.paper",
+  // bgcolor: "background.paper",
   //   border: "0px solid #000",
   boxShadow: 24,
   p: 0,
   borderRadius: "10px",
 };
 
-const OPTIONS = {};
-const SLIDE_COUNT = 10;
-const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
+// const OPTIONS = {};
+// const SLIDE_COUNT = 10;
+// const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 
-const CommonModal = (props) => {
+const CommonModal = ({ children, ...props }) => {
   const {
     cardId,
     open,
+    customWidth,
+    customBg,
     title,
     description,
     title1,
@@ -44,16 +46,17 @@ const CommonModal = (props) => {
       >
         <Box
           sx={style}
-          className="!outline-none focus:!outline-none !w-[85%] lg:!w-[65%]"
+          className={`!outline-none focus:!outline-none ${customWidth} ${customBg} `}
         >
           <>
             <section className="">
-              <GalleryPageEmbla
+              {/* <GalleryPageEmbla
                 slides={SLIDES}
                 options={OPTIONS}
                 cardId={cardId}
                 selectedCard={selectedCard}
-              />
+              /> */}
+              {children}
             </section>
           </>
         </Box>

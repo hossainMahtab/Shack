@@ -4,6 +4,8 @@ import React, { useEffect, useState } from "react";
 import { MdClose } from "react-icons/md";
 import { FiMenu } from "react-icons/fi";
 import { BiSolidUpArrowCircle } from "react-icons/bi";
+import CommonModal from "@/components/shared/modal/CommonModal";
+import SignIn from "@/components/login/SignIn";
 
 const Header = () => {
   const [sticky, setSticky] = React.useState(false);
@@ -60,13 +62,13 @@ const Header = () => {
     };
   }, []);
 
-  const [currentPath, setCurrentPath] = useState("");
-
-  useEffect(() => {
-    setCurrentPath(pathname);
-  }, [pathname]);
-
-  console.log("currentPath", currentPath);
+  const [signInModalOpen, setSignInModalOpen] = useState(false);
+  const handleSignInOpen = () => {
+    setSignInModalOpen(true);
+  };
+  const handleSignInClose = () => {
+    setSignInModalOpen(false);
+  };
 
   return (
     <>
@@ -83,7 +85,10 @@ const Header = () => {
                     <FiMenu className="text-white text-2xl cursor-pointer" />
                   )}
                 </div>
-                <button className="text-white xl:text-base lg:text-sm capitalize text-right cursor-pointer bg-transparent outline-none focus:outline-none">
+                <button
+                  onClick={handleSignInOpen}
+                  className="text-white xl:text-base lg:text-sm capitalize text-right cursor-pointer bg-transparent outline-none focus:outline-none"
+                >
                   Sign in
                 </button>
               </div>
@@ -583,6 +588,19 @@ const Header = () => {
           </div>
         )}
       </nav>
+
+      {/* sign in modal */}
+      {signInModalOpen && (
+        <CommonModal
+          handleOpen={handleSignInOpen}
+          handleClose={handleSignInClose}
+          open={signInModalOpen}
+          customWidth="w-[85%] lg:w-[65%]"
+          customBg="bg-white/80"
+        >
+          <SignIn />
+        </CommonModal>
+      )}
     </>
   );
 };
