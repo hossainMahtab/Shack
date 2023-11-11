@@ -71,3 +71,7 @@ body {
 .pageContainerPaddingY {
   @apply xl:py-20 lg:py-16 md:py-12 py-8;
 }
+
+.custom-mui-input > .MuiInputBase-root > input {
+  @apply !text-[#FFFFFF] !text-[1.125rem] !font-semibold !bg-transparent;
+}
