@@ -4,6 +4,14 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { AiOutlineClose } from "react-icons/ai";
 
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  GoogleAuthProvider,
+  signInWithPopup,
+} from "firebase/auth";
+import { useRouter } from "next/router";
+
 const SignUp = (props) => {
   const handleClose = () => {
     // props.handleSignUpClose();
@@ -22,17 +30,41 @@ const SignUp = (props) => {
     formState: { errors },
     watch,
   } = useForm();
-  const password = watch("password", "");
+
+  const auth = getAuth();
+  const googleProvider = new GoogleAuthProvider();
+  const router = useRouter();
 
   const handleSignUpSubmit = (data) => {
-    console.log("FormData:", data);
+    createUserWithEmailAndPassword(auth, data?.email, data?.password)
+      .then((response) => {
+        sessionStorage.setItem("Token", response.user.accessToken);
+        console.log(response.user);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
 
+  const signupWithGoogle = () => {
+    signInWithPopup(auth, googleProvider)
+      .then((response) => {
+        sessionStorage.setItem("Token", response.user.accessToken);
+
+        console.log(response.user);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
+  const password = watch("password", "");
   const [showPassword, setShowPassword] = useState(false);
 
   const handleTogglePassword = () => {
     setShowPassword(!showPassword);
   };
+
   return (
     <form
       className="w-full h-full relative "
@@ -137,7 +169,8 @@ const SignUp = (props) => {
           <div className="w-full flex flex-col gap-2 items-center justify-center">
             <TextField
               fullWidth
-              type="password"
+              // type="password"
+              type={showPassword ? "text" : "password"}
               className="!w-full !h-full rounded-md custom-mui-input  !bg-inherit !font-bold"
               sx={{
                 "& label.Mui-focused": {
@@ -186,7 +219,7 @@ const SignUp = (props) => {
           <div className="w-full flex flex-col gap-2 items-center justify-center">
             <TextField
               fullWidth
-              type="password"
+              type={showPassword ? "text" : "password"}
               className="!w-full !h-full rounded-md custom-mui-input  !bg-inherit !font-bold"
               sx={{
                 "& label.Mui-focused": {
@@ -235,6 +268,7 @@ const SignUp = (props) => {
             )}
           </div>
         </div>
+
         <div className="w-full flex flex-col items-center justify-center mt-6">
           <button
             type="submit"
@@ -253,6 +287,23 @@ const SignUp = (props) => {
           >
             Sign In
           </p>
+        </div>
+        <p className="text-white mt-2">Or</p>
+        <div className="w-full flex  items-center justify-center gap-10 mt-2 ">
+          <div onClick={signupWithGoogle} className="cursor-pointer">
+            <img
+              src="logo/google.png"
+              alt="google"
+              className="w-10 h-10 rounded-full"
+            />
+          </div>
+          <div className="cursor-pointer">
+            <img
+              src="logo/facebook.png"
+              alt="facebook"
+              className="w-10 h-10 rounded-full"
+            />
+          </div>
         </div>
       </div>
     </form>

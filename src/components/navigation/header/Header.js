@@ -5,8 +5,9 @@ import { MdClose } from "react-icons/md";
 import { FiMenu } from "react-icons/fi";
 import { BiSolidUpArrowCircle } from "react-icons/bi";
 import CommonModal from "@/components/shared/modal/CommonModal";
-import SignIn from "@/components/login/SignIn";
-import SignUp from "@/components/login/SignUp";
+import SignIn from "@/components/auth/SignIn";
+import SignUp from "@/components/auth/SignUp";
+import { auth } from "../../../../firebaseConfig";
 
 const Header = () => {
   const [sticky, setSticky] = React.useState(false);
@@ -88,6 +89,18 @@ const Header = () => {
     // setSignInModalOpen(true);
   };
 
+  const [userName, setUserName] = useState("null");
+
+  useEffect(() => {
+    auth.onAuthStateChanged((user) => {
+      if (user) {
+        setUserName(user.displayName);
+      } else {
+        setUserName("");
+      }
+    });
+  }, []);
+
   return (
     <>
       <nav className=" w-full h-full relative ">
@@ -107,7 +120,7 @@ const Header = () => {
                   onClick={handleSignInOpen}
                   className="text-white xl:text-base lg:text-sm capitalize text-right cursor-pointer bg-transparent outline-none focus:outline-none"
                 >
-                  Sign in
+                  {userName == "" ? "Sign in" : `${userName}`}
                 </button>
               </div>
 

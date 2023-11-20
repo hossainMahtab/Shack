@@ -10,6 +10,8 @@ import LatestNews from "@/components/homePage/latestNews/LatestNews";
 import Testimonials from "@/components/homePage/testimonials/Testimonials";
 import ContactUs from "@/components/homePage/contact-us/ContactUs";
 import HomeGallery from "@/components/homePage/homeGallery/HomeGallery";
+import { app } from "../../firebaseConfig";
+
 const Home = () => {
   return (
     <div className=" w-full h-full  bg-[#ffffff]  pb-[300px] -mt-[132px] ">

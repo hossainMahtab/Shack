@@ -1,17 +1,9 @@
-import {
-  Checkbox,
-  FormControlLabel,
-  FormGroup,
-  IconButton,
-  InputAdornment,
-  TextField,
-} from "@mui/material";
+import { IconButton, InputAdornment, TextField } from "@mui/material";
 import { AiOutlineClose } from "react-icons/ai";
 import React, { useState } from "react";
-import CommonModal from "../shared/modal/CommonModal";
-import SignUp from "./SignUp";
 import { useForm } from "react-hook-form";
 import { Visibility, VisibilityOff } from "@mui/icons-material";
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 
 const SignIn = (props) => {
   const handleClose = () => {
@@ -30,8 +22,22 @@ const SignIn = (props) => {
     reset,
   } = useForm();
 
+  const auth = getAuth();
+
   const handleSignInSubmit = (data) => {
-    localStorage.setItem("user", JSON.stringify(data));
+    signInWithEmailAndPassword(auth, data.email, data.password)
+      .then((userCredential) => {
+        // Signed in
+        const user = userCredential.user;
+        console.log(user);
+        // ...
+      })
+      .catch((error) => {
+        const errorMessage = error.message;
+        console.log(errorMessage);
+        // ..
+      });
+
     reset();
   };
 
