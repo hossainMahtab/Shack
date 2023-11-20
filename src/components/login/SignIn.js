@@ -27,10 +27,12 @@ const SignIn = (props) => {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm();
 
   const handleSignInSubmit = (data) => {
-    console.log("Form data:", data);
+    localStorage.setItem("user", JSON.stringify(data));
+    reset();
   };
 
   const [showPassword, setShowPassword] = useState(false);

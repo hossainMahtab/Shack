@@ -64,7 +64,7 @@ const PrivateSection = () => {
                 tempora.
               </h3>
             </div>
-            <div className=" flex justify-center lg:justify-start items-center  w-full xl:mt-4 lg:mt-3 mt-2">
+            <div className=" flex justify-center lg:justify-end items-center  w-full xl:mt-4 lg:mt-3 mt-2">
               <Link href="/reservation">
                 <CommonButton
                   btnText="Book Now"
