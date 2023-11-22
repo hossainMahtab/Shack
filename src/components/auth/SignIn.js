@@ -3,7 +3,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { Visibility, VisibilityOff } from "@mui/icons-material";
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { UserAuth } from "@/context/FireAuthContext";
 
 const SignIn = (props) => {
   const handleClose = () => {
@@ -22,29 +22,31 @@ const SignIn = (props) => {
     reset,
   } = useForm();
 
-  const auth = getAuth();
-
-  const handleSignInSubmit = (data) => {
-    signInWithEmailAndPassword(auth, data.email, data.password)
-      .then((userCredential) => {
-        // Signed in
-        const user = userCredential.user;
-        console.log(user);
-        // ...
-      })
-      .catch((error) => {
-        const errorMessage = error.message;
-        console.log(errorMessage);
-        // ..
-      });
-
-    reset();
-  };
-
   const [showPassword, setShowPassword] = useState(false);
 
   const handleTogglePassword = () => {
     setShowPassword(!showPassword);
+  };
+
+  // auth sign in
+  const { user, googleSignIn, logOut, emailSignUp, emailSignIn } = UserAuth();
+
+  const handleGoogleSignIn = async () => {
+    try {
+      await googleSignIn();
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const handleSignInSubmit = async (data) => {
+    try {
+      await emailSignIn(data.email, data.password);
+    } catch (error) {
+      console.log(error);
+    }
+
+    reset();
   };
 
   return (
@@ -216,6 +218,23 @@ const SignIn = (props) => {
             >
               Sign Up
             </p>
+          </div>
+          <p className="text-white mt-2">Or</p>
+          <div className="w-full flex  items-center justify-center gap-10 mt-2 ">
+            <div onClick={handleGoogleSignIn} className="cursor-pointer">
+              <img
+                src="logo/google.png"
+                alt="google"
+                className="w-10 h-10 rounded-full"
+              />
+            </div>
+            <div className="cursor-pointer">
+              <img
+                src="logo/facebook.png"
+                alt="facebook"
+                className="w-10 h-10 rounded-full"
+              />
+            </div>
           </div>
         </div>
       </form>

@@ -7,9 +7,13 @@ import { BiSolidUpArrowCircle } from "react-icons/bi";
 import CommonModal from "@/components/shared/modal/CommonModal";
 import SignIn from "@/components/auth/SignIn";
 import SignUp from "@/components/auth/SignUp";
-import { auth } from "../../../../firebaseConfig";
+import { UserAuth } from "@/context/FireAuthContext";
+import { AiOutlineLogout } from "react-icons/ai";
 
 const Header = () => {
+  const { user, googleSignIn, logOut, emailSignUp } = UserAuth();
+  console.log("user", user);
+
   const [sticky, setSticky] = React.useState(false);
   const [notSticky, setNotSticky] = React.useState(true);
   const scrollThreshold = 64;
@@ -89,17 +93,15 @@ const Header = () => {
     // setSignInModalOpen(true);
   };
 
-  const [userName, setUserName] = useState("null");
+  // log out
 
-  useEffect(() => {
-    auth.onAuthStateChanged((user) => {
-      if (user) {
-        setUserName(user.displayName);
-      } else {
-        setUserName("");
-      }
-    });
-  }, []);
+  const handlelogOut = async () => {
+    try {
+      await logOut();
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <>
@@ -116,12 +118,26 @@ const Header = () => {
                     <FiMenu className="text-white text-2xl cursor-pointer" />
                   )}
                 </div>
-                <button
-                  onClick={handleSignInOpen}
-                  className="text-white xl:text-base lg:text-sm capitalize text-right cursor-pointer bg-transparent outline-none focus:outline-none"
-                >
-                  {userName == "" ? "Sign in" : `${userName}`}
-                </button>
+                {!user ? (
+                  <button
+                    onClick={handleSignInOpen}
+                    className="text-white xl:text-base lg:text-sm capitalize text-right cursor-pointer bg-transparent outline-none focus:outline-none"
+                  >
+                    Sign in
+                  </button>
+                ) : (
+                  <div className="flex items-center gap-4">
+                    <p className="text-white xl:text-base lg:text-sm capitalize text-right  bg-transparent outline-none focus:outline-none">
+                      {user?.displayName}
+                    </p>
+                    <button
+                      onClick={handlelogOut}
+                      className="text-white xl:text-base lg:text-sm capitalize text-right cursor-pointer bg-transparent outline-none focus:outline-none"
+                    >
+                      <AiOutlineLogout />
+                    </button>
+                  </div>
+                )}
               </div>
 
               <img
@@ -215,12 +231,26 @@ const Header = () => {
                   <FiMenu className="text-white text-2xl cursor-pointer" />
                 )}
               </div>
-              <button
-                onClick={handleSignInOpen}
-                className="text-white xl:text-base lg:text-sm capitalize text-right cursor-pointer bg-transparent outline-none focus:outline-none"
-              >
-                Sign in
-              </button>
+              {!user ? (
+                <button
+                  onClick={handleSignInOpen}
+                  className="text-white xl:text-base lg:text-sm capitalize text-right cursor-pointer bg-transparent outline-none focus:outline-none"
+                >
+                  Sign in
+                </button>
+              ) : (
+                <div className="flex items-center gap-4">
+                  <p className="text-white xl:text-base lg:text-sm capitalize text-right  bg-transparent outline-none focus:outline-none">
+                    {user?.displayName}
+                  </p>
+                  <button
+                    onClick={handlelogOut}
+                    className="text-white xl:text-base lg:text-sm capitalize text-right cursor-pointer bg-transparent outline-none focus:outline-none"
+                  >
+                    <AiOutlineLogout />
+                  </button>
+                </div>
+              )}
             </div>
             <div className="container mx-auto h-[70px] hidden lg:flex  justify-between items-center bg-transparent py-5 ">
               <Link href="/">
@@ -304,12 +334,26 @@ const Header = () => {
                   </Link>
                 </ul>
               </div>
-              <button
-                onClick={handleSignInOpen}
-                className="text-white bg-transparent cursor-pointer xl:text-base lg:text-sm  uppercase outline-none focus:outline-none"
-              >
-                Sign in
-              </button>
+              {!user ? (
+                <button
+                  onClick={handleSignInOpen}
+                  className="text-white bg-transparent cursor-pointer xl:text-base lg:text-sm  uppercase outline-none focus:outline-none"
+                >
+                  Sign in
+                </button>
+              ) : (
+                <div className="flex items-center gap-4">
+                  <p className="text-white bg-transparent cursor-pointer xl:text-base lg:text-sm   outline-none focus:outline-none capitalize">
+                    {user?.displayName}
+                  </p>
+                  <button
+                    onClick={handlelogOut}
+                    className="text-white xl:text-base lg:text-sm capitalize text-right cursor-pointer bg-transparent outline-none focus:outline-none"
+                  >
+                    <AiOutlineLogout />
+                  </button>
+                </div>
+              )}
             </div>
           </div>
         )}

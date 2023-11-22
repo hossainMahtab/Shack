@@ -3,14 +3,7 @@ import { IconButton, InputAdornment, TextField } from "@mui/material";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { AiOutlineClose } from "react-icons/ai";
-
-import {
-  getAuth,
-  createUserWithEmailAndPassword,
-  GoogleAuthProvider,
-  signInWithPopup,
-} from "firebase/auth";
-import { useRouter } from "next/router";
+import { UserAuth } from "@/context/FireAuthContext";
 
 const SignUp = (props) => {
   const handleClose = () => {
@@ -31,31 +24,15 @@ const SignUp = (props) => {
     watch,
   } = useForm();
 
-  const auth = getAuth();
-  const googleProvider = new GoogleAuthProvider();
-  const router = useRouter();
+  const { user, googleSignIn, logOut, emailSignUp } = UserAuth();
 
-  const handleSignUpSubmit = (data) => {
-    createUserWithEmailAndPassword(auth, data?.email, data?.password)
-      .then((response) => {
-        sessionStorage.setItem("Token", response.user.accessToken);
-        console.log(response.user);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  };
-
-  const signupWithGoogle = () => {
-    signInWithPopup(auth, googleProvider)
-      .then((response) => {
-        sessionStorage.setItem("Token", response.user.accessToken);
-
-        console.log(response.user);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+  const handleSignUpSubmit = async (data) => {
+    console.log(data);
+    try {
+      await emailSignUp(data.email, data.password, data.name);
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   const password = watch("password", "");
@@ -287,23 +264,6 @@ const SignUp = (props) => {
           >
             Sign In
           </p>
-        </div>
-        <p className="text-white mt-2">Or</p>
-        <div className="w-full flex  items-center justify-center gap-10 mt-2 ">
-          <div onClick={signupWithGoogle} className="cursor-pointer">
-            <img
-              src="logo/google.png"
-              alt="google"
-              className="w-10 h-10 rounded-full"
-            />
-          </div>
-          <div className="cursor-pointer">
-            <img
-              src="logo/facebook.png"
-              alt="facebook"
-              className="w-10 h-10 rounded-full"
-            />
-          </div>
         </div>
       </div>
     </form>
