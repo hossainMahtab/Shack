@@ -7,7 +7,7 @@ export const demoNews = [
     date: "12/12/2021",
     title: "Lorem ipsum",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate.",
+      "Lorem ipsum adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate.",
     image: "/homepage-img/pizza2.jpg",
   },
   {

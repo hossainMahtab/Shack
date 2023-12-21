@@ -13,7 +13,7 @@ const LatestNewsCard = () => {
 
   return (
     <>
-      <div className="hidden">
+      {/* <div className="hidden">
         <div
           className={` ${
             pathname == "/"
@@ -139,8 +139,169 @@ const LatestNewsCard = () => {
                 </div>
               ))}
         </div>
+      </div> */}
+      <div className="">
+        <div
+          className={` ${
+            pathname == "/"
+              ? " grid-cols-1 lg:grid-cols-3"
+              : "grid-cols-1 lg:grid-cols-2"
+          } w-full grid gap-x-6 lg:gap-x-10 xl:gap-x-14 gap-y-4 lg:gap-y-7 xl:gap-y-10 items-center  `}
+        >
+          {pathname == "/"
+            ? demoNews.slice(0, 3).map((news) => (
+                <div
+                  key={news.id}
+                  className="overflow-hidden bg-white rounded-[10px] shadow-md hover:shadow-xl hover:scale-[1.01]"
+                  // onClick={handleBlogId(news.id)}
+                >
+                  <div className="p-5 ">
+                    <div className="relative">
+                      <div className="block aspect-w-4 aspect-h-3 ">
+                        <img
+                          className="object-cover w-full h-[240px]"
+                          src={news.image}
+                          alt=""
+                        />
+                      </div>
+
+                      <div className="absolute top-4 left-4">
+                        <span className="px-4 py-2 text-xs font-semibold tracking-widest text-gray-900 uppercase bg-white rounded-full">
+                          {" "}
+                          {news.type}
+                        </span>
+                      </div>
+                    </div>
+                    <span className="flex justify-between mt-6 text-sm font-semibold tracking-widest text-gray-500 uppercase">
+                      {" "}
+                      {/* March 21, 2020{" "} */}
+                      {news.date}
+                      <div className="flex items-center gap-1 lg:gap-2">
+                        <img
+                          src={news.profilePic}
+                          alt=""
+                          className="w-4 h-4 object-cover  lg:w-6 lg:h-6 rounded-full"
+                        />
+                        <p className="">{news.profileName}</p>
+                      </div>
+                    </span>
+                    <p className="mt-5 text-2xl font-semibold">
+                      <p className="text-black">
+                        {" "}
+                        {/* How to build coffee inside your home in 5 minutes.{" "} */}
+                        {news.title}
+                      </p>
+                    </p>
+                    <p className="mt-4 text-base text-gray-600">
+                      {/* Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint. Velit officia consequat duis enim
+                        velit mollit. */}
+                      {/* {news.description} */}
+                      {news.description && news.description.slice(0, 90)}
+                      {news.description &&
+                        news.description.length > 90 &&
+                        "..."}
+                    </p>
+                    <a
+                      onClick={handleBlogId(news.id)}
+                      title=""
+                      className="inline-flex items-center cursor-pointer justify-center pb-0.5 mt-5 text-base font-semibold text-[#202020] transition-all duration-200 "
+                    >
+                      Continue Reading
+                      <svg
+                        className="w-5 h-5"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              ))
+            : demoNews.map((news) => (
+                <div
+                  key={news.id}
+                  className="overflow-hidden bg-white rounded-[10px] shadow-md hover:shadow-xl hover:scale-[1.01] hover:transition-all duration-300 ease-in-out"
+                  // onClick={handleBlogId(news.id)}
+                >
+                  <div className="p-5 ">
+                    <div className="relative">
+                      <div className="block aspect-w-4 aspect-h-3 ">
+                        <img
+                          className="object-cover w-full h-[240px]"
+                          src={news.image}
+                          alt=""
+                        />
+                      </div>
+
+                      <div className="absolute top-4 left-4">
+                        <span className="px-4 py-2 text-xs font-semibold tracking-widest text-gray-900 uppercase bg-white rounded-full">
+                          {" "}
+                          {news.type}
+                        </span>
+                      </div>
+                    </div>
+                    <span className="flex justify-between mt-6 text-sm font-semibold tracking-widest text-gray-500 uppercase">
+                      {" "}
+                      {/* March 21, 2020{" "} */}
+                      {news.date}
+                      <div className="flex items-center gap-1 lg:gap-2">
+                        <img
+                          src={news.profilePic}
+                          alt=""
+                          className="w-4 h-4 object-cover  lg:w-6 lg:h-6 rounded-full"
+                        />
+                        <p className="">{news.profileName}</p>
+                      </div>
+                    </span>
+                    <p className="mt-5 text-2xl font-semibold">
+                      <p className="text-black">
+                        {" "}
+                        {/* How to build coffee inside your home in 5 minutes.{" "} */}
+                        {news.title}
+                      </p>
+                    </p>
+                    <p className="mt-4 text-base text-gray-600">
+                      {/* Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint. Velit officia consequat duis enim
+                        velit mollit. */}
+                      {/* {news.description} */}
+                      {news.description && news.description.slice(0, 90)}
+                      {news.description &&
+                        news.description.length > 90 &&
+                        "..."}
+                    </p>
+                    <a
+                      onClick={handleBlogId(news.id)}
+                      title=""
+                      className="inline-flex items-center cursor-pointer justify-center pb-0.5 mt-5 text-base font-semibold text-[#202020] transition-all duration-200 "
+                    >
+                      Continue Reading
+                      <svg
+                        className="w-5 h-5"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              ))}
+        </div>
       </div>
-      <section className="py-10 bg-gray-50 sm:py-16 lg:py-24">
+      {/* <section className="py-10 bg-gray-50 sm:py-16 lg:py-24">
         <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div className="flex items-end justify-between">
             <div className="flex-1 text-center lg:text-left">
@@ -402,7 +563,7 @@ const LatestNewsCard = () => {
             </button>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 };
