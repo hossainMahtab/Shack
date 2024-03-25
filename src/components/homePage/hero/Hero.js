@@ -115,7 +115,7 @@ const Hero = () => {
                 enjoy the food
               </p>
               <div className="xl:mt-4 lg:mt-3 mt-2">
-                <Link href="/reservation">
+                <Link href="/about">
                   <CommonButton
                     btnText="Book Now"
                     borderColor="border-[#FFFFFF]"

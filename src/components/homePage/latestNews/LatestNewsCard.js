@@ -185,12 +185,9 @@ const LatestNewsCard = () => {
                         <p className="">{news.profileName}</p>
                       </div>
                     </span>
-                    <p className="mt-5 text-2xl font-semibold">
-                      <p className="text-black">
-                        {" "}
-                        {/* How to build coffee inside your home in 5 minutes.{" "} */}
-                        {news.title}
-                      </p>
+                    <p className="mt-5 text-2xl font-semibold text-black">
+                      {/* How to build coffee inside your home in 5 minutes.{" "} */}
+                      {news.title}
                     </p>
                     <p className="mt-4 text-base text-gray-600">
                       {/* Amet minim mollit non deserunt ullamco est sit aliqua
