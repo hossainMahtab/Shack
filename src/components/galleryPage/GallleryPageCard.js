@@ -20,14 +20,16 @@ const GallleryPageCard = (props) => {
       <img
         src={imgSrc}
         alt="cover"
-        className={` w-full h-[400px] object-cover rounded-[10px] ${
+        className={` w-full h-[300px] lg:h-[360px] xl:h-[400px] object-cover rounded-[10px] ${
           hoveredCard === id
             ? "scale-[1.075] transition-all duration-300 ease-out"
             : "scale-[1.01] transition-all duration-300 ease-out"
         } `}
       />
       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col justify-center items-center gap-4 rounded-[10px]">
-        <div className="text-white text-3xl font-bold uppercase">{title}</div>
+        <div className="text-white xl:text-4xl lg:text-3xl text-2xl font-bold uppercase">
+          {title}
+        </div>
       </div>
     </div>
   );

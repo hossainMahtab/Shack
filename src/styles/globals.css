@@ -26,7 +26,17 @@ body {
   /* color: rgb(var(--foreground-rgb)); }*/
 
 ::-webkit-scrollbar {
-  width: 0.5rem;
+  width: 0.625rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Track color */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4b5563; /* Thumb color */
+  border-radius: 4px; /* Rounded corners */
+  border: 2px solid #f0f0f0; /* Optional border */
 }
 
 .accordion-hover:hover > .MuiAccordionSummary-expandIconWrapper {
@@ -70,4 +80,8 @@ body {
 
 .pageContainerPaddingY {
   @apply xl:py-20 lg:py-16 md:py-12 py-8;
+}
+
+.custom-mui-input > .MuiInputBase-root > input {
+  @apply !text-[#FFFFFF] !text-[1.125rem] !font-semibold !bg-transparent;
 }

@@ -1,6 +1,7 @@
 import React, { use, useEffect } from "react";
 import GallleryPageCard from "./GallleryPageCard";
-import GalleryModal from "../shared/modal/GalleryModal";
+import CommonModal from "../shared/modal/CommonModal";
+import GalleryPageEmbla from "./galleryPageEmbla/GalleryPageEmbla";
 
 const demoCardData = [
   {
@@ -69,18 +70,36 @@ const GalleryPageContent = () => {
     selectedCard && setSelectedCard(null);
   };
 
+  const OPTIONS = {};
+  const SLIDE_COUNT = 10;
+  const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
+
+  console.log("open", open);
   return (
     <>
-      <GalleryModal
-        selectedCard={selectedCard}
-        cardId={cardId}
+      <CommonModal
         open={open}
-        handleOpen={handleOpen}
         handleClose={handleClose}
-      />
+        handleOpen={handleOpen}
+        customWidth="w-[85%] lg:w-[65%]"
+        customBg="bg-white"
+      >
+        <GalleryPageEmbla
+          slides={SLIDES}
+          options={OPTIONS}
+          cardId={cardId}
+          selectedCard={selectedCard}
+        />
+      </CommonModal>
+      {/* selectedCard={selectedCard}
+         cardId={cardId}
+         open={open}
+         handleOpen={handleOpen}
+         handleClose={handleClose}
+       /> */}
       <div className="w-full  ">
         <div className="container mx-auto">
-          <div className="w-full grid grid-cols-3 xl:gap-10 md:gap-8 gap-6 xl:px-20 md:px-16 px-12 pt-20">
+          <div className="w-full grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 xl:gap-10 md:gap-8 gap-6  pt-12 lg:pt-16 xl:pt-20">
             {demoCardData.map((card) => (
               <GallleryPageCard
                 key={card.id}

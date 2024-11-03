@@ -11,8 +11,8 @@ const Footer = () => {
         <div className="relative">
           <div className="  w-full absolute left-0 -top-36">
             <div className="flex bg-[#e4ae62] w-full rounded-[10px] z-[20] relative">
-              <div className="absolute  xl:-top-36 lg:-top-32 -top-28 left-0 flex items-center  w-full  z-10">
-                <div className="w-full flex xl:px-20 lg:px-16  items-center lg:items-start text-center lg:justify-start justify-center">
+              <div className="absolute  xl:-top-36 lg:-top-32 -top-28  left-0 flex items-center  w-full  z-10">
+                <div className="w-full flex xl:px-20 lg:px-16 px-12  items-center lg:items-start text-center lg:justify-start justify-center">
                   <img
                     className="xl:w-[180px] lg:w-[160px] w-[140px] xl:h-[160px] lg:h-[140px] h-[120px]"
                     src="/chef.gif"
@@ -20,7 +20,7 @@ const Footer = () => {
                   />
                 </div>
               </div>
-              <div className="w-full flex lg:flex-row flex-col xl:gap-4 lg:gap-3 gap-2  items-center justify-between xl:px-20 lg:px-16 px-12 xl:py-16 lg:py-12 py-8">
+              <div className="w-full flex lg:flex-row flex-col xl:gap-4 lg:gap-3 gap-2  items-center justify-between xl:px-20 lg:px-16 px-12 xl:py-14 lg:py-10 py-6">
                 <div className=" flex flex-col xl:gap-4 lg:gap-3 gap-2 text-center lg:text-left">
                   <p className="text-[#FFFFFF] xl:text-4xl lg:text-2xl text-xl font-bold">
                     Subscribe to our newsletter
@@ -41,7 +41,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="w-full xl:pt-[160px] lg:pt-[145px] pt-[130px] pb-6 flex flex-col items-center xl:gap-8 lg:gap-6 gap-4 ">
+        <div className="w-full xl:pt-[160px] lg:pt-[150px] pt-[140px] pb-6 flex flex-col items-center xl:gap-8 lg:gap-6 gap-4 ">
           <div className="w-full grid lg:grid-cols-3  grid-cols-1 xl:gap-16 lg:gap-12 gap-8">
             <div className="col-span-1 flex flex-col items-center xl:gap-4 lg:gap-3 gap-2 text-center">
               <h1 className="text-[#FFFFFF] xl:text-2xl lg:text-xl text-lg font-bold uppercase xl:mb-4 lg:mb-3 mb-2">
