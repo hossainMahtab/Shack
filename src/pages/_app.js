@@ -10,7 +10,7 @@ export default function App({ Component, pageProps }) {
     <>
       <FireAuthContextProvider>
         <AboutSite />
-        <div className=" w-full h-auto overflow-hidden">
+        <div className=" w-full min-h-screen">
           <Header />
           <Component {...pageProps} />
           <Footer />

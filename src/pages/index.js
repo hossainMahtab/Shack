@@ -14,7 +14,7 @@ import { app } from "../../firebaseConfig";
 
 const Home = () => {
   return (
-    <div className=" w-full h-full  bg-[#ffffff]  pb-[300px] -mt-[132px] ">
+    <div className=" w-full h-full  bg-[#ffffff]  pb-[300px] -mt-[128px] ">
       <Hero />
       <Specialization />
       <AboutUs />

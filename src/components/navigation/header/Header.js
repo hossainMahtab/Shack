@@ -139,12 +139,13 @@ const Header = () => {
                   </div>
                 )}
               </div>
-
-              <img
-                src="/logo/shack-logo-2.png"
-                alt="logo"
-                className="w-24 lg:w-32  xl:w-36 h-8 lg:h-10 xl:h-12 z-[9999]"
-              />
+              <Link href="/">
+                <img
+                  src="/logo/shack-logo-2.png"
+                  alt="logo"
+                  className="w-24 lg:w-32  xl:w-36 h-8 lg:h-10 xl:h-12 z-[9999] relative cursor-pointer"
+                />
+              </Link>
             </div>
             <div className="container mx-auto hidden lg:flex flex-col  justify-center items-center bg-transparent  py-5 xl:px-20 lg:px-16 px-12 z-[9999]">
               <div className=" text-lg uppercase">
