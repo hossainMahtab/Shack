@@ -1,7 +1,7 @@
 export const demoNews = [
   {
     id: 1,
-    type: "food",
+    type: "Food",
     profilePic: "/homepage-img/profilePic1.jpeg",
     profileName: "John Doe",
     date: "12/12/2021",
@@ -12,7 +12,7 @@ export const demoNews = [
   },
   {
     id: 2,
-    type: "dessert",
+    type: "Dessert",
     profilePic: "/homepage-img/profilePic2.jpg",
     profileName: "John Doe",
     date: "12/12/2021",
@@ -23,7 +23,7 @@ export const demoNews = [
   },
   {
     id: 3,
-    type: "recipes",
+    type: "Recipe",
     profilePic: "/homepage-img/profilePic1.jpeg",
     profileName: "John Doe",
     date: "12/12/2021",
@@ -34,7 +34,7 @@ export const demoNews = [
   },
   {
     id: 4,
-    type: "food",
+    type: "Food",
     profilePic: "/homepage-img/profilePic2.jpg",
     profileName: "John Doe",
     date: "12/12/2021",
@@ -45,7 +45,7 @@ export const demoNews = [
   },
   {
     id: 5,
-    type: "food",
+    type: "Food",
     profilePic: "/homepage-img/profilePic1.jpeg",
     profileName: "John Doe",
     date: "12/12/2021",
@@ -56,7 +56,7 @@ export const demoNews = [
   },
   {
     id: 6,
-    type: "recipes",
+    type: "Recipe",
     profilePic: "/homepage-img/profilePic2.jpg",
     profileName: "John Doe",
     date: "12/12/2021",

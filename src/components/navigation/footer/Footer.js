@@ -3,8 +3,10 @@ import { MdCall, MdOutlineEmail } from "react-icons/md";
 import { BsFacebook } from "react-icons/bs";
 import { RiTwitterXFill } from "react-icons/ri";
 import { FaInstagram } from "react-icons/fa";
+import Link from "next/link";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <div className="w-full bg-[#202020] rounded-t-[20px]  ">
       <div className="container  mx-auto">
@@ -47,9 +49,13 @@ const Footer = () => {
               <h1 className="text-[#FFFFFF] xl:text-2xl lg:text-xl text-lg font-bold uppercase xl:mb-4 lg:mb-3 mb-2">
                 Address
               </h1>
-              <h3 className="text-[#FFFFFF] xl:text-xl lg:text-lg text-base ">
-                Shack Restaurant
-              </h3>
+              <Link href="/">
+                <img
+                  src="/logo/shack-logo-2.png"
+                  alt="logo"
+                  className="w-20 lg:w-24  xl:w-28 z-[9999] relative cursor-pointer"
+                />
+              </Link>
               <p className="text-[#FFFFFF] xl:text-xl lg:text-lg text-base  ">
                 121 Rock Sreet, 21 Avenue, New York, NY 92103-9000
               </p>
@@ -59,11 +65,11 @@ const Footer = () => {
                 <h1 className="text-[#FFFFFF] xl:text-2xl lg:text-xl text-lg font-bold uppercase xl:mb-4 lg:mb-3 mb-2">
                   Opening Hours
                 </h1>
-                <h3 className="text-[#FFFFFF] xl:text-xl lg:text-lg text-base ">
-                  Monday - Friday: 11:00 AM - 11:00 PM
+                <h3 className="text-[#FFFFFF] xl:text-xl lg:text-lg text-base flex flex-col items-center gap-2 ">
+                  Monday - Friday: <span>11:00 AM - 11:00 PM</span>
                 </h3>
-                <h3 className="text-[#FFFFFF] xl:text-xl lg:text-lg text-base ">
-                  Saturday - Sunday: 11:00 AM - 12:00 PM
+                <h3 className="text-[#FFFFFF] xl:text-xl lg:text-lg text-base flex flex-col items-center gap-2">
+                  Saturday - Sunday: <span>11:00 AM - 12:00 PM</span>
                 </h3>
               </div>
             </div>
@@ -72,24 +78,41 @@ const Footer = () => {
                 <h1 className="text-[#FFFFFF] xl:text-2xl lg:text-xl text-lg font-bold uppercase xl:mb-4 lg:mb-3 mb-2">
                   Reservation
                 </h1>
-                <h3 className="text-[#FFFFFF] flex items-center gap-2 xl:text-xl lg:text-lg text-base ">
-                  <MdCall />
-                  +1 234 567 890
+                <h3 className="text-[#FFFFFF]  xl:text-xl lg:text-lg text-base ">
+                  <a
+                    href="tel:+1 123 456 7890"
+                    className="flex items-center gap-2"
+                  >
+                    <MdCall />
+                    +1 123 456 7890
+                  </a>
                 </h3>
-                <h3 className="text-[#FFFFFF] flex items-center gap-2 xl:text-xl lg:text-lg text-base ">
-                  <MdOutlineEmail /> info@shackrestaurant
+                <h3 className="text-[#FFFFFF] xl:text-xl lg:text-lg text-base ">
+                  <a
+                    href="mailto:info@shackrestaurant"
+                    className="flex items-center gap-2"
+                  >
+                    <MdOutlineEmail />
+                    info@shackrestaurant
+                  </a>
                 </h3>
               </div>
             </div>
           </div>
           <div className="w-full  flex flex-col items-center gap-2 xl:gap-6 lg:gap-4 ">
             <div className=" flex xl:gap-4 lg:gap-3 gap-2 items-center xl:text-3xl lg:text-2xl text-xl text-white xl:mb-4 lg:mb-3 mb-2">
-              <BsFacebook />
-              <RiTwitterXFill />
-              <FaInstagram />
+              <Link href="#" target="_blank" rel="norefferer">
+                <BsFacebook />
+              </Link>
+              <Link href="#" target="_blank" rel="norefferer">
+                <RiTwitterXFill />
+              </Link>
+              <Link href="#" target="_blank" rel="norefferer">
+                <FaInstagram />
+              </Link>
             </div>
             <p className="text-[#FFFFFF] text-center  lg:text-sm text-xs uppercase font-extralight">
-              COPYRIGHT © 2023, Shack . DESIGNED BY Mahtab Hossain
+              COPYRIGHT © {currentYear}, Shack . DESIGNED BY Mahtab Hossain
             </p>
           </div>
         </div>

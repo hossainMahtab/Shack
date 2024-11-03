@@ -9,7 +9,7 @@ const CommonPageSlider = (props) => {
           //   src="/menuPage/food-menu-cover.jpeg"
           src={props.imgSrc}
           alt=""
-          className="w-full min-h-[300px] max-h-[460px] object-cover"
+          className="w-full min-h-[350px] max-h-[460px] object-cover"
         />
         <div className="absolute top-12 lg:top-6 left-0 w-full h-full  flex justify-center items-center text-center overflow-hidden">
           {props.imgContentsrc ? (
@@ -20,7 +20,7 @@ const CommonPageSlider = (props) => {
               className="w-auto min-h-[100px] max-h-[120px] sm:min-h-[120px] sm:max-h-[240px] lg:max-h-[340px] lg:min-h-[240px] mt-6 sm:mt-4 lg:mt-2 object-cover"
             />
           ) : (
-            <h1 className="xl:text-6xl lg:text-5xl text-4xl font-semibold text-white uppercase">
+            <h1 className="xl:text-6xl sm:text-5xl text-4xl  font-semibold text-white uppercase">
               {props.title}
             </h1>
           )}

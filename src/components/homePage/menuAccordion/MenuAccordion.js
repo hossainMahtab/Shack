@@ -10,7 +10,7 @@ import Link from "next/link";
 import CommonContentHeader from "@/components/shared/contentHeader/CommonContentHeader";
 
 const MenuAccordion = () => {
-  const { starters, mainCourse, soups, desserts } = demoItems;
+  const { starters, mainCourse, soups, desserts, drinks } = demoItems;
   return (
     <>
       <section className="w-full">
@@ -58,7 +58,7 @@ const MenuAccordion = () => {
                   id="panel1a-header"
                 >
                   <h1 className=" text-xl lg:text-2xl xl:text-3xl font-semibold  uppercase">
-                    Starters
+                    The Taste Teasers
                   </h1>
                 </AccordionSummary>
                 <AccordionDetails>
@@ -114,7 +114,7 @@ const MenuAccordion = () => {
                   id="panel1a-header"
                 >
                   <h1 className="text-xl lg:text-2xl xl:text-3xl font-semibold  uppercase">
-                    Main Courses
+                    The Gourmet Affair
                   </h1>
                 </AccordionSummary>
                 <AccordionDetails>
@@ -170,7 +170,7 @@ const MenuAccordion = () => {
                   id="panel1a-header"
                 >
                   <h1 className="text-xl lg:text-2xl xl:text-3xl font-semibold  uppercase">
-                    Soups
+                    The Broth Bar
                   </h1>
                 </AccordionSummary>
                 <AccordionDetails>
@@ -226,7 +226,7 @@ const MenuAccordion = () => {
                   id="panel1a-header"
                 >
                   <h1 className="text-xl lg:text-2xl xl:text-3xl font-semibold  uppercase">
-                    Desserts
+                    The Dessert Vault
                   </h1>
                 </AccordionSummary>
                 <AccordionDetails>
@@ -257,6 +257,69 @@ const MenuAccordion = () => {
                             {item.description}
                           </p>
                         </div>
+                      </div>
+                    ))}
+                  </div>
+                </AccordionDetails>
+              </Accordion>
+              <Accordion className="!rounded-[10px]">
+                <AccordionSummary
+                  className=" accordion-hover !rounded-[10px] !py-2 lg:!py-3 xl:!py-4 !bg-[#FFFFFF] hover:!bg-[#202020] !text-[#202020] hover:!text-[#FFFFFF]  hover:!transition hover:!duration-500 hover:!ease-in-out"
+                  sx={{
+                    border: "6px solid #202020",
+
+                    "& .MuiAccordionSummary-expandIconWrapper": {
+                      color: "#202020",
+                    },
+
+                    "& .MuiAccordionSummary-expandIconWrapper .MuiSvgIcon-root":
+                      {
+                        fontSize: "3rem",
+                      },
+                  }}
+                  expandIcon={<ExpandMoreIcon />}
+                  aria-controls="panel1a-content"
+                  id="panel1a-header"
+                >
+                  <h1 className="text-xl lg:text-2xl xl:text-3xl font-semibold  uppercase">
+                    The Sip Suite
+                  </h1>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <div className="w-full  grid grid-cols-1 lg:grid-cols-2 gap-x-12 lg:gap-x-16  xl:gap-x-20 gap-y-2 lg:gap-y-3 xl:gap-y-4">
+                    {drinks.map((drink, index) => (
+                      <div key={index}>
+                        <h1 className="xl:text-2xl lg:text-xl text-lg text-[#202020] font-bold text-start">
+                          {drink.category}
+                        </h1>
+                        {drink.items.map((item, index) => (
+                          <div
+                            key={index}
+                            className=" w-full flex items-center gap-2 lg:gap-3 xl:gap-4 pt-2 lg:pt-3 xl:pt-4"
+                          >
+                            <img
+                              src={item.image}
+                              alt="menu"
+                              className="w-12 lg:w-16 xl:w-20 h-12 lg:h-16 xl:h-20 rounded-full -rotate-[90deg]"
+                            />
+                            <div className="w-full flex flex-col ">
+                              <div className="w-full flex ">
+                                <div className=" w-auto flex gap-2">
+                                  <h1 className="text-sm lg:text-base xl:text-lg text-[#202020] font-semibold">
+                                    {item.item}
+                                  </h1>
+                                </div>
+                                <div className=" mx-1 lg:mx-2 mb-1 lg:mb-2 flex-grow border-b border-dashed border-slate-600 "></div>
+                                <p className="text-sm lg:text-base xl:text-lg text-[#202020] font-semibold">
+                                  {item.price}
+                                </p>
+                              </div>
+                              <p className="text-xs lg:text-sm text-slate-600">
+                                {item.description}
+                              </p>
+                            </div>
+                          </div>
+                        ))}
                       </div>
                     ))}
                   </div>

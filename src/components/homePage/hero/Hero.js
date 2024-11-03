@@ -57,10 +57,10 @@ const Hero = () => {
             <img
               src="/hero-food/slider-2.jpg"
               alt=""
-              className="w-full min-h-[390px] max-h-screen object-cover  "
+              className="w-full min-h-[350px] max-h-screen object-cover  "
             />
             <div className=" w-full  absolute left-0 top-[50%] lg:top-[40%]  flex flex-col gap-1 md:gap-2 lg:gap-3 xl:gap-4 items-center justify-center z-20">
-              <h1 className="xl:text-8xl lg:text-6xl md:text-5xl sm:text-4xl text-3xl text-white font-bold uppercase">
+              <h1 className="2xl:text-8xl xl:text-7xl lg:text-6xl md:text-5xl sm:text-4xl text-3xl text-white font-bold uppercase">
                 Welcome
               </h1>
               <p className="text-white  xl:text-2xl  lg:text-xl md:text-lg sm:text-base text-sm font-semibold capitalize">
@@ -85,10 +85,10 @@ const Hero = () => {
             <img
               src="/hero-food/slider-1.jpg"
               alt=""
-              className="w-full min-h-[390px] max-h-screen object-cover "
+              className="w-full min-h-[350px] max-h-screen object-cover "
             />
             <div className=" w-full  absolute left-0 top-[50%] lg:top-[40%] flex flex-col gap-1 md:gap-2 lg:gap-3 xl:gap-4 items-center justify-center z-20">
-              <h1 className="xl:text-8xl lg:text-6xl md:text-5xl sm:text-4xl text-3xl text-white font-bold uppercase">
+              <h1 className="2xl:text-8xl xl:text-7xl lg:text-6xl md:text-5xl sm:text-4xl text-3xl text-white font-bold uppercase">
                 Welcome
               </h1>
               <p className="text-white  xl:text-2xl  lg:text-xl md:text-lg sm:text-base text-sm font-semibold capitalize">
