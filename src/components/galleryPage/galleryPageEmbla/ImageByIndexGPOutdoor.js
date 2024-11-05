@@ -22,6 +22,7 @@ export const images = [
   image10,
 ];
 
-const ImageByIndexGPOutdoor = (index) => images[index % images.length];
-
+const ImageByIndexGPOutdoor = (index) => {
+  return images[index % images.length];
+};
 export default ImageByIndexGPOutdoor;
