@@ -6,6 +6,7 @@ const title5 = "Desserts";
 const title6 = "Private Dinner";
 
 export const titles = [title1, title2, title3, title4, title5, title6];
-const TitleByIndex = (index) => titles[index % titles.length];
-
+const TitleByIndex = (index) => {
+  return titles[index % titles.length];
+};
 export default TitleByIndex;

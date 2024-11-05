@@ -22,6 +22,8 @@ export const images = [
   image10,
 ];
 
-const ImageByIndexGPInterior = (index) => images[index % images.length];
+const ImageByIndexGPInterior = (index) => {
+  return images[index % images.length];
+};
 
 export default ImageByIndexGPInterior;

@@ -22,6 +22,7 @@ export const images = [
   image10,
 ];
 
-const ImageByIndexGPDessert = (index) => images[index % images.length];
-
+const ImageByIndexGPDessert = (index) => {
+  return images[index % images.length];
+};
 export default ImageByIndexGPDessert;

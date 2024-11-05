@@ -22,6 +22,8 @@ export const images = [
   image10,
 ];
 
-const ImageByIndexGPKitchen = (index) => images[index % images.length];
+const ImageByIndexGPKitchen = (index) => {
+  return images[index % images.length];
+};
 
 export default ImageByIndexGPKitchen;
