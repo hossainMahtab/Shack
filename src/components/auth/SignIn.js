@@ -210,7 +210,7 @@ const SignIn = (props) => {
           </div>
           <div className="flex flex-wrap gap-0.5 lg:gap-1 items-center justify-center text-center mt-6">
             <h2 className="text-xl text-white font-bold">
-              Don't have an account?{" "}
+              Don&apos;t have an account?{" "}
             </h2>
             <p
               onClick={handleSignUp}
