@@ -151,7 +151,7 @@ const MenuItems = (itemType) => {
                   <img
                     src={item.image}
                     alt="menu"
-                    className="xl:w-20 lg:w-16 w-12 xl:h-20 lg:h-16 h-12 object-cover  rounded-full -rotate-[90deg]"
+                    className="xl:w-20 lg:w-16 w-12 xl:h-20 lg:h-16 h-12 object-cover  rounded-full "
                   />
                   <div className="w-full flex flex-col ">
                     <div className="w-full flex ">

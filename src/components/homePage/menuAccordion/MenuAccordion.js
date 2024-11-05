@@ -286,7 +286,7 @@ const MenuAccordion = () => {
                   </h1>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <div className="w-full  grid grid-cols-1 lg:grid-cols-2 gap-x-12 lg:gap-x-16  xl:gap-x-20 gap-y-2 lg:gap-y-3 xl:gap-y-4">
+                  <div className="w-full  grid grid-cols-1 lg:grid-cols-2 gap-x-12 lg:gap-x-16  xl:gap-x-20 gap-y-2 lg:gap-y-3 xl:gap-y-4 ">
                     {drinks.map((drink, index) => (
                       <div key={index}>
                         <h1 className="xl:text-2xl lg:text-xl text-lg text-[#202020] font-bold text-start">
@@ -300,7 +300,7 @@ const MenuAccordion = () => {
                             <img
                               src={item.image}
                               alt="menu"
-                              className="w-12 lg:w-16 xl:w-20 h-12 lg:h-16 xl:h-20 rounded-full -rotate-[90deg]"
+                              className="w-12 lg:w-16 xl:w-20 h-12 lg:h-16 xl:h-20 rounded-full object-cover"
                             />
                             <div className="w-full flex flex-col ">
                               <div className="w-full flex ">

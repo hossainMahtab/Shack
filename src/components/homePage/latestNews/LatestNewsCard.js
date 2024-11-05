@@ -4,7 +4,6 @@ import CommonButton from "@/components/shared/button/CommonButton";
 import { useRouter } from "next/router";
 
 const LatestNewsCard = ({ selectedCategory }) => {
-  console.log("selectedCategory", selectedCategory);
   const { pathname } = useRouter();
   const router = useRouter();
 

@@ -53,9 +53,9 @@ const Hero = () => {
         /> */}
         <Slider {...sliderSettings} className="w-full ">
           <div className="w-full h-full relative ">
-            <div className="absolute inset-0 bg-black/40 z-10"></div>
+            <div className="absolute inset-0 bg-black/50 z-10"></div>
             <img
-              src="/hero-food/slider-2.jpg"
+              src="/hero-food/slider-6.jpg"
               alt=""
               className="w-full min-h-[350px] max-h-screen object-cover  "
             />
@@ -83,7 +83,7 @@ const Hero = () => {
             <div className="absolute inset-0 bg-black/40 z-10"></div>
 
             <img
-              src="/hero-food/slider-1.jpg"
+              src="/hero-food/slider-3.jpg"
               alt=""
               className="w-full min-h-[350px] max-h-screen object-cover "
             />
