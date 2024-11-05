@@ -1,12 +1,9 @@
 import React, { use, useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { flushSync } from "react-dom";
-import ImageByIndex from "./ImageByIndex";
-import TitleByIndex from "./TitleByIndex";
+import ImageByIndex from "./imageByIndex";
+import TitleByIndex from "./titleByIndex";
 import { useRouter } from "next/router";
-import GalleryPageEmbla from "@/components/galleryPage/galleryPageEmbla/GalleryPageEmbla";
-import GallleryPageCard from "@/components/galleryPage/GallleryPageCard";
-import Link from "next/link";
 
 const TWEEN_FACTOR = 1.2;
 

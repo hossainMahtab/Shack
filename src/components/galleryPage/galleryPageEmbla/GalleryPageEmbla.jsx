@@ -2,12 +2,12 @@ import React, { useState, useEffect, useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 
 import { GalleryPageEmblaThumbnail } from "./GalleryPageEmblaThumbnail";
-import ImageByIndexGPKitchen from "./ImageByIndexGPKitchen";
-import ImageByIndexGPInterior from "./ImageByIndexGPInterior";
-import ImageByIndexGPOutdoor from "./ImageByIndexGPOutdoor";
-import ImageByIndexGPBreakfast from "./ImageByIndexGPBreakfast";
-import ImageByIndexGPDessert from "./ImageByIndexGPDessert";
-import ImageByIndexGPPrivate from "./ImageByIndexGPPrivate";
+import ImageByIndexGPKitchen from "./imageByIndexGpKitchen";
+import ImageByIndexGPInterior from "./imageByIndexGpInterior";
+import ImageByIndexGPOutdoor from "./imageByIndexGpOutdoor";
+import ImageByIndexGPBreakfast from "./imageByIndexGpBreakfast";
+import ImageByIndexGPDessert from "./imageByIndexGpDessert";
+import ImageByIndexGPPrivate from "./imageByIndexGpPrivate";
 
 const GalleryPageEmbla = (props) => {
   const { slides, options, cardId, selectedCard } = props;
