@@ -12,7 +12,7 @@ const MenuList = () => {
               <CommonContentHeader
                 textColor="text-[#202020]"
                 // subtitle="About"
-                title="Starters"
+                title="The Taste Teasers"
                 lineBg="bg-[#202020]"
                 // subtitleSize="text-2xl"
                 titleSizeXl="text-6xl"
@@ -28,7 +28,7 @@ const MenuList = () => {
               <CommonContentHeader
                 textColor="text-[#202020]"
                 // subtitle="About"
-                title="Main Courses"
+                title="The Gourmet Affair"
                 lineBg="bg-[#202020]"
                 // subtitleSize="text-2xl"
                 titleSizeXl="text-6xl"
@@ -44,7 +44,7 @@ const MenuList = () => {
               <CommonContentHeader
                 textColor="text-[#202020]"
                 // subtitle="About"
-                title="Soups"
+                title="The Broth Bar"
                 lineBg="bg-[#202020]"
                 // subtitleSize="text-2xl"
                 titleSizeXl="text-6xl"
@@ -60,7 +60,7 @@ const MenuList = () => {
               <CommonContentHeader
                 textColor="text-[#202020]"
                 // subtitle="About"
-                title="Desserts"
+                title="The Dessert Vault"
                 lineBg="bg-[#202020]"
                 // subtitleSize="text-2xl"
                 titleSizeXl="text-6xl"
@@ -70,6 +70,22 @@ const MenuList = () => {
             </div>
             {/* menu Items starts */}
             <MenuItems itemType="desserts" />
+          </div>
+          <div className="w-full items-center flex flex-col gap-4 lg:gap-6 xl:gap-8">
+            <div className="w-full  flex flex-col items-center ">
+              <CommonContentHeader
+                textColor="text-[#202020]"
+                // subtitle="About"
+                title="The Sip Suite"
+                lineBg="bg-[#202020]"
+                // subtitleSize="text-2xl"
+                titleSizeXl="text-6xl"
+                titleSizeLg="text-4xl"
+                titleSize="text-2xl"
+              />
+            </div>
+            {/* menu Items starts */}
+            <MenuItems itemType="drinks" />
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
-import { MdClose } from "react-icons/md";
+import { MdCall, MdClose } from "react-icons/md";
 import { FiMenu } from "react-icons/fi";
 import { BiSolidUpArrowCircle } from "react-icons/bi";
 import CommonModal from "@/components/shared/modal/CommonModal";
@@ -12,7 +12,7 @@ import { AiOutlineLogout } from "react-icons/ai";
 
 const Header = () => {
   const { user, googleSignIn, logOut, emailSignUp } = UserAuth();
-  console.log("user", user);
+  // console.log("user", user);
 
   const [sticky, setSticky] = React.useState(false);
   const [notSticky, setNotSticky] = React.useState(true);
@@ -54,7 +54,7 @@ const Header = () => {
   };
 
   const toggleVisibility = () => {
-    if (window.scrollY > 580) {
+    if (window.scrollY > 64) {
       setIsVisible(true);
     } else {
       setIsVisible(false);
@@ -103,6 +103,8 @@ const Header = () => {
     }
   };
 
+  // console.log("name", user?.displayName.charAt(0));
+
   return (
     <>
       <nav className=" w-full h-full relative ">
@@ -110,15 +112,16 @@ const Header = () => {
           <div className=" w-full z-[7777] flex flex-col bg-transparent  ">
             <div className="w-full relative mx-auto flex justify-center items-center bg-transparent z-[7777]  pt-4 ">
               <div className="absolute top-4 xl:px-20 lg:px-16 px-4  w-full flex justify-between items-center">
-                <p className="text-white xl:text-sm lg:text-xs capitalize text-left hidden lg:block ">
-                  9100 Jane St, Vaughan, <br /> ON L4K 0A4
+                <p className="text-white xl:text-sm lg:text-xs capitalize text-left hidden lg:flex flex-col gap-1 ">
+                  121 Rock Street, 21 Avenue,{" "}
+                  <span>New York, NY 92103-9000</span>
                 </p>
                 <div onClick={handleBurger} className="block lg:hidden">
                   {!burger && (
                     <FiMenu className="text-white text-2xl cursor-pointer" />
                   )}
                 </div>
-                {!user ? (
+                {/* {!user ? (
                   <button
                     onClick={handleSignInOpen}
                     className="text-white xl:text-base lg:text-sm capitalize text-right cursor-pointer bg-transparent outline-none focus:outline-none"
@@ -127,8 +130,8 @@ const Header = () => {
                   </button>
                 ) : (
                   <div className="flex items-center gap-4">
-                    <p className="text-white xl:text-base lg:text-sm capitalize text-right  bg-transparent outline-none focus:outline-none">
-                      {user?.displayName}
+                    <p className="text-[#fff] text-[12px]/[12px] capitalize outline-none focus:outline-none w-6 h-6 flex items-center justify-center rounded-full border border-[#fff] bg-transparent">
+                      {user?.displayName.charAt(0)}
                     </p>
                     <button
                       onClick={handlelogOut}
@@ -137,7 +140,17 @@ const Header = () => {
                       <AiOutlineLogout />
                     </button>
                   </div>
-                )}
+                )} */}
+                <a href="tel:+1 123 456 7890">
+                  <p
+                    className={` ${
+                      pathname === "/contact" ? "text-[#e4ae62]" : "text-white"
+                    } cursor-pointer text-white xl:text-sm lg:text-xs capitalize hidden lg:flex flex-col text-right gap-1`}
+                  >
+                    Book Now
+                    <span>+1 123 456 7890</span>
+                  </p>
+                </a>
               </div>
               <Link href="/">
                 <img
@@ -225,14 +238,14 @@ const Header = () => {
           </div>
         )}
         {sticky && (
-          <div className="bg-[#202020]  top-0 w-full !fixed  z-[9999]  ">
+          <div className="bg-black/10 backdrop-blur-sm lg:backdrop-blur-[6px] backdrop-brightness-50  top-0 w-full !fixed  z-[9999]  ">
             <div className=" px-4 h-14 lg:hidden flex  justify-between items-center bg-transparent py-5 ">
               <div onClick={handleBurger}>
                 {!burger && (
                   <FiMenu className="text-white text-2xl cursor-pointer" />
                 )}
               </div>
-              {!user ? (
+              {/* {!user ? (
                 <button
                   onClick={handleSignInOpen}
                   className="text-white xl:text-base lg:text-sm capitalize text-right cursor-pointer bg-transparent outline-none focus:outline-none"
@@ -241,8 +254,8 @@ const Header = () => {
                 </button>
               ) : (
                 <div className="flex items-center gap-4">
-                  <p className="text-white xl:text-base lg:text-sm capitalize text-right  bg-transparent outline-none focus:outline-none">
-                    {user?.displayName}
+                  <p className="text-[#fff] text-[12px]/[12px] capitalize outline-none focus:outline-none w-6 h-6 flex items-center justify-center rounded-full border border-[#fff] bg-transparent">
+                    {user?.displayName.charAt(0)}
                   </p>
                   <button
                     onClick={handlelogOut}
@@ -251,91 +264,85 @@ const Header = () => {
                     <AiOutlineLogout />
                   </button>
                 </div>
-              )}
+              )} */}
             </div>
-            <div className="container mx-auto h-[70px] hidden lg:flex  justify-between items-center bg-transparent py-5 ">
-              <Link href="/">
+            <div className="container mx-auto h-[70px] hidden lg:flex  justify-center items-center bg-transparent py-5 ">
+              {/* <Link href="/">
                 <img
                   src="/logo/shack-logo-2.png"
                   alt="logo"
                   border="0"
                   className="xl:w-24 lg:w-20 xl:h-8 h-6 z-[9999] cursor-pointer"
                 />
-              </Link>
-              <div className=" text-lg uppercase">
-                <ul className="flex xl:space-x-14 lg:space-x-10 xl:text-base lg:text-sm">
-                  <Link href="/">
-                    <li
-                      className={` ${
-                        pathname === "/" ? "text-[#e4ae62]" : "text-white"
-                      } cursor-pointer `}
-                    >
-                      Home
-                    </li>
-                  </Link>
-                  <Link href="/menu">
-                    <li
-                      className={` ${
-                        pathname === "/menu" ? "text-[#e4ae62]" : "text-white"
-                      } cursor-pointer `}
-                    >
-                      Menu
-                    </li>
-                  </Link>
-                  <Link href="/reservation">
-                    <li
-                      className={` ${
-                        pathname === "/reservation"
-                          ? "text-[#e4ae62]"
-                          : "text-white"
-                      } cursor-pointer `}
-                    >
-                      Reservation
-                    </li>
-                  </Link>
-                  <Link href="/about">
-                    <li
-                      className={` ${
-                        pathname === "/about" ? "text-[#e4ae62]" : "text-white"
-                      } cursor-pointer `}
-                    >
-                      About
-                    </li>
-                  </Link>
-                  <Link href="/gallery">
-                    <li
-                      className={` ${
-                        pathname === "/gallery"
-                          ? "text-[#e4ae62]"
-                          : "text-white"
-                      } cursor-pointer `}
-                    >
-                      Gallery
-                    </li>
-                  </Link>
-                  <Link href="/blog">
-                    <li
-                      className={` ${
-                        pathname === "/blog" ? "text-[#e4ae62]" : "text-white"
-                      } cursor-pointer `}
-                    >
-                      Blog
-                    </li>
-                  </Link>
-                  <Link href="/contact">
-                    <li
-                      className={` ${
-                        pathname === "/contact"
-                          ? "text-[#e4ae62]"
-                          : "text-white"
-                      } cursor-pointer `}
-                    >
-                      Contact
-                    </li>
-                  </Link>
-                </ul>
-              </div>
-              {!user ? (
+              </Link> */}
+              <ul className="flex xl:space-x-14 lg:space-x-10 xl:text-base lg:text-sm uppercase">
+                <Link href="/">
+                  <li
+                    className={` ${
+                      pathname === "/" ? "text-[#e4ae62]" : "text-white"
+                    } cursor-pointer `}
+                  >
+                    Home
+                  </li>
+                </Link>
+                <Link href="/menu">
+                  <li
+                    className={` ${
+                      pathname === "/menu" ? "text-[#e4ae62]" : "text-white"
+                    } cursor-pointer `}
+                  >
+                    Menu
+                  </li>
+                </Link>
+                <Link href="/reservation">
+                  <li
+                    className={` ${
+                      pathname === "/reservation"
+                        ? "text-[#e4ae62]"
+                        : "text-white"
+                    } cursor-pointer `}
+                  >
+                    Reservation
+                  </li>
+                </Link>
+                <Link href="/about">
+                  <li
+                    className={` ${
+                      pathname === "/about" ? "text-[#e4ae62]" : "text-white"
+                    } cursor-pointer `}
+                  >
+                    About
+                  </li>
+                </Link>
+                <Link href="/gallery">
+                  <li
+                    className={` ${
+                      pathname === "/gallery" ? "text-[#e4ae62]" : "text-white"
+                    } cursor-pointer `}
+                  >
+                    Gallery
+                  </li>
+                </Link>
+                <Link href="/blog">
+                  <li
+                    className={` ${
+                      pathname === "/blog" ? "text-[#e4ae62]" : "text-white"
+                    } cursor-pointer `}
+                  >
+                    Blog
+                  </li>
+                </Link>
+                <Link href="/contact">
+                  <li
+                    className={` ${
+                      pathname === "/contact" ? "text-[#e4ae62]" : "text-white"
+                    } cursor-pointer `}
+                  >
+                    Contact
+                  </li>
+                </Link>
+              </ul>
+              {/* {!user ? (
                 <button
                   onClick={handleSignInOpen}
                   className="text-white bg-transparent cursor-pointer xl:text-base lg:text-sm  uppercase outline-none focus:outline-none"
@@ -344,8 +351,8 @@ const Header = () => {
                 </button>
               ) : (
                 <div className="flex items-center gap-4">
-                  <p className="text-white bg-transparent cursor-pointer xl:text-base lg:text-sm   outline-none focus:outline-none capitalize">
-                    {user?.displayName}
+                  <p className="text-[#fff] cursor-pointer text-[12px]/[12px] outline-none focus:outline-none capitalize w-6 h-6 flex items-center justify-center rounded-full border border-[#fff] bg-transparent">
+                    {user?.displayName.charAt(0)}
                   </p>
                   <button
                     onClick={handlelogOut}
@@ -354,7 +361,16 @@ const Header = () => {
                     <AiOutlineLogout />
                   </button>
                 </div>
-              )}
+              )} */}
+              {/* <Link href="/contact">
+                <p
+                  className={` ${
+                    pathname === "/contact" ? "text-[#e4ae62]" : "text-white"
+                  } cursor-pointer xl:text-base lg:text-sm uppercase`}
+                >
+                  Book Now
+                </p>
+              </Link> */}
             </div>
           </div>
         )}
@@ -368,18 +384,20 @@ const Header = () => {
               className="bg-black/30 left-0  top-0 w-full h-screen fixed  z-[8888] block lg:hidden   "
             />
 
-            <div className="bg-black/90 left-0  top-0 w-[65%] h-screen fixed  transition-all duration-500 ease-in-out  z-[9999] block lg:hidden   ">
+            <div className="bg-black/90 left-0  top-0 w-[65%] h-screen overflow-y-auto fixed  transition-all duration-500 ease-in-out  z-[9999] block lg:hidden   ">
               <div className="w-full flex justify-between items-center px-4 py-4">
                 <div onClick={handleBurger}>
                   {burger && (
                     <MdClose className="text-white text-2xl cursor-pointer" />
                   )}
                 </div>
-                <img
-                  src="/logo/shack-logo-2.png"
-                  alt="logo"
-                  className="w-24 lg:w-32  xl:w-36 h-8 lg:h-10 xl:h-12 z-[9999]"
-                />
+                <Link href="/">
+                  <img
+                    src="/logo/shack-logo-2.png"
+                    alt="logo"
+                    className="w-24 lg:w-32  xl:w-36 h-8 lg:h-10 xl:h-12 z-[9999]"
+                  />
+                </Link>
               </div>
               <div className="container mx-auto flex flex-col items-center justify-center py-4 gap-10">
                 <Link href="/">
@@ -672,7 +690,7 @@ const Header = () => {
       </nav>
 
       {/* sign in modal */}
-      {signInModalOpen && (
+      {signInModalOpen && user?.displayName == undefined && (
         <CommonModal
           handleOpen={handleSignInOpen}
           handleClose={handleSignInClose}
@@ -687,7 +705,7 @@ const Header = () => {
         </CommonModal>
       )}
 
-      {signUpModalOpen && (
+      {signUpModalOpen && user?.displayName == undefined && (
         <CommonModal
           handleClose={handleSignUpClose}
           handleOpen={handleSignUpOpen}

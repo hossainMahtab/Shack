@@ -5,7 +5,7 @@ import CommonContentHeader from "@/components/shared/contentHeader/CommonContent
 
 const Opening = () => {
   return (
-    <div className="flex relative items-center justify-center bg-[url(/homepage-img/about-5.jpg)] bg-fixed bg-cover  max-w-full h-[300px] md:h-[420px] xl:h-[540px]">
+    <div className="flex relative items-center justify-center bg-[url(/homepage-img/desserts.jpg)] bg-fixed bg-cover  max-w-full h-[300px] md:h-[420px] xl:h-[540px]">
       <div className="absolute inset-0 bg-black/40"></div>
       <div className="absolute w-full">
         <div className="w-full flex flex-col items-center justify-center">
